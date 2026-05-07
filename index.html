@@ -36,7 +36,9 @@
         margin: 0;
         padding: 0;
       }
-      html { scroll-behavior: smooth; }
+      html {
+        scroll-behavior: smooth;
+      }
       body {
         background-color: var(--krem);
         font-family: "Plus Jakarta Sans", sans-serif;
@@ -44,6 +46,66 @@
         overflow-x: hidden;
       }
 
+
+    .table-posyandu{
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        background: #fff;
+    }
+
+    .table-posyandu thead{
+        background: linear-gradient(135deg, #2f9e44, #40c057);
+        color: white;
+    }
+
+    .table-posyandu thead th{
+        padding: 16px;
+        text-align: center;
+        font-weight: 700;
+        border: none;
+    }
+
+    .table-posyandu tbody td{
+        padding: 16px;
+        text-align: center;
+        vertical-align: middle;
+        border: none;
+        font-weight: 500;
+    }
+
+    /* Warna hijau beda tiap row */
+    .rw1  { background: #f1fdf4; }
+    .rw2  { background: #e9f9ee; }
+    .rw3  { background: #e3f7e8; }
+    .rw4  { background: #dcf5e2; }
+    .rw5  { background: #d5f2dc; }
+    .rw6  { background: #cef0d6; }
+    .rw7  { background: #c7edd0; }
+    .rw8  { background: #c0ebca; }
+    .rw9  { background: #bae8c4; }
+    .rw10 { background: #b3e6be; }
+    .rw11 { background: #ace3b8; }
+
+    .rw-title{
+        font-weight: 800;
+        font-size: 15px;
+        color: #1b4332;
+    }
+
+    .tanggal{
+        font-weight: 700;
+        color: #2d6a4f;
+    }
+
+    .hari{
+        color: #52796f;
+    }
+
+    .table-posyandu tbody tr:hover{
+        filter: brightness(0.98);
+        transition: 0.2s ease;
+    }
       /* ══════════════════════════════
          PREMIUM SCROLL ANIMATIONS
       ══════════════════════════════ */
@@ -52,8 +114,9 @@
       .reveal {
         opacity: 0;
         transform: translateY(36px);
-        transition: opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1),
-                    transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+        transition:
+          opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1),
+          transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
         will-change: opacity, transform;
       }
       .reveal.reveal-left {
@@ -64,15 +127,17 @@
       }
       .reveal.reveal-scale {
         transform: scale(0.92) translateY(20px);
-        transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
-                    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+        transition:
+          opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+          transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
       }
       .reveal.reveal-blur {
         filter: blur(8px);
         transform: translateY(24px);
-        transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
-                    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1),
-                    filter 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+        transition:
+          opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+          transform 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+          filter 0.9s cubic-bezier(0.22, 1, 0.36, 1);
       }
 
       /* Saat masuk viewport — visible */
@@ -86,16 +151,45 @@
       .stagger-parent .stagger-child {
         opacity: 0;
         transform: translateY(28px);
-        transition: opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1),
-                    transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+        transition:
+          opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+          transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
       }
-      .stagger-parent.is-visible .stagger-child:nth-child(1) { opacity:1; transform:translateY(0); transition-delay: 0.05s; }
-      .stagger-parent.is-visible .stagger-child:nth-child(2) { opacity:1; transform:translateY(0); transition-delay: 0.15s; }
-      .stagger-parent.is-visible .stagger-child:nth-child(3) { opacity:1; transform:translateY(0); transition-delay: 0.25s; }
-      .stagger-parent.is-visible .stagger-child:nth-child(4) { opacity:1; transform:translateY(0); transition-delay: 0.35s; }
-      .stagger-parent.is-visible .stagger-child:nth-child(5) { opacity:1; transform:translateY(0); transition-delay: 0.45s; }
-      .stagger-parent.is-visible .stagger-child:nth-child(6) { opacity:1; transform:translateY(0); transition-delay: 0.55s; }
-      .stagger-parent.is-visible .stagger-child:nth-child(n+7) { opacity:1; transform:translateY(0); transition-delay: 0.65s; }
+      .stagger-parent.is-visible .stagger-child:nth-child(1) {
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: 0.05s;
+      }
+      .stagger-parent.is-visible .stagger-child:nth-child(2) {
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: 0.15s;
+      }
+      .stagger-parent.is-visible .stagger-child:nth-child(3) {
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: 0.25s;
+      }
+      .stagger-parent.is-visible .stagger-child:nth-child(4) {
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: 0.35s;
+      }
+      .stagger-parent.is-visible .stagger-child:nth-child(5) {
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: 0.45s;
+      }
+      .stagger-parent.is-visible .stagger-child:nth-child(6) {
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: 0.55s;
+      }
+      .stagger-parent.is-visible .stagger-child:nth-child(n + 7) {
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: 0.65s;
+      }
 
       /* Line wipe — section label */
       .line-wipe {
@@ -103,7 +197,7 @@
         overflow: hidden;
       }
       .line-wipe::after {
-        content: '';
+        content: "";
         position: absolute;
         inset: 0;
         background: var(--krem);
@@ -111,41 +205,60 @@
         transform-origin: left;
         transition: transform 0.7s cubic-bezier(0.77, 0, 0.18, 1);
       }
-      .line-wipe.is-visible::after { transform: scaleX(0); transform-origin: right; }
+      .line-wipe.is-visible::after {
+        transform: scaleX(0);
+        transform-origin: right;
+      }
 
       /* Counter animasi angka stats */
-      .stat-num[data-target] { transition: none; }
+      .stat-num[data-target] {
+        transition: none;
+      }
 
       /* Shimmer effect untuk card hover premium */
-      .card-berita, .misi-card, .filos-card, .card-pegawai {
+      .card-berita,
+      .misi-card,
+      .filos-card,
+      .card-pegawai {
         position: relative;
         overflow: hidden;
       }
-      .card-berita::before, .misi-card::before, .filos-card::before {
-        content: '';
+      .card-berita::before,
+      .misi-card::before,
+      .filos-card::before {
+        content: "";
         position: absolute;
-        top: 0; left: -100%;
+        top: 0;
+        left: -100%;
         width: 60%;
         height: 100%;
-        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.06), transparent);
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.06),
+          transparent
+        );
         transition: left 0.6s ease;
         z-index: 1;
         pointer-events: none;
       }
-      .card-berita:hover::before, .misi-card:hover::before, .filos-card:hover::before {
+      .card-berita:hover::before,
+      .misi-card:hover::before,
+      .filos-card:hover::before {
         left: 140%;
       }
 
       /* Progress line di atas page */
       #progress-bar {
         position: fixed;
-        top: 0; left: 0;
+        top: 0;
+        left: 0;
         height: 3px;
         background: linear-gradient(90deg, var(--kuning), #ffb703);
         width: 0%;
         z-index: 9999;
         transition: width 0.1s linear;
-        box-shadow: 0 0 8px rgba(255,222,36,0.6);
+        box-shadow: 0 0 8px rgba(255, 222, 36, 0.6);
       }
 
       /* Parallax hero subtitle */
@@ -162,21 +275,37 @@
         margin-bottom: 1.5rem;
         border-radius: 99px;
       }
-      .section-divider-anim.is-visible { width: 80px; }
+      .section-divider-anim.is-visible {
+        width: 80px;
+      }
 
       /* Floating ornamen subtle */
       @keyframes floatY {
-        0%, 100% { transform: translateY(0); }
-        50% { transform: translateY(-10px); }
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
       }
-      .float-anim { animation: floatY 5s ease-in-out infinite; }
+      .float-anim {
+        animation: floatY 5s ease-in-out infinite;
+      }
 
       /* Glow pulse untuk featured card */
       @keyframes glowPulse {
-        0%, 100% { box-shadow: 0 0 0 0 rgba(255,222,36,0.2); }
-        50% { box-shadow: 0 0 24px 6px rgba(255,222,36,0.15); }
+        0%,
+        100% {
+          box-shadow: 0 0 0 0 rgba(255, 222, 36, 0.2);
+        }
+        50% {
+          box-shadow: 0 0 24px 6px rgba(255, 222, 36, 0.15);
+        }
       }
-      .card-featured { animation: glowPulse 3s ease-in-out infinite; }
+      .card-featured {
+        animation: glowPulse 3s ease-in-out infinite;
+      }
 
       /* ── NAVBAR ── */
       .navbar-custom {
@@ -187,14 +316,22 @@
         top: 0;
         z-index: 1000;
         box-shadow: 0 4px 20px rgba(1, 82, 75, 0.3);
-        transition: padding 0.3s ease, background 0.3s ease;
+        transition:
+          padding 0.3s ease,
+          background 0.3s ease;
       }
       .navbar-custom.scrolled {
         padding: 0.3rem 1.5rem;
         box-shadow: 0 6px 30px rgba(1, 82, 75, 0.45);
       }
-      .navbar-custom .logo { height: 60px; width: auto; transition: height 0.3s ease; }
-      .navbar-custom.scrolled .logo { height: 48px; }
+      .navbar-custom .logo {
+        height: 60px;
+        width: auto;
+        transition: height 0.3s ease;
+      }
+      .navbar-custom.scrolled .logo {
+        height: 48px;
+      }
       .navbar-custom .nav-link {
         color: rgba(255, 255, 255, 0.85) !important;
         font-weight: 500;
@@ -214,11 +351,17 @@
         box-shadow: 0 10px 30px rgba(1, 82, 75, 0.22);
         border-top: 3px solid var(--kuning);
         padding: 0.4rem 0;
-        animation: dropIn 0.25s cubic-bezier(0.22,1,0.36,1);
+        animation: dropIn 0.25s cubic-bezier(0.22, 1, 0.36, 1);
       }
       @keyframes dropIn {
-        from { opacity:0; transform: translateY(-8px); }
-        to   { opacity:1; transform: translateY(0); }
+        from {
+          opacity: 0;
+          transform: translateY(-8px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
       }
       .navbar-custom .dropdown-item {
         padding: 0.55rem 1.2rem;
@@ -230,13 +373,18 @@
         align-items: center;
         gap: 8px;
       }
-      .navbar-custom .dropdown-item i { color: var(--hijau-terang); width: 16px; }
+      .navbar-custom .dropdown-item i {
+        color: var(--hijau-terang);
+        width: 16px;
+      }
       .navbar-custom .dropdown-item:hover {
         background: var(--hijau-tua);
         color: var(--kuning);
         padding-left: 1.6rem;
       }
-      .navbar-custom .dropdown-item:hover i { color: var(--kuning); }
+      .navbar-custom .dropdown-item:hover i {
+        color: var(--kuning);
+      }
       .btn-hubungi {
         background: var(--kuning);
         color: var(--hijau-tua);
@@ -253,13 +401,18 @@
         transform: translateY(-1px);
         box-shadow: 0 4px 12px rgba(255, 222, 36, 0.4);
       }
-      .navbar-toggler { border: 1px solid rgba(255, 222, 36, 0.5); }
+      .navbar-toggler {
+        border: 1px solid rgba(255, 222, 36, 0.5);
+      }
       .navbar-toggler-icon {
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,222,36,0.9)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
       }
 
       /* ── HERO ── */
-      .hero-wrapper { position: relative; background: var(--hijau-tua); }
+      .hero-wrapper {
+        position: relative;
+        background: var(--hijau-tua);
+      }
       #heroCarousel .carousel-item img {
         height: 500px;
         object-fit: cover;
@@ -267,8 +420,14 @@
       }
       .carousel-overlay {
         position: absolute;
-        bottom: 0; left: 0; right: 0;
-        background: linear-gradient(to top, rgba(1, 82, 75, 0.95) 0%, transparent 100%);
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(
+          to top,
+          rgba(1, 82, 75, 0.95) 0%,
+          transparent 100%
+        );
         padding: 3rem 3.5rem 2.2rem;
         z-index: 10;
       }
@@ -279,11 +438,19 @@
         margin-bottom: 0.4rem;
         text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
       }
-      .carousel-overlay p { color: rgba(255, 255, 255, 0.75); font-size: 0.9rem; }
+      .carousel-overlay p {
+        color: rgba(255, 255, 255, 0.75);
+        font-size: 0.9rem;
+      }
 
       /* ── STATS ── */
-      .stats-strip { background: var(--kuning); }
-      .stat-item { text-align: center; padding: 1.1rem 1rem; }
+      .stats-strip {
+        background: var(--kuning);
+      }
+      .stat-item {
+        text-align: center;
+        padding: 1.1rem 1rem;
+      }
       .stat-num {
         font-family: "Playfair Display", serif;
         font-size: 2rem;
@@ -343,7 +510,10 @@
         margin-bottom: 0.25rem;
         line-height: 1.2;
       }
-      .section-subtitle { color: #5a7a75; font-size: 0.93rem; }
+      .section-subtitle {
+        color: #5a7a75;
+        font-size: 0.93rem;
+      }
 
       /* ── BERITA ── */
       .card-berita {
@@ -351,7 +521,9 @@
         border-radius: 16px;
         overflow: hidden;
         box-shadow: 0 4px 20px rgba(1, 82, 75, 0.09);
-        transition: transform 0.3s, box-shadow 0.3s;
+        transition:
+          transform 0.3s,
+          box-shadow 0.3s;
         background: white;
         height: 100%;
         display: flex;
@@ -361,7 +533,10 @@
         transform: translateY(-5px);
         box-shadow: 0 12px 32px rgba(1, 82, 75, 0.17);
       }
-      .card-berita .card-body { padding: 1.25rem; flex: 1; }
+      .card-berita .card-body {
+        padding: 1.25rem;
+        flex: 1;
+      }
       .card-tag {
         font-size: 0.7rem;
         font-weight: 700;
@@ -381,10 +556,7 @@
         font-size: 0.85rem;
         color: #6b8580;
         line-height: 1.6;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
+        text-align: justify;
       }
       .card-footer-custom {
         display: flex;
@@ -401,7 +573,9 @@
         text-decoration: none;
         font-size: 0.8rem;
       }
-      .card-footer-custom a:hover { color: var(--hijau-tua); }
+      .card-footer-custom a:hover {
+        color: var(--hijau-tua);
+      }
 
       /* ── PETA ── */
       .info-card {
@@ -418,15 +592,25 @@
         color: #8aaca8;
         margin-bottom: 3px;
       }
-      .info-val { font-weight: 600; font-size: 0.88rem; color: var(--teks); }
+      .info-val {
+        font-weight: 600;
+        font-size: 0.88rem;
+        color: var(--teks);
+      }
       .icon-box {
-        width: 40px; height: 40px;
+        width: 40px;
+        height: 40px;
         background: rgba(1, 97, 98, 0.09);
         border-radius: 10px;
-        display: flex; align-items: center; justify-content: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         flex-shrink: 0;
       }
-      .icon-box i { color: var(--hijau-mid); font-size: 1.05rem; }
+      .icon-box i {
+        color: var(--hijau-mid);
+        font-size: 1.05rem;
+      }
 
       /* ── VISI MISI ── */
       .akronim-box {
@@ -434,11 +618,14 @@
         border: 1px solid rgba(255, 255, 255, 0.14);
         border-radius: 12px;
         padding: 0.6rem 0.4rem;
-        transition: background 0.3s, border-color 0.3s, transform 0.3s;
+        transition:
+          background 0.3s,
+          border-color 0.3s,
+          transform 0.3s;
       }
       .akronim-box:hover {
-        background: rgba(255,222,36,0.15);
-        border-color: rgba(255,222,36,0.4);
+        background: rgba(255, 222, 36, 0.15);
+        border-color: rgba(255, 222, 36, 0.4);
         transform: translateY(-3px);
       }
       .akronim-huruf {
@@ -448,7 +635,12 @@
         font-family: "Playfair Display", serif;
         line-height: 1;
       }
-      .akronim-kata { font-size: 0.7rem; color: rgba(255,255,255,0.75); margin-top: 3px; font-weight: 500; }
+      .akronim-kata {
+        font-size: 0.7rem;
+        color: rgba(255, 255, 255, 0.75);
+        margin-top: 3px;
+        font-weight: 500;
+      }
       .misi-card {
         background: white;
         border: 1px solid #e4eeec;
@@ -457,7 +649,10 @@
         display: flex;
         align-items: flex-start;
         gap: 1rem;
-        transition: box-shadow 0.2s, border-color 0.2s, transform 0.2s;
+        transition:
+          box-shadow 0.2s,
+          border-color 0.2s,
+          transform 0.2s;
       }
       .misi-card:hover {
         box-shadow: 0 8px 24px rgba(1, 82, 75, 0.11);
@@ -466,13 +661,19 @@
       }
       .misi-icon {
         flex-shrink: 0;
-        width: 46px; height: 46px;
+        width: 46px;
+        height: 46px;
         background: linear-gradient(135deg, var(--hijau-tua), var(--hijau-mid));
         border-radius: 13px;
-        display: flex; align-items: center; justify-content: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         box-shadow: 0 4px 12px rgba(1, 82, 75, 0.22);
       }
-      .misi-icon i { color: var(--kuning); font-size: 1.05rem; }
+      .misi-icon i {
+        color: var(--kuning);
+        font-size: 1.05rem;
+      }
       .misi-num {
         font-size: 0.65rem;
         font-weight: 700;
@@ -481,7 +682,13 @@
         color: var(--hijau-terang);
         margin-bottom: 4px;
       }
-      .misi-text { font-size: 0.91rem; line-height: 1.65; color: var(--teks); font-weight: 500; margin: 0; }
+      .misi-text {
+        font-size: 0.91rem;
+        line-height: 1.65;
+        color: var(--teks);
+        font-weight: 500;
+        margin: 0;
+      }
 
       /* ── FILOSOFI ── */
       .filos-card {
@@ -491,48 +698,98 @@
         padding: 1.4rem;
         height: 100%;
         box-shadow: 0 4px 16px rgba(1, 82, 75, 0.06);
-        transition: box-shadow 0.25s, transform 0.25s;
+        transition:
+          box-shadow 0.25s,
+          transform 0.25s;
       }
-      .filos-card:hover { box-shadow: 0 10px 28px rgba(1, 82, 75, 0.13); transform: translateY(-3px); }
+      .filos-card:hover {
+        box-shadow: 0 10px 28px rgba(1, 82, 75, 0.13);
+        transform: translateY(-3px);
+      }
       .filos-header {
-        display: flex; align-items: center; gap: 0.9rem;
+        display: flex;
+        align-items: center;
+        gap: 0.9rem;
         margin-bottom: 1.2rem;
         padding-bottom: 1rem;
         border-bottom: 2px solid #f0f5f4;
       }
       .filos-icon {
-        width: 44px; height: 44px;
+        width: 44px;
+        height: 44px;
         border-radius: 12px;
-        display: flex; align-items: center; justify-content: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         flex-shrink: 0;
       }
-      .filos-icon i { color: white; font-size: 1.05rem; }
-      .filos-elemen { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }
-      .filos-judul { font-weight: 700; font-size: 0.97rem; color: var(--teks); }
-      .filos-item { display: flex; gap: 0.8rem; align-items: flex-start; }
-      .filos-dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; margin-top: 5px; }
-      .filos-item-title { font-weight: 700; font-size: 0.86rem; margin-bottom: 2px; }
-      .filos-item-desc { font-size: 0.84rem; color: #5a7a75; line-height: 1.6; margin: 0; }
+      .filos-icon i {
+        color: white;
+        font-size: 1.05rem;
+      }
+      .filos-elemen {
+        font-size: 0.65rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+      .filos-judul {
+        font-weight: 700;
+        font-size: 0.97rem;
+        color: var(--teks);
+      }
+      .filos-item {
+        display: flex;
+        gap: 0.8rem;
+        align-items: flex-start;
+      }
+      .filos-dot {
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        flex-shrink: 0;
+        margin-top: 5px;
+      }
+      .filos-item-title {
+        font-weight: 700;
+        font-size: 0.86rem;
+        margin-bottom: 2px;
+      }
+      .filos-item-desc {
+        font-size: 0.84rem;
+        color: #5a7a75;
+        line-height: 1.6;
+        margin: 0;
+      }
 
       /* ── SOTK ── */
       .sotk-section {
-        background: linear-gradient(135deg, var(--hijau-tua) 0%, var(--hijau-mid) 60%, #024e3d 100%);
+        background: linear-gradient(
+          135deg,
+          var(--hijau-tua) 0%,
+          var(--hijau-mid) 60%,
+          #024e3d 100%
+        );
         position: relative;
         overflow: hidden;
       }
       .sotk-section::before {
-        content: '';
+        content: "";
         position: absolute;
-        top: -60px; right: -60px;
-        width: 300px; height: 300px;
+        top: -60px;
+        right: -60px;
+        width: 300px;
+        height: 300px;
         background: rgba(255, 222, 36, 0.05);
         border-radius: 50%;
       }
       .sotk-section::after {
-        content: '';
+        content: "";
         position: absolute;
-        bottom: -80px; left: -40px;
-        width: 250px; height: 250px;
+        bottom: -80px;
+        left: -40px;
+        width: 250px;
+        height: 250px;
         background: rgba(255, 222, 36, 0.04);
         border-radius: 50%;
       }
@@ -555,7 +812,12 @@
         border: 3px solid rgba(255, 222, 36, 0.45);
         flex-shrink: 0;
       }
-      .foto-wrapper img { width: 100%; height: 100%; object-fit: cover; display: block; }
+      .foto-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
       .card-pegawai .jabatan {
         font-size: 0.72rem;
         font-weight: 700;
@@ -565,30 +827,89 @@
         margin-bottom: 3px;
         line-height: 1.3;
       }
-      .card-pegawai .nama { font-weight: 700; font-size: 0.95rem; color: white; }
+      .card-pegawai .nama {
+        font-weight: 700;
+        font-size: 0.95rem;
+        color: white;
+      }
       .card-featured {
-        background: linear-gradient(135deg, rgba(255,222,36,0.16), rgba(255,222,36,0.05)) !important;
+        background: linear-gradient(
+          135deg,
+          rgba(255, 222, 36, 0.16),
+          rgba(255, 222, 36, 0.05)
+        ) !important;
         border-color: rgba(255, 222, 36, 0.5) !important;
       }
 
       /* ── FOOTER ── */
-      .footer-custom { background: var(--gelap); }
-      .footer-brand { font-family: "Playfair Display", serif; font-size: 1.05rem; color: var(--kuning); font-weight: 700; margin-bottom: 0.4rem; }
-      .footer-alamat { font-size: 0.83rem; color: rgba(255,255,255,0.6); line-height: 1.75; }
-      .footer-heading { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--kuning); margin-bottom: 0.85rem; }
-      .footer-info { font-size: 0.84rem; color: rgba(255,255,255,0.68); display: flex; align-items: center; gap: 8px; margin-bottom: 0.5rem; }
-      .footer-info i { color: var(--kuning); font-size: 0.92rem; }
-      .footer-info a { color: rgba(255,255,255,0.68); text-decoration: none; transition: color 0.2s; }
-      .footer-info a:hover { color: var(--kuning); }
-      .footer-bottom { background: rgba(0,0,0,0.22); font-size: 0.8rem; color: rgba(255,255,255,0.42); text-align: center; padding: 1rem; }
-      .logo-footer { width: 65px; height: auto; }
-      .divider-kuning { border: none; border-top: 3px solid var(--kuning); opacity: 1; margin: 0; }
+      .footer-custom {
+        background: var(--gelap);
+      }
+      .footer-brand {
+        font-family: "Playfair Display", serif;
+        font-size: 1.05rem;
+        color: var(--kuning);
+        font-weight: 700;
+        margin-bottom: 0.4rem;
+      }
+      .footer-alamat {
+        font-size: 0.83rem;
+        color: rgba(255, 255, 255, 0.6);
+        line-height: 1.75;
+      }
+      .footer-heading {
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--kuning);
+        margin-bottom: 0.85rem;
+      }
+      .footer-info {
+        font-size: 0.84rem;
+        color: rgba(255, 255, 255, 0.68);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 0.5rem;
+      }
+      .footer-info i {
+        color: var(--kuning);
+        font-size: 0.92rem;
+      }
+      .footer-info a {
+        color: rgba(255, 255, 255, 0.68);
+        text-decoration: none;
+        transition: color 0.2s;
+      }
+      .footer-info a:hover {
+        color: var(--kuning);
+      }
+      .footer-bottom {
+        background: rgba(0, 0, 0, 0.22);
+        font-size: 0.8rem;
+        color: rgba(255, 255, 255, 0.42);
+        text-align: center;
+        padding: 1rem;
+      }
+      .logo-footer {
+        width: 65px;
+        height: auto;
+      }
+      .divider-kuning {
+        border: none;
+        border-top: 3px solid var(--kuning);
+        opacity: 1;
+        margin: 0;
+      }
 
       /* Image zoom on hover */
-      .card-berita img, .img-zoom-wrap img {
+      .card-berita img,
+      .img-zoom-wrap img {
         transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
       }
-      .card-berita:hover img, .img-zoom-wrap:hover img {
+      .card-berita:hover img,
+      .img-zoom-wrap:hover img {
         transform: scale(1.04);
       }
       .card-berita .img-container {
@@ -600,22 +921,30 @@
         position: fixed;
         bottom: 2rem;
         right: 2rem;
-        width: 44px; height: 44px;
+        width: 44px;
+        height: 44px;
         background: var(--hijau-tua);
         border: 2px solid var(--kuning);
         border-radius: 50%;
-        display: flex; align-items: center; justify-content: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         color: var(--kuning);
         font-size: 1.1rem;
         cursor: pointer;
         z-index: 999;
         opacity: 0;
         transform: translateY(16px);
-        transition: opacity 0.35s, transform 0.35s;
-        box-shadow: 0 4px 16px rgba(1,82,75,0.35);
+        transition:
+          opacity 0.35s,
+          transform 0.35s;
+        box-shadow: 0 4px 16px rgba(1, 82, 75, 0.35);
         text-decoration: none;
       }
-      #backToTop.show { opacity: 1; transform: translateY(0); }
+      #backToTop.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
       #backToTop:hover {
         background: var(--kuning);
         color: var(--hijau-tua);
@@ -624,7 +953,6 @@
     </style>
   </head>
   <body>
-
     <!-- Progress bar -->
     <div id="progress-bar"></div>
 
@@ -634,109 +962,268 @@
     </a>
 
     <!-- ══ SPLASH SCREEN ══ -->
-    <div id="splashScreen" style="
-      position: fixed; inset: 0;
-      background: var(--hijau-tua); z-index: 9999;
-      display: flex; flex-direction: column;
-      align-items: center; justify-content: center; gap: 1.5rem;
-      transition: opacity 0.6s ease, visibility 0.6s ease;
-    ">
-      <img src="logof.png" alt="Logo Giriwangi" style="width:160px;height:auto;
-        filter:drop-shadow(0 8px 24px rgba(0,0,0,0.4));
-        animation:logoPop 0.8s cubic-bezier(0.34,1.56,0.64,1) forwards;"/>
-      <div style="text-align:center;animation:fadeUp 0.8s 0.3s ease both;">
-        <div style="font-family:'Playfair Display',serif;color:var(--kuning);font-size:1.4rem;font-weight:700;letter-spacing:0.05em;">
+    <div
+      id="splashScreen"
+      style="
+        position: fixed;
+        inset: 0;
+        background: var(--hijau-tua);
+        z-index: 9999;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        transition:
+          opacity 0.6s ease,
+          visibility 0.6s ease;
+      "
+    >
+      <img
+        src="logof.png"
+        alt="Logo Giriwangi"
+        style="
+          width: 160px;
+          height: auto;
+          filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.4));
+          animation: logoPop 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        "
+      />
+      <div style="text-align: center; animation: fadeUp 0.8s 0.3s ease both">
+        <div
+          style="
+            font-family: &quot;Playfair Display&quot;, serif;
+            color: var(--kuning);
+            font-size: 1.4rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+          "
+        >
           Desa Persiapan Giriwangi
         </div>
-        <div style="color:rgba(255,255,255,0.6);font-size:0.78rem;letter-spacing:0.2em;text-transform:uppercase;margin-top:4px;">
+        <div
+          style="
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.78rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            margin-top: 4px;
+          "
+        >
           Kec. Cilengkrang · Kab. Bandung
         </div>
       </div>
-      <div style="width:160px;height:3px;background:rgba(255,255,255,0.15);border-radius:99px;overflow:hidden;animation:fadeUp 0.8s 0.5s ease both;">
-        <div id="loadingBar" style="height:100%;width:0%;background:var(--kuning);border-radius:99px;transition:width 0.05s linear;"></div>
+      <div
+        style="
+          width: 160px;
+          height: 3px;
+          background: rgba(255, 255, 255, 0.15);
+          border-radius: 99px;
+          overflow: hidden;
+          animation: fadeUp 0.8s 0.5s ease both;
+        "
+      >
+        <div
+          id="loadingBar"
+          style="
+            height: 100%;
+            width: 0%;
+            background: var(--kuning);
+            border-radius: 99px;
+            transition: width 0.05s linear;
+          "
+        ></div>
       </div>
     </div>
 
     <style>
       @keyframes logoPop {
-        from { transform:scale(0.6);opacity:0; }
-        to   { transform:scale(1);  opacity:1; }
+        from {
+          transform: scale(0.6);
+          opacity: 0;
+        }
+        to {
+          transform: scale(1);
+          opacity: 1;
+        }
       }
       @keyframes fadeUp {
-        from { transform:translateY(16px);opacity:0; }
-        to   { transform:translateY(0);   opacity:1; }
+        from {
+          transform: translateY(16px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
       }
     </style>
     <script>
-      const bar = document.getElementById('loadingBar');
-      const splash = document.getElementById('splashScreen');
+      const bar = document.getElementById("loadingBar");
+      const splash = document.getElementById("splashScreen");
       let progress = 0;
       const interval = setInterval(() => {
         progress += Math.random() * 18;
         if (progress >= 100) {
           progress = 100;
-          bar.style.width = '100%';
+          bar.style.width = "100%";
           clearInterval(interval);
           setTimeout(() => {
-            splash.style.opacity = '0';
-            splash.style.visibility = 'hidden';
-            document.body.style.overflow = '';
+            splash.style.opacity = "0";
+            splash.style.visibility = "hidden";
+            document.body.style.overflow = "";
           }, 400);
         } else {
-          bar.style.width = progress + '%';
+          bar.style.width = progress + "%";
         }
       }, 80);
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = "hidden";
     </script>
 
     <!-- ══════════════ NAVBAR ══════════════ -->
     <nav class="navbar navbar-expand-lg navbar-custom">
       <div class="container">
         <a class="navbar-brand" href="#beranda">
-          <img class="logo" src="logo2.png" alt="Logo Desa Giriwangi"
-            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"/>
-          <div style="display:none;align-items:center;gap:10px">
-            <div style="width:48px;height:48px;background:var(--kuning);border-radius:50%;display:flex;align-items:center;justify-content:center;">
-              <span style="font-weight:900;color:var(--hijau-tua);font-size:1.1rem;">G</span>
+          <img
+            class="logo"
+            src="logo2.png"
+            alt="Logo Desa Giriwangi"
+            onerror="
+              this.style.display = 'none';
+              this.nextElementSibling.style.display = 'flex';
+            "
+          />
+          <div style="display: none; align-items: center; gap: 10px">
+            <div
+              style="
+                width: 48px;
+                height: 48px;
+                background: var(--kuning);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <span
+                style="
+                  font-weight: 900;
+                  color: var(--hijau-tua);
+                  font-size: 1.1rem;
+                "
+                >G</span
+              >
             </div>
             <div>
-              <div style="font-family:'Playfair Display',serif;color:white;font-size:0.95rem;font-weight:700;line-height:1.2;">Desa Persiapan</div>
-              <div style="color:var(--kuning);font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;">Giriwangi</div>
+              <div
+                style="
+                  font-family: &quot;Playfair Display&quot;, serif;
+                  color: white;
+                  font-size: 0.95rem;
+                  font-weight: 700;
+                  line-height: 1.2;
+                "
+              >
+                Desa Persiapan
+              </div>
+              <div
+                style="
+                  color: var(--kuning);
+                  font-size: 0.75rem;
+                  font-weight: 700;
+                  letter-spacing: 0.1em;
+                  text-transform: uppercase;
+                "
+              >
+                Giriwangi
+              </div>
             </div>
           </div>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMain"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navMain">
           <ul class="navbar-nav mx-auto gap-1">
-            <li class="nav-item"><a class="nav-link" href="#beranda">Beranda</a></li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Profile</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#sotk"><i class="bi bi-diagram-3"></i>Struktur Organisasi</a></li>
-                <li><a class="dropdown-item" href="#filosofi-logo"><i class="bi bi-hexagon"></i>Filosofi Logo</a></li>
-                <li><a class="dropdown-item" href="#visi-misi"><i class="bi bi-eye"></i>Visi &amp; Misi</a></li>
-              </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="#beranda">Beranda</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#peta"><i class="bi bi-geo-alt me-1"></i>Profil Wilayah</a></li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Publikasi</a>
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                >Profile</a
+              >
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#berita"><i class="bi bi-newspaper"></i>Berita Desa</a></li>
-                <li><a class="dropdown-item" href="#"><i class="bi bi-bar-chart"></i>Info Grafis</a></li>
-                <li><a class="dropdown-item" href="#"><i class="bi bi-clipboard-check"></i>Indeks Kepuasan Masyarakat</a></li>
+                <li>
+                  <a class="dropdown-item" href="#sotk"
+                    ><i class="bi bi-diagram-3"></i>Struktur Organisasi</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#filosofi-logo"
+                    ><i class="bi bi-hexagon"></i>Filosofi Logo</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#visi-misi"
+                    ><i class="bi bi-eye"></i>Visi &amp; Misi</a
+                  >
+                </li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://www.instagram.com/pemdes.giriwangi/" target="_blank">
+              <a class="nav-link" href="#peta"
+                ><i class="bi bi-geo-alt me-1"></i>Profil Wilayah</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                >Publikasi</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#berita"
+                    ><i class="bi bi-newspaper"></i>Berita Desa</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="bi bi-bar-chart"></i>Info Grafis</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="bi bi-clipboard-check"></i>Indeks Kepuasan
+                    Masyarakat</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://www.instagram.com/pemdes.giriwangi/"
+                target="_blank"
+              >
                 <i class="bi bi-share me-1"></i>Media Sosial
               </a>
             </li>
           </ul>
           <div class="ms-auto mt-2 mt-lg-0">
             <a href="mailto:pemdes.giriwangi@gmail.com">
-              <button class="btn btn-hubungi"><i class="bi bi-envelope me-1"></i>Hubungi Kami</button>
+              <button class="btn btn-hubungi">
+                <i class="bi bi-envelope me-1"></i>Hubungi Kami
+              </button>
             </a>
           </div>
         </div>
@@ -749,19 +1236,41 @@
         <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="giriwangi3.png" class="d-block w-100" alt="Desa Persiapan Giriwangi"
-                onerror="this.src='https://placehold.co/1400x500/01524B/FFDE24?text=Desa+Persiapan+Giriwangi'"/>
+              <img
+                src="giriwangi3.png"
+                class="d-block w-100"
+                alt="Desa Persiapan Giriwangi"
+                onerror="
+                  this.src =
+                    'https://placehold.co/1400x500/01524B/FFDE24?text=Desa+Persiapan+Giriwangi'
+                "
+              />
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span><span class="visually-hidden">Sebelumnya</span>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span
+            ><span class="visually-hidden">Sebelumnya</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span><span class="visually-hidden">Selanjutnya</span>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span
+            ><span class="visually-hidden">Selanjutnya</span>
           </button>
           <div class="carousel-overlay">
             <h2>Selamat Datang di Desa Persiapan Giriwangi</h2>
-            <p><i class="bi bi-geo-alt-fill me-1"></i>Kecamatan Cilengkrang, Kabupaten Bandung, Jawa Barat</p>
+            <p>
+              <i class="bi bi-geo-alt-fill me-1"></i>Kecamatan Cilengkrang,
+              Kabupaten Bandung, Jawa Barat
+            </p>
           </div>
         </div>
       </div>
@@ -769,7 +1278,10 @@
       <!-- Stats dengan counter animasi -->
       <div class="stats-strip">
         <div class="container">
-          <div class="d-flex flex-wrap justify-content-around align-items-center stagger-parent" id="statsRow">
+          <div
+            class="d-flex flex-wrap justify-content-around align-items-center stagger-parent"
+            id="statsRow"
+          >
             <div class="stat-item stagger-child">
               <div class="stat-num" data-target="3" data-suffix="">3</div>
               <div class="stat-label">Dusun</div>
@@ -781,7 +1293,14 @@
             </div>
             <div class="stat-divider d-none d-md-block stagger-child"></div>
             <div class="stat-item stagger-child">
-              <div class="stat-num" data-target="6120" data-suffix="" data-formatted="6.120">6.120</div>
+              <div
+                class="stat-num"
+                data-target="6120"
+                data-suffix=""
+                data-formatted="6.120"
+              >
+                6.120
+              </div>
               <div class="stat-label">Jiwa</div>
             </div>
             <div class="stat-divider d-none d-md-block stagger-child"></div>
@@ -795,62 +1314,637 @@
     </section>
 
     <!-- ══════════════ BERITA ══════════════ -->
-    <section id="berita" class="py-5" style="background:var(--krem)">
+    <section id="berita" class="py-5" style="background: var(--krem)">
       <div class="container">
         <div class="row mb-4">
           <div class="col reveal">
-            <div class="section-label"><i class="bi bi-newspaper"></i> Publikasi</div>
+            <div class="section-label">
+              <i class="bi bi-newspaper"></i> Publikasi
+            </div>
             <div class="section-divider-anim reveal"></div>
             <h2 class="section-title">Berita Desa</h2>
-            <p class="section-subtitle">Informasi terbaru tentang peristiwa dan kegiatan desa</p>
+            <p class="section-subtitle">
+              Informasi terbaru tentang peristiwa dan kegiatan desa
+            </p>
           </div>
         </div>
         <div class="row g-4">
+                    <div class="col-md-6 reveal">
+            <div class="card-berita">
+       <div
+                  id="carouselBerita1"
+                  class="carousel slide carousel-fade"
+                  data-bs-ride="carousel"
+                  data-bs-interval="2000"
+                >
+                  <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                      <img
+                        src="hl1crop.jpeg"
+                        class="w-100"
+                        style="height: 300px; object-fit: cover"
+                        onerror="
+                          this.src =
+                            'https://placehold.co/800x300/016162/FFDE24?text=Berita'
+                        "
+                      />
+                    </div>
+                    <div class="carousel-item active">
+                      <img
+                        src="hl7.jpeg"
+                        class="w-100"
+                        style="height: 300px; object-fit: cover"
+                        onerror="
+                          this.src =
+                            'https://placehold.co/800x300/016162/FFDE24?text=Berita'
+                        "
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="hl11.jpeg"
+                        class="w-100"
+                        style="height: 300px; object-fit: cover"
+                        onerror="
+                          this.src =
+                            'https://placehold.co/800x300/016162/FFDE24?text=Berita'
+                        "
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="hl2.jpeg"
+                        class="w-100"
+                        style="height: 300px; object-fit: cover"
+                        onerror="
+                          this.src =
+                            'https://placehold.co/800x300/016162/FFDE24?text=Berita'
+                        "
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="hl4.jpeg"
+                        class="w-100"
+                        style="height: 300px; object-fit: cover"
+                        onerror="
+                          this.src =
+                            'https://placehold.co/800x300/016162/FFDE24?text=Berita'
+                        "
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="hl12.jpeg"
+                        class="w-100"
+                        style="height: 300px; object-fit: cover"
+                        onerror="
+                          this.src =
+                            'https://placehold.co/800x300/016162/FFDE24?text=Berita'
+                        "
+                      />
+                    </div>
+                  </div>
+                  <!-- <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselBerita1"
+                    data-bs-slide="prev"
+                  >
+                    <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselBerita1"
+                    data-bs-slide="next"
+                  >
+                    <span class="carousel-control-next-icon"></span>
+                  </button> -->
+                </div>
+              <div class="card-body">
+                <div class="card-tag">
+                  <i class="bi bi-recycle me-1"></i>Kegiatan
+                </div>
+                <h5 class="card-title">
+                 Silaturahmi/halal bihalal dalam rangka peringatan Hari Jadi Kabupaten Bandung yang ke-385 tahun.
+                             <p class="card-text">
+                 PJ. Kepala Desa Persiapan Giriwangi dan
+                  Kepala Desa Girimekar Kecamatan Cilengkrang mengadakan acara
+                  Silaturahmi/halal bihalal dalam rangka peringatan Hari Jadi
+                  Kabupaten Bandung yang ke-385 tahun. <br> <br> Kegiatan ini bertujuan
+                  untuk mempererat tali silaturahmi di wilayah Desa Girimekar
+                  selaku desa induk dan wilayah Desa Persiapan Giriwangi, selain
+                  dihadiri oleh Kepala Desa Girimekar dan PJ. Kepala Desa
+                  kegiatan ini dihadiri juga oleh Camat Cilengkrang,
+                  Kapolsubsektor Cilengkrang, Penyuluh KUA Cilengkrang, MUI Desa
+                  Girimekar, BPD Girimekar, LPMD, Girimekar, karta Desa
+                  Girimekar, Seluruh Ketua RW dan Ketua RT di wilayah Desa
+                  Girimekar dan Desa Persiapan Giriwangi, serta juga hadir para
+                  tokoh masyarakat & tokoh agama. <br /> <br>
+                  Kegiatan berjalan dengan lancar, dibuka dengan Pembacaan ayat
+                  suci Al-Qur'an, Do'a Bersama, Sambutan-sambutan, Tausiah dan
+                  ditutup dengan acara halal bihalal dan ramah tamah PJ. <br /> <br>
+                  Kepala Desa Giriwangi dalam sambutannya, selain mengajak
+                  kepada seluruh warga masyarakat dan pemangku kepentingan
+                  lainnya untuk mensukseskan program pemekaran desa agar Desa
+                  Persiapan Giriwangi menjadi desa definitif, juga memaparkan
+                  Visi dan Misi kedepannya dalam pembangunan di wilayah Desa
+                  Persiapan Giriwangi yang merupakan sub desa dari Desa
+                  Girimekar. <br /><br>
+                  Adapun Visinya yaitu : Giriwangi MAKMUR, yang dimana MAKMUR
+                  disini merupakan akronim dari Maju, Aktif, Kreatif, Mufakat,
+                  Unggul dan Religius.
+                </p>
+              </div>
+              <div class="card-footer-custom">
+                <span><i class="bi bi-clock me-1"></i> Kamis, 30 April 2026. </span>
+              </div>
+            </div>
+          </div>
+                   <div class="col-md-6 reveal">
+            <div class="card-berita">
+       <div
+                  id="carouselBerita1"
+                  class="carousel slide carousel-fade"
+                  data-bs-ride="carousel"
+                  data-bs-interval="2000"
+                >
+                  <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                      <img
+                        src="posyandu.png"
+                        class="w-100"
+                        style="height: 300px; object-fit: cover"
+                        onerror="
+                          this.src =
+                            'https://placehold.co/800x300/016162/FFDE24?text=Berita'
+                        "
+                      />
+                    </div>
+                  </div>
+                  <!-- <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselBerita1"
+                    data-bs-slide="prev"
+                  >
+                    <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselBerita1"
+                    data-bs-slide="next"
+                  >
+                    <span class="carousel-control-next-icon"></span>
+                  </button> -->
+                </div>
+              <div class="card-body">
+                <div class="card-tag">
+                  <i class="bi bi-recycle me-1"></i>Kegiatan
+                </div>
+                <h5 class="card-title">
+         Ayo Datang ke Posyandu!
+                  <p class="card-text">
+                    Pemerintah Desa Persiapan Giriwangi mengajak seluruh masyarakat, khususnya para ibu dan balita, untuk turut hadir dalam kegiatan Posyandu yang akan dilaksanakan di setiap wilayah RW 1 sampai RW 11 sesuai jadwal yang telah ditentukan.
+                   <br> <br> Kegiatan Posyandu ini bertujuan untuk memantau tumbuh kembang anak, pemeriksaan kesehatan, imunisasi, serta memberikan edukasi kesehatan bagi masyarakat. 
+                  <br>  <br> Melalui kegiatan ini diharapkan dapat meningkatkan kesadaran bersama akan pentingnya menjaga kesehatan keluarga sejak dini demi terciptanya generasi yang sehat, aktif, dan berkualitas. Catat tanggal pelaksanaannya dan jangan sampai terlewat agar pelayanan kesehatan dapat dirasakan secara maksimal oleh seluruh warga.
+                  </p>
+                 <p>
+<div class="table-responsive table-posyandu">    <table class="table align-middle mb-0">        <thead>            <tr>                <th>Wilayah RW</th>                <th>Tanggal Pelaksanaan</th>                <th>Hari</th>            </tr>        </thead>        <tbody>            <tr class="rw1">                <td class="rw-title">RW 01</td>                <td class="tanggal">11 Mei 2026</td>                <td class="hari">Senin</td>            </tr>            <tr class="rw2">                <td class="rw-title">RW 02</td>                <td class="tanggal">29 Mei 2026</td>                <td class="hari">Jumat</td>            </tr>            <tr class="rw3">                <td class="rw-title">RW 03</td>                <td class="tanggal">21 Mei 2026</td>                <td class="hari">Kamis</td>            </tr>            <tr class="rw4">                <td class="rw-title">RW 04</td>                <td class="tanggal">18 Mei 2026</td>                <td class="hari">Senin</td>            </tr>            <tr class="rw5">                <td class="rw-title">RW 05</td>                <td class="tanggal">25 Mei 2026</td>                <td class="hari">Senin</td>            </tr>            <tr class="rw6">                <td class="rw-title">RW 06</td>                <td class="tanggal">05 Mei 2026</td>                <td class="hari">Selasa</td>            </tr>            <tr class="rw7">                <td class="rw-title">RW 07</td>                <td class="tanggal">20 Mei 2026</td>                <td class="hari">Rabu</td>            </tr>            <tr class="rw8">                <td class="rw-title">RW 08</td>                <td class="tanggal">09 Mei 2026</td>                <td class="hari">Sabtu</td>            </tr>            <tr class="rw9">                <td class="rw-title">RW 09</td>                <td class="tanggal">13 Mei 2026</td>                <td class="hari">Rabu</td>            </tr>            <tr class="rw10">                <td class="rw-title">RW 10</td>                <td class="tanggal">06 Mei 2026</td>                <td class="hari">Rabu</td>            </tr>            <tr class="rw11">                <td class="rw-title">RW 11</td>                <td class="tanggal">04 Mei 2026</td>                <td class="hari">Senin</td>            </tr>        </tbody>    </table></div>
+                </div>
+              <div class="card-footer-custom">
+                <span><i class="bi bi-clock me-1"></i> Kamis, 7 Mei 2026. </span>
+              </div>
+            </div>
+          </div>
+                     <div class="col-md-6 reveal">
+            <div class="card-berita">
+              <div class="img-container">
+             <div
+                  id="carouselBerita1"
+                  class="carousel slide carousel-fade"
+                  data-bs-ride="carousel"
+                  data-bs-interval="2000"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="rapat7may.jpeg"
+                        class="w-100"
+                        style="height: 300px; object-fit: cover"
+                        onerror="
+                          this.src =
+                            'https://placehold.co/800x300/016162/FFDE24?text=Berita'
+                        "
+                      />
+                    </div>
+
+                  </div>
+                  <!-- <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselBerita1"
+                    data-bs-slide="prev"
+                  >
+                    <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselBerita1"
+                    data-bs-slide="next"
+                  >
+                    <span class="carousel-control-next-icon"></span>
+                  </button> -->
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="card-tag">
+                  <i class="bi bi-moon-stars me-1"></i>Kegiatan
+                </div>
+                <h5 class="card-title">
+                Penetapan Batas Wilayah
+                </h5>
+                <p class="card-text">
+              Pemerintah Desa Persiapan Giriwangi melaksanakan kegiatan persiapan penetapan batas wilayah sekaligus penyusunan laporan per enam bulan yang dilaksanakan di Soreang sebagai bentuk tertib administrasi dan upaya meningkatkan kualitas pelayanan pemerintahan desa.
+              <br><br> Kegiatan ini dilakukan guna memastikan data dan informasi yang disampaikan sesuai dengan kondisi di lapangan serta mendukung kelancaran proses administrasi desa secara transparan dan akuntabel.
+                </p>
+              </div>
+              <div class="card-footer-custom">
+                <span><i class="bi bi-clock me-1"></i>Kamis, 7 Mei 2026.</span>
+              </div>
+            </div>
+          </div>
+           <div class="col-md-6 reveal">
+            <div class="card-berita">
+              <div class="img-container">
+             <div
+                  id="carouselBerita1"
+                  class="carousel slide carousel-fade"
+                  data-bs-ride="carousel"
+                  data-bs-interval="2000"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="kb1.jpeg"
+                        class="w-100"
+                        style="height: 300px; object-fit: cover"
+                        onerror="
+                          this.src =
+                            'https://placehold.co/800x300/016162/FFDE24?text=Berita'
+                        "
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="kb2.jpeg"
+                        class="w-100"
+                        style="height: 300px; object-fit: cover"
+                        onerror="
+                          this.src =
+                            'https://placehold.co/800x300/016162/FFDE24?text=Berita'
+                        "
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="kb3.jpeg"
+                        class="w-100"
+                        style="height: 300px; object-fit: cover"
+                        onerror="
+                          this.src =
+                            'https://placehold.co/800x300/016162/FFDE24?text=Berita'
+                        "
+                      />
+                    </div>
+
+                  </div>
+                  <!-- <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselBerita1"
+                    data-bs-slide="prev"
+                  >
+                    <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselBerita1"
+                    data-bs-slide="next"
+                  >
+                    <span class="carousel-control-next-icon"></span>
+                  </button> -->
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="card-tag">
+                  <i class="bi bi-moon-stars me-1"></i>Kegiatan
+                </div>
+                <h5 class="card-title">
+                Kebersamaan bersama warga
+                </h5>
+                <p class="card-text">
+              Pemerintah Desa Persiapan Giriwangi bersama warga menunjukkan semangat kebersamaan dan gotong royong dalam kegiatan membantu menurunkan pasir dari kendaraan kobak untuk kebutuhan pembangunan di lingkungan desa. 
+             <br><br> Kegiatan ini menjadi bentuk kepedulian serta kekompakan antara pemerintah desa dan masyarakat dalam mendukung terciptanya lingkungan yang lebih baik dan harmonis.
+                </p>
+              </div>
+              <div class="card-footer-custom">
+                <span><i class="bi bi-clock me-1"></i>Jum'at, 1 Mei 2026.</span>
+              </div>
+            </div>
+          </div>
+           <div class="col-md-6 reveal">
+            <div class="card-berita">
+              <div class="img-container">
+             <div
+                  id="carouselBerita1"
+                  class="carousel slide carousel-fade"
+                  data-bs-ride="carousel"
+                  data-bs-interval="2000"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="uj1.jpeg"
+                        class="w-100"
+                        style="height: 300px; object-fit: cover"
+                        onerror="
+                          this.src =
+                            'https://placehold.co/800x300/016162/FFDE24?text=Berita'
+                        "
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="uj9.jpeg"
+                        class="w-100"
+                        style="height: 300px; object-fit: cover"
+                        onerror="
+                          this.src =
+                            'https://placehold.co/800x300/016162/FFDE24?text=Berita'
+                        "
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="uj6.jpeg"
+                        class="w-100"
+                        style="height: 300px; object-fit: cover"
+                        onerror="
+                          this.src =
+                            'https://placehold.co/800x300/016162/FFDE24?text=Berita'
+                        "
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="uj8.jpeg"
+                        class="w-100"
+                        style="height: 300px; object-fit: cover"
+                        onerror="
+                          this.src =
+                            'https://placehold.co/800x300/016162/FFDE24?text=Berita'
+                        "
+                      />
+                    </div>
+                  </div>
+                  <!-- <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselBerita1"
+                    data-bs-slide="prev"
+                  >
+                    <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselBerita1"
+                    data-bs-slide="next"
+                  >
+                    <span class="carousel-control-next-icon"></span>
+                  </button> -->
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="card-tag">
+                  <i class="bi bi-moon-stars me-1"></i>Kegiatan
+                </div>
+                <h5 class="card-title">
+                 kegiatan pengukuran jalan sebagai tahap awal dalam rencana perbaikan infrastruktur jalan
+                </h5>
+                <p class="card-text">
+               Pemerintah Desa Persiapan Giriwangi bersama perangkat desa dan pejabat desa melaksanakan kegiatan pengukuran jalan sebagai tahap awal dalam rencana perbaikan infrastruktur jalan desa yang bertujuan untuk meningkatkan kualitas akses dan kenyamanan masyarakat. 
+               
+              <br><br> Kegiatan ini dilakukan guna memastikan proses pembangunan nantinya berjalan tepat sasaran, sesuai kondisi lapangan, serta dapat memberikan manfaat yang maksimal bagi warga dan lingkungan sekitar.
+                </p>
+              </div>
+              <div class="card-footer-custom">
+                <span><i class="bi bi-clock me-1"></i>Jum'at, 1 Mei 2026.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 reveal">
+            <div class="card-berita">
+              <div class="img-container">
+             <div
+                  id="carouselBerita1"
+                  class="carousel slide carousel-fade"
+                  data-bs-ride="carousel"
+                  data-bs-interval="2000"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="opsih1.jpeg"
+                        class="w-100"
+                        style="height: 300px; object-fit: cover"
+                        onerror="
+                          this.src =
+                            'https://placehold.co/800x300/016162/FFDE24?text=Berita'
+                        "
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="opsih3.jpeg"
+                        class="w-100"
+                        style="height: 300px; object-fit: cover"
+                        onerror="
+                          this.src =
+                            'https://placehold.co/800x300/016162/FFDE24?text=Berita'
+                        "
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="opsih4.jpeg"
+                        class="w-100"
+                        style="height: 300px; object-fit: cover"
+                        onerror="
+                          this.src =
+                            'https://placehold.co/800x300/016162/FFDE24?text=Berita'
+                        "
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="opsih2.jpeg"
+                        class="w-100"
+                        style="height: 300px; object-fit: cover"
+                        onerror="
+                          this.src =
+                            'https://placehold.co/800x300/016162/FFDE24?text=Berita'
+                        "
+                      />
+                    </div>
+                  </div>
+                  <!-- <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselBerita1"
+                    data-bs-slide="prev"
+                  >
+                    <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselBerita1"
+                    data-bs-slide="next"
+                  >
+                    <span class="carousel-control-next-icon"></span>
+                  </button> -->
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="card-tag">
+                  <i class="bi bi-moon-stars me-1"></i>Kegiatan
+                </div>
+                <h5 class="card-title">
+                  Warga masyarakat Kampung Batununggal RW.
+                  08 Desa Persiapan Giriwangi, mengadakan kegiatan Jumsih
+                  (Jum'at Bersih).
+                </h5>
+                <p class="card-text">
+                  Warga masyarakat Kampung Batununggal RW. 08 Desa Persiapan Giriwangi, mengadakan kegiatan Jumsih
+                  (Jum'at Bersih). <br> <br> Kegiatan Jumsih ini merupakan kegiatan rutin
+                  yang dilakukan oleh warga masyarakat dalam rangka melestarikan
+                  kebersihan lingkungan agar tercipta lingkungan yang bersih dan
+                  asri. <br><br> Adapun kegiatan Jumsih ini, tidak hanya dilakukan oleh
+                  warga RW. 08 namun warga masyarakat di RW lainnya pun
+                  melakukan hal yang sama, sebagaimana himbauan dan ajakan dari
+                  PJ. Kepala Desa Persiapan Giriwangi Bpk.Suryana, agar seluruh
+                  masyarakat dan seluruh stake holder agar mencintai
+                  lingkungannya akan tercipta suasana yang asri, nyaman dan
+                  kondusif dilingkungan wilayahnya masing-masing.
+                </p>
+              </div>
+              <div class="card-footer-custom">
+                <span><i class="bi bi-clock me-1"></i>Jum'at, 1 Mei 2026.</span>
+              </div>
+            </div>
+          </div>
           <!-- Featured besar -->
           <div class="col-lg-8 reveal reveal-left">
             <div class="card-berita">
               <div class="img-container">
-                <img src="bpd2.jpeg" alt="Musyawarah BPD" class="w-100" style="height:300px;object-fit:cover;"
-                  onerror="this.src='https://placehold.co/800x300/016162/FFDE24?text=Berita+Utama'"/>
+                <img
+                  src="bpd2.jpeg"
+                  alt="Musyawarah BPD"
+                  class="w-100"
+                  style="height: 300px; object-fit: cover"
+                  onerror="
+                    this.src =
+                      'https://placehold.co/800x300/016162/FFDE24?text=Berita+Utama'
+                  "
+                />
               </div>
               <div class="card-body">
-                <div class="card-tag"><i class="bi bi-megaphone me-1"></i>Pemerintahan</div>
-                <h4 class="card-title" style="font-size:1.15rem;">
-                  Pj. Desa Persiapan Giriwangi Hadiri Musyawarah Pembentukan Panitia Pemilihan BPD Desa Girimekar 2026–2034
+                <div class="card-tag">
+                  <i class="bi bi-megaphone me-1"></i>Pemerintahan
+                </div>
+                <h4 class="card-title" style="font-size: 1.15rem">
+                  Pj. Desa Persiapan Giriwangi Hadiri Musyawarah Pembentukan
+                  Panitia Pemilihan BPD Desa Girimekar 2026–2034
                 </h4>
                 <p class="card-text">
-                  Pj. Kepala Desa Persiapan Giriwangi menghadiri musyawarah pembentukan Panitia Pemilihan BPD Desa Girimekar untuk masa bakti 2026–2034. Kegiatan ini bertujuan memastikan proses pemilihan BPD berjalan transparan, tertib, dan sesuai ketentuan yang berlaku.
+                  Pj. Kepala Desa Persiapan Giriwangi menghadiri musyawarah
+                  pembentukan Panitia Pemilihan BPD Desa Girimekar untuk masa
+                  bakti 2026–2034. Kegiatan ini bertujuan memastikan proses
+                  pemilihan BPD berjalan transparan, tertib, dan sesuai
+                  ketentuan yang berlaku.
                 </p>
               </div>
-              <div class="card-footer-custom"><span><i class="bi bi-clock me-1"></i></span></div>
+              <div class="card-footer-custom">
+                <span><i class="bi bi-clock me-1"></i></span>
+              </div>
             </div>
           </div>
 
           <!-- Berita kecil kanan -->
           <div class="col-lg-4 d-flex flex-column gap-4 reveal reveal-right">
-            <div class="card-berita" style="flex:1">
+            <div class="card-berita" style="flex: 1">
               <div class="img-container">
-                <img src="rapathalal.jpeg" alt="Halal Bihalal" class="w-100" style="height:150px;object-fit:cover;"
-                  onerror="this.src='https://placehold.co/400x150/016162/FFDE24?text=Berita'"/>
+                <img
+                  src="rapathalal.jpeg"
+                  alt="Halal Bihalal"
+                  class="w-100"
+                  style="height: 150px; object-fit: cover"
+                  onerror="
+                    this.src =
+                      'https://placehold.co/400x150/016162/FFDE24?text=Berita'
+                  "
+                />
               </div>
               <div class="card-body">
-                <div class="card-tag"><i class="bi bi-people me-1"></i>Kegiatan</div>
-                <h5 class="card-title">Penentuan Halal Bihalal Desa Giriwangi</h5>
-                <p class="card-text" style="font-size:0.82rem;">Perangkat desa menggelar rapat penentuan waktu dan tempat pelaksanaan Halal Bihalal bersama warga sebagai wujud silaturahmi pasca Idul Fitri.</p>
+                <div class="card-tag">
+                  <i class="bi bi-people me-1"></i>Kegiatan
+                </div>
+                <h5 class="card-title">
+                  Penentuan Halal Bihalal Desa Giriwangi
+                </h5>
+                <p class="card-text" style="font-size: 0.82rem">
+                  Perangkat desa menggelar rapat penentuan waktu dan tempat
+                  pelaksanaan Halal Bihalal bersama warga sebagai wujud
+                  silaturahmi pasca Idul Fitri.
+                </p>
               </div>
-              <div class="card-footer-custom"><span><i class="bi bi-clock me-1"></i></span></div>
+              <div class="card-footer-custom">
+                <span><i class="bi bi-clock me-1"></i></span>
+              </div>
             </div>
-            <div class="card-berita" style="flex:1">
+            <div class="card-berita" style="flex: 1">
               <div class="img-container">
-                <img src="beras.jpeg" alt="Pembagian Beras" class="w-100" style="height:150px;object-fit:cover;"
-                  onerror="this.src='https://placehold.co/400x150/016162/FFDE24?text=Berita'"/>
+                <img
+                  src="beras.jpeg"
+                  alt="Pembagian Beras"
+                  class="w-100"
+                  style="height: 150px; object-fit: cover"
+                  onerror="
+                    this.src =
+                      'https://placehold.co/400x150/016162/FFDE24?text=Berita'
+                  "
+                />
               </div>
               <div class="card-body">
-                <div class="card-tag"><i class="bi bi-box-seam me-1"></i>Sosial</div>
+                <div class="card-tag">
+                  <i class="bi bi-box-seam me-1"></i>Sosial
+                </div>
                 <h5 class="card-title">Pembagian Beras Desa Giriwangi</h5>
-                <p class="card-text" style="font-size:0.82rem;">Pemerintah Desa Giriwangi menyalurkan bantuan beras kepada warga yang berhak sebagai bentuk kepedulian terhadap ketahanan pangan masyarakat.</p>
+                <p class="card-text" style="font-size: 0.82rem">
+                  Pemerintah Desa Giriwangi menyalurkan bantuan beras kepada
+                  warga yang berhak sebagai bentuk kepedulian terhadap ketahanan
+                  pangan masyarakat.
+                </p>
               </div>
-              <div class="card-footer-custom"><span><i class="bi bi-clock me-1"></i></span></div>
+              <div class="card-footer-custom">
+                <span><i class="bi bi-clock me-1"></i></span>
+              </div>
             </div>
           </div>
 
@@ -858,29 +1952,65 @@
           <div class="col-md-6 reveal">
             <div class="card-berita">
               <div class="img-container">
-                <img src="bannersampah.jpeg" alt="Banner Anti Sampah" class="w-100" style="height:200px;object-fit:cover;"
-                  onerror="this.src='https://placehold.co/600x200/016162/FFDE24?text=Berita'"/>
+                <img
+                  src="bannersampah.jpeg"
+                  alt="Banner Anti Sampah"
+                  class="w-100"
+                  style="height: 200px; object-fit: cover"
+                  onerror="
+                    this.src =
+                      'https://placehold.co/600x200/016162/FFDE24?text=Berita'
+                  "
+                />
               </div>
               <div class="card-body">
-                <div class="card-tag"><i class="bi bi-recycle me-1"></i>Lingkungan</div>
-                <h5 class="card-title">Desa Giriwangi Pasang Banner Anti Sampah</h5>
-                <p class="card-text">Dalam upaya meningkatkan kesadaran warga, Desa Giriwangi memasang banner larangan membuang sampah sembarangan di titik-titik strategis desa.</p>
+                <div class="card-tag">
+                  <i class="bi bi-recycle me-1"></i>Lingkungan
+                </div>
+                <h5 class="card-title">
+                  Desa Giriwangi Pasang Banner Anti Sampah
+                </h5>
+                <p class="card-text">
+                  Dalam upaya meningkatkan kesadaran warga, Desa Giriwangi
+                  memasang banner larangan membuang sampah sembarangan di
+                  titik-titik strategis desa.
+                </p>
               </div>
-              <div class="card-footer-custom"><span><i class="bi bi-clock me-1"></i></span></div>
+              <div class="card-footer-custom">
+                <span><i class="bi bi-clock me-1"></i></span>
+              </div>
             </div>
           </div>
           <div class="col-md-6 reveal">
             <div class="card-berita">
               <div class="img-container">
-                <img src="tahlil3.jpeg" alt="Tahlil" class="w-100" style="height:200px;object-fit:cover;"
-                  onerror="this.src='https://placehold.co/600x200/016162/FFDE24?text=Berita'"/>
+                <img
+                  src="tahlil3.jpeg"
+                  alt="Tahlil"
+                  class="w-100"
+                  style="height: 200px; object-fit: cover"
+                  onerror="
+                    this.src =
+                      'https://placehold.co/600x200/016162/FFDE24?text=Berita'
+                  "
+                />
               </div>
               <div class="card-body">
-                <div class="card-tag"><i class="bi bi-moon-stars me-1"></i>Keagamaan</div>
-                <h5 class="card-title">Kegiatan Tahlil Bersama Warga Desa Giriwangi</h5>
-                <p class="card-text">Kegiatan tahlil rutin digelar bersama perangkat dan warga desa sebagai wujud nilai religius dan kebersamaan yang dijunjung tinggi oleh masyarakat Giriwangi.</p>
+                <div class="card-tag">
+                  <i class="bi bi-moon-stars me-1"></i>Keagamaan
+                </div>
+                <h5 class="card-title">
+                  Kegiatan Tahlil Bersama Warga Desa Giriwangi
+                </h5>
+                <p class="card-text">
+                  Kegiatan tahlil rutin digelar bersama perangkat dan warga desa
+                  sebagai wujud nilai religius dan kebersamaan yang dijunjung
+                  tinggi oleh masyarakat Giriwangi.
+                </p>
               </div>
-              <div class="card-footer-custom"><span><i class="bi bi-clock me-1"></i></span></div>
+              <div class="card-footer-custom">
+                <span><i class="bi bi-clock me-1"></i></span>
+              </div>
             </div>
           </div>
         </div>
@@ -888,55 +2018,131 @@
     </section>
 
     <!-- ══════════════ PETA ══════════════ -->
-    <section id="peta" class="py-5" style="background:white">
+    <section id="peta" class="py-5" style="background: white">
       <div class="container">
         <div class="row mb-4">
           <div class="col reveal">
-            <div class="section-label"><i class="bi bi-geo-alt"></i> Wilayah</div>
+            <div class="section-label">
+              <i class="bi bi-geo-alt"></i> Wilayah
+            </div>
             <div class="section-divider-anim reveal"></div>
             <h2 class="section-title">Profil Wilayah</h2>
-            <p class="section-subtitle">Batas wilayah dan informasi geografis Desa Persiapan Giriwangi</p>
+            <p class="section-subtitle">
+              Batas wilayah dan informasi geografis Desa Persiapan Giriwangi
+            </p>
           </div>
         </div>
         <div class="row g-4 align-items-stretch">
           <div class="col-lg-5 reveal reveal-left">
-            <div class="h-100 p-4 rounded-4" style="background:var(--krem);border:1px solid #e8ede9">
-              <div style="font-weight:700;color:var(--hijau-tua);font-size:0.95rem;margin-bottom:0.85rem;display:flex;align-items:center;gap:8px;">
-                <i class="bi bi-bounding-box" style="color:var(--hijau-terang)"></i>Batas Wilayah
+            <div
+              class="h-100 p-4 rounded-4"
+              style="background: var(--krem); border: 1px solid #e8ede9"
+            >
+              <div
+                style="
+                  font-weight: 700;
+                  color: var(--hijau-tua);
+                  font-size: 0.95rem;
+                  margin-bottom: 0.85rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 8px;
+                "
+              >
+                <i
+                  class="bi bi-bounding-box"
+                  style="color: var(--hijau-terang)"
+                ></i
+                >Batas Wilayah
               </div>
               <div class="row g-2 mb-3 stagger-parent" id="batasWilayah">
                 <div class="col-6 stagger-child">
-                  <div class="info-card"><div class="info-label"><i class="bi bi-arrow-up me-1"></i>Utara</div><div class="info-val">PERHUTANI</div></div>
+                  <div class="info-card">
+                    <div class="info-label">
+                      <i class="bi bi-arrow-up me-1"></i>Utara
+                    </div>
+                    <div class="info-val">PERHUTANI</div>
+                  </div>
                 </div>
                 <div class="col-6 stagger-child">
-                  <div class="info-card"><div class="info-label"><i class="bi bi-arrow-right me-1"></i>Timur</div><div class="info-val">MELATIWANGI</div></div>
+                  <div class="info-card">
+                    <div class="info-label">
+                      <i class="bi bi-arrow-right me-1"></i>Timur
+                    </div>
+                    <div class="info-val">MELATIWANGI</div>
+                  </div>
                 </div>
                 <div class="col-6 stagger-child">
-                  <div class="info-card"><div class="info-label"><i class="bi bi-arrow-down me-1"></i>Selatan</div><div class="info-val">GIRIMEKAR</div></div>
+                  <div class="info-card">
+                    <div class="info-label">
+                      <i class="bi bi-arrow-down me-1"></i>Selatan
+                    </div>
+                    <div class="info-val">GIRIMEKAR</div>
+                  </div>
                 </div>
                 <div class="col-6 stagger-child">
-                  <div class="info-card"><div class="info-label"><i class="bi bi-arrow-left me-1"></i>Barat</div><div class="info-val">MEKARMANIK DAN SINDANGLAYA</div></div>
+                  <div class="info-card">
+                    <div class="info-label">
+                      <i class="bi bi-arrow-left me-1"></i>Barat
+                    </div>
+                    <div class="info-val">MEKARMANIK DAN SINDANGLAYA</div>
+                  </div>
                 </div>
               </div>
-              <hr style="border-color:#deeede;margin:1rem 0"/>
+              <hr style="border-color: #deeede; margin: 1rem 0" />
               <div class="d-flex flex-column gap-2">
                 <div class="d-flex align-items-center gap-3 info-card reveal">
                   <div class="icon-box"><i class="bi bi-map"></i></div>
-                  <div><div class="info-label">Luas Desa</div><div style="font-weight:700;font-size:1rem;color:var(--teks);">4.352 km²</div></div>
+                  <div>
+                    <div class="info-label">Luas Desa</div>
+                    <div
+                      style="
+                        font-weight: 700;
+                        font-size: 1rem;
+                        color: var(--teks);
+                      "
+                    >
+                      4.352 km²
+                    </div>
+                  </div>
                 </div>
                 <div class="d-flex align-items-center gap-3 info-card reveal">
                   <div class="icon-box"><i class="bi bi-people-fill"></i></div>
-                  <div><div class="info-label">Jumlah Penduduk</div><div style="font-weight:700;font-size:1rem;color:var(--teks);">6.120 Jiwa</div></div>
+                  <div>
+                    <div class="info-label">Jumlah Penduduk</div>
+                    <div
+                      style="
+                        font-weight: 700;
+                        font-size: 1rem;
+                        color: var(--teks);
+                      "
+                    >
+                      6.120 Jiwa
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-lg-7 reveal reveal-right">
-            <div class="h-100 rounded-4 overflow-hidden" style="min-height:360px;border:1px solid #e0eae0;box-shadow:0 4px 20px rgba(1,82,75,0.08);">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d458.41477038509373!2d107.69523254439522!3d-6.8838403300489555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwNTMnMDIuMyJTIDEwN8KwNDEnNDMuNSJF!5e0!3m2!1sen!2sid!4v1777490413243!5m2!1sen!2sid"
-                width="100%" height="100%" style="border:0;min-height:360px;display:block"
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                title="Peta Lokasi Desa Persiapan Giriwangi"></iframe>
+            <div
+              class="h-100 rounded-4 overflow-hidden"
+              style="
+                min-height: 360px;
+                border: 1px solid #e0eae0;
+                box-shadow: 0 4px 20px rgba(1, 82, 75, 0.08);
+              "
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d458.41477038509373!2d107.69523254439522!3d-6.8838403300489555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwNTMnMDIuMyJTIDEwN8KwNDEnNDMuNSJF!5e0!3m2!1sen!2sid!4v1777490413243!5m2!1sen!2sid"
+                width="100%"
+                height="100%"
+                style="border: 0; min-height: 360px; display: block"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Peta Lokasi Desa Persiapan Giriwangi"
+              ></iframe>
             </div>
           </div>
         </div>
@@ -944,11 +2150,13 @@
     </section>
 
     <!-- ══════════════ VISI MISI ══════════════ -->
-    <section id="visi-misi" class="py-5" style="background:var(--krem)">
+    <section id="visi-misi" class="py-5" style="background: var(--krem)">
       <div class="container">
         <div class="row mb-5">
           <div class="col text-center reveal">
-            <div class="section-label mx-auto" style="width:fit-content"><i class="bi bi-stars"></i> Arah Pembangunan</div>
+            <div class="section-label mx-auto" style="width: fit-content">
+              <i class="bi bi-stars"></i> Arah Pembangunan
+            </div>
             <h2 class="section-title">Visi &amp; Misi</h2>
             <p class="section-subtitle">Desa Persiapan Giriwangi</p>
           </div>
@@ -957,25 +2165,129 @@
         <!-- VISI -->
         <div class="row justify-content-center mb-5">
           <div class="col-lg-10 reveal reveal-scale">
-            <div class="p-5 rounded-4 text-center position-relative overflow-hidden"
-              style="background:linear-gradient(135deg,var(--hijau-tua) 0%,var(--hijau-mid) 100%);box-shadow:0 12px 40px rgba(1,82,75,0.22);">
-              <div style="position:absolute;top:-40px;right:-40px;width:180px;height:180px;background:rgba(255,222,36,0.07);border-radius:50%;pointer-events:none;"></div>
-              <div style="position:absolute;bottom:-60px;left:-30px;width:220px;height:220px;background:rgba(255,222,36,0.05);border-radius:50%;pointer-events:none;"></div>
+            <div
+              class="p-5 rounded-4 text-center position-relative overflow-hidden"
+              style="
+                background: linear-gradient(
+                  135deg,
+                  var(--hijau-tua) 0%,
+                  var(--hijau-mid) 100%
+                );
+                box-shadow: 0 12px 40px rgba(1, 82, 75, 0.22);
+              "
+            >
+              <div
+                style="
+                  position: absolute;
+                  top: -40px;
+                  right: -40px;
+                  width: 180px;
+                  height: 180px;
+                  background: rgba(255, 222, 36, 0.07);
+                  border-radius: 50%;
+                  pointer-events: none;
+                "
+              ></div>
+              <div
+                style="
+                  position: absolute;
+                  bottom: -60px;
+                  left: -30px;
+                  width: 220px;
+                  height: 220px;
+                  background: rgba(255, 222, 36, 0.05);
+                  border-radius: 50%;
+                  pointer-events: none;
+                "
+              ></div>
               <div class="position-relative">
-                <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(255,222,36,0.14);border:1px solid rgba(255,222,36,0.28);border-radius:20px;padding:4px 14px;margin-bottom:1.2rem;">
-                  <i class="bi bi-eye-fill" style="color:var(--kuning);font-size:0.8rem;"></i>
-                  <span style="font-size:0.7rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--kuning);">Visi</span>
+                <div
+                  style="
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 7px;
+                    background: rgba(255, 222, 36, 0.14);
+                    border: 1px solid rgba(255, 222, 36, 0.28);
+                    border-radius: 20px;
+                    padding: 4px 14px;
+                    margin-bottom: 1.2rem;
+                  "
+                >
+                  <i
+                    class="bi bi-eye-fill"
+                    style="color: var(--kuning); font-size: 0.8rem"
+                  ></i>
+                  <span
+                    style="
+                      font-size: 0.7rem;
+                      font-weight: 700;
+                      letter-spacing: 0.12em;
+                      text-transform: uppercase;
+                      color: var(--kuning);
+                    "
+                    >Visi</span
+                  >
                 </div>
-                <p style="font-family:'Playfair Display',serif;font-size:1.3rem;color:white;line-height:1.75;margin-bottom:1.6rem;font-style:italic;">
-                  "Terwujudnya Desa Giriwangi yang <span style="color:var(--kuning);font-weight:700;font-style:normal;">MAKMUR</span>"
+                <p
+                  style="
+                    font-family: &quot;Playfair Display&quot;, serif;
+                    font-size: 1.3rem;
+                    color: white;
+                    line-height: 1.75;
+                    margin-bottom: 1.6rem;
+                    font-style: italic;
+                  "
+                >
+                  "Terwujudnya Desa Giriwangi yang
+                  <span
+                    style="
+                      color: var(--kuning);
+                      font-weight: 700;
+                      font-style: normal;
+                    "
+                    >MAKMUR</span
+                  >"
                 </p>
-                <div class="row g-2 justify-content-center stagger-parent" id="akronimRow">
-                  <div class="col-6 col-sm-4 col-lg-2 stagger-child"><div class="akronim-box"><div class="akronim-huruf">M</div><div class="akronim-kata">Maju</div></div></div>
-                  <div class="col-6 col-sm-4 col-lg-2 stagger-child"><div class="akronim-box"><div class="akronim-huruf">A</div><div class="akronim-kata">Aktif</div></div></div>
-                  <div class="col-6 col-sm-4 col-lg-2 stagger-child"><div class="akronim-box"><div class="akronim-huruf">K</div><div class="akronim-kata">Kreatif</div></div></div>
-                  <div class="col-6 col-sm-4 col-lg-2 stagger-child"><div class="akronim-box"><div class="akronim-huruf">M</div><div class="akronim-kata">Mufakat</div></div></div>
-                  <div class="col-6 col-sm-4 col-lg-2 stagger-child"><div class="akronim-box"><div class="akronim-huruf">U</div><div class="akronim-kata">Unggul</div></div></div>
-                  <div class="col-6 col-sm-4 col-lg-2 stagger-child"><div class="akronim-box"><div class="akronim-huruf">R</div><div class="akronim-kata">Religius</div></div></div>
+                <div
+                  class="row g-2 justify-content-center stagger-parent"
+                  id="akronimRow"
+                >
+                  <div class="col-6 col-sm-4 col-lg-2 stagger-child">
+                    <div class="akronim-box">
+                      <div class="akronim-huruf">M</div>
+                      <div class="akronim-kata">Maju</div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-4 col-lg-2 stagger-child">
+                    <div class="akronim-box">
+                      <div class="akronim-huruf">A</div>
+                      <div class="akronim-kata">Aktif</div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-4 col-lg-2 stagger-child">
+                    <div class="akronim-box">
+                      <div class="akronim-huruf">K</div>
+                      <div class="akronim-kata">Kreatif</div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-4 col-lg-2 stagger-child">
+                    <div class="akronim-box">
+                      <div class="akronim-huruf">M</div>
+                      <div class="akronim-kata">Mufakat</div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-4 col-lg-2 stagger-child">
+                    <div class="akronim-box">
+                      <div class="akronim-huruf">U</div>
+                      <div class="akronim-kata">Unggul</div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-4 col-lg-2 stagger-child">
+                    <div class="akronim-box">
+                      <div class="akronim-huruf">R</div>
+                      <div class="akronim-kata">Religius</div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -986,31 +2298,107 @@
         <div class="row justify-content-center">
           <div class="col-lg-10">
             <div class="text-center mb-4 reveal">
-              <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(1,97,98,0.08);border:1px solid rgba(1,97,98,0.18);border-radius:20px;padding:4px 14px;">
-                <i class="bi bi-bullseye" style="color:var(--hijau-mid);font-size:0.8rem;"></i>
-                <span style="font-size:0.7rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--hijau-mid);">Misi</span>
+              <div
+                style="
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 7px;
+                  background: rgba(1, 97, 98, 0.08);
+                  border: 1px solid rgba(1, 97, 98, 0.18);
+                  border-radius: 20px;
+                  padding: 4px 14px;
+                "
+              >
+                <i
+                  class="bi bi-bullseye"
+                  style="color: var(--hijau-mid); font-size: 0.8rem"
+                ></i>
+                <span
+                  style="
+                    font-size: 0.7rem;
+                    font-weight: 700;
+                    letter-spacing: 0.12em;
+                    text-transform: uppercase;
+                    color: var(--hijau-mid);
+                  "
+                  >Misi</span
+                >
               </div>
             </div>
             <div class="d-flex flex-column gap-3" id="misiList">
-              <div class="misi-card reveal reveal-left" style="transition-delay:0.05s">
-                <div class="misi-icon"><i class="bi bi-person-check-fill"></i></div>
-                <div><div class="misi-num">Misi 01</div><p class="misi-text">Meningkatkan profesionalisme aparatur pemerintahan desa, aktif, kreatif, dan pelayanan yang prima.</p></div>
+              <div
+                class="misi-card reveal reveal-left"
+                style="transition-delay: 0.05s"
+              >
+                <div class="misi-icon">
+                  <i class="bi bi-person-check-fill"></i>
+                </div>
+                <div>
+                  <div class="misi-num">Misi 01</div>
+                  <p class="misi-text">
+                    Meningkatkan profesionalisme aparatur pemerintahan desa,
+                    aktif, kreatif, dan pelayanan yang prima.
+                  </p>
+                </div>
               </div>
-              <div class="misi-card reveal reveal-left" style="transition-delay:0.12s">
+              <div
+                class="misi-card reveal reveal-left"
+                style="transition-delay: 0.12s"
+              >
                 <div class="misi-icon"><i class="bi bi-building-fill"></i></div>
-                <div><div class="misi-num">Misi 02</div><p class="misi-text">Membangun infrastruktur desa yang berkelanjutan dan merata serta transparansi dalam pengelolaan anggaran.</p></div>
+                <div>
+                  <div class="misi-num">Misi 02</div>
+                  <p class="misi-text">
+                    Membangun infrastruktur desa yang berkelanjutan dan merata
+                    serta transparansi dalam pengelolaan anggaran.
+                  </p>
+                </div>
               </div>
-              <div class="misi-card reveal reveal-left" style="transition-delay:0.19s">
+              <div
+                class="misi-card reveal reveal-left"
+                style="transition-delay: 0.19s"
+              >
                 <div class="misi-icon"><i class="bi bi-shop-window"></i></div>
-                <div><div class="misi-num">Misi 03</div><p class="misi-text">Mengembangkan usaha milik desa, UMKM, dan potensi lokal desa lainnya yang unggul untuk meningkatkan kesejahteraan masyarakat.</p></div>
+                <div>
+                  <div class="misi-num">Misi 03</div>
+                  <p class="misi-text">
+                    Mengembangkan usaha milik desa, UMKM, dan potensi lokal desa
+                    lainnya yang unggul untuk meningkatkan kesejahteraan
+                    masyarakat.
+                  </p>
+                </div>
               </div>
-              <div class="misi-card reveal reveal-left" style="transition-delay:0.26s">
-                <div class="misi-icon"><i class="bi bi-heart-pulse-fill"></i></div>
-                <div><div class="misi-num">Misi 04</div><p class="misi-text">Meningkatkan kualitas pendidikan, kesehatan, sosial, budaya, olahraga dan agama, serta melestarikan kearifan lokal desa yang memberikan kemaslahatan bagi masyarakat.</p></div>
+              <div
+                class="misi-card reveal reveal-left"
+                style="transition-delay: 0.26s"
+              >
+                <div class="misi-icon">
+                  <i class="bi bi-heart-pulse-fill"></i>
+                </div>
+                <div>
+                  <div class="misi-num">Misi 04</div>
+                  <p class="misi-text">
+                    Meningkatkan kualitas pendidikan, kesehatan, sosial, budaya,
+                    olahraga dan agama, serta melestarikan kearifan lokal desa
+                    yang memberikan kemaslahatan bagi masyarakat.
+                  </p>
+                </div>
               </div>
-              <div class="misi-card reveal reveal-left" style="transition-delay:0.33s">
-                <div class="misi-icon"><i class="bi bi-shield-check-fill"></i></div>
-                <div><div class="misi-num">Misi 05</div><p class="misi-text">Memelihara keamanan dan kondusifitas lingkungan dengan mengedepankan musyawarah mufakat dalam kehidupan bermasyarakat.</p></div>
+              <div
+                class="misi-card reveal reveal-left"
+                style="transition-delay: 0.33s"
+              >
+                <div class="misi-icon">
+                  <i class="bi bi-shield-check-fill"></i>
+                </div>
+                <div>
+                  <div class="misi-num">Misi 05</div>
+                  <p class="misi-text">
+                    Memelihara keamanan dan kondusifitas lingkungan dengan
+                    mengedepankan musyawarah mufakat dalam kehidupan
+                    bermasyarakat.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -1019,35 +2407,116 @@
     </section>
 
     <!-- ══════════════ FILOSOFI LOGO ══════════════ -->
-    <section id="filosofi-logo" class="py-5" style="background:linear-gradient(180deg,#f0f7f4 0%,var(--krem) 100%)">
+    <section
+      id="filosofi-logo"
+      class="py-5"
+      style="background: linear-gradient(180deg, #f0f7f4 0%, var(--krem) 100%)"
+    >
       <div class="container">
         <div class="row mb-5">
           <div class="col text-center reveal">
-            <div class="section-label mx-auto" style="width:fit-content"><i class="bi bi-hexagon"></i> Identitas Desa</div>
-            <div class="section-divider-anim reveal" style="margin:0.5rem auto 1rem;"></div>
+            <div class="section-label mx-auto" style="width: fit-content">
+              <i class="bi bi-hexagon"></i> Identitas Desa
+            </div>
+            <div
+              class="section-divider-anim reveal"
+              style="margin: 0.5rem auto 1rem"
+            ></div>
             <h2 class="section-title">Filosofi Logo</h2>
-            <p class="section-subtitle">Makna dan simbolisme di balik logo Desa Persiapan Giriwangi</p>
+            <p class="section-subtitle">
+              Makna dan simbolisme di balik logo Desa Persiapan Giriwangi
+            </p>
           </div>
         </div>
 
         <!-- Logo Banner -->
         <div class="row justify-content-center mb-5">
           <div class="col-lg-10 reveal reveal-scale">
-            <div class="p-5 rounded-4 text-center position-relative overflow-hidden"
-              style="background:linear-gradient(135deg,var(--hijau-tua) 0%,var(--hijau-mid) 100%);box-shadow:0 12px 40px rgba(1,82,75,0.22);">
-              <div style="position:absolute;top:-50px;right:-50px;width:200px;height:200px;background:rgba(255,222,36,0.06);border-radius:50%;pointer-events:none;"></div>
-              <div style="position:absolute;bottom:-60px;left:-40px;width:240px;height:240px;background:rgba(255,222,36,0.04);border-radius:50%;pointer-events:none;"></div>
+            <div
+              class="p-5 rounded-4 text-center position-relative overflow-hidden"
+              style="
+                background: linear-gradient(
+                  135deg,
+                  var(--hijau-tua) 0%,
+                  var(--hijau-mid) 100%
+                );
+                box-shadow: 0 12px 40px rgba(1, 82, 75, 0.22);
+              "
+            >
+              <div
+                style="
+                  position: absolute;
+                  top: -50px;
+                  right: -50px;
+                  width: 200px;
+                  height: 200px;
+                  background: rgba(255, 222, 36, 0.06);
+                  border-radius: 50%;
+                  pointer-events: none;
+                "
+              ></div>
+              <div
+                style="
+                  position: absolute;
+                  bottom: -60px;
+                  left: -40px;
+                  width: 240px;
+                  height: 240px;
+                  background: rgba(255, 222, 36, 0.04);
+                  border-radius: 50%;
+                  pointer-events: none;
+                "
+              ></div>
               <div class="position-relative">
-                <img src="logof.png" alt="Logo Giriwangi Makmur" class="mx-auto mb-3 d-block float-anim"
-                  style="width:200px;height:auto;filter:drop-shadow(0 8px 28px rgba(0,0,0,0.45));"
-                  onerror="this.style.display='none'"/>
-                <p style="color:rgba(255,255,255,0.55);font-size:0.78rem;letter-spacing:0.2em;text-transform:uppercase;margin-bottom:1.5rem;">
+                <img
+                  src="logof.png"
+                  alt="Logo Giriwangi Makmur"
+                  class="mx-auto mb-3 d-block float-anim"
+                  style="
+                    width: 200px;
+                    height: auto;
+                    filter: drop-shadow(0 8px 28px rgba(0, 0, 0, 0.45));
+                  "
+                  onerror="this.style.display = 'none'"
+                />
+                <p
+                  style="
+                    color: rgba(255, 255, 255, 0.55);
+                    font-size: 0.78rem;
+                    letter-spacing: 0.2em;
+                    text-transform: uppercase;
+                    margin-bottom: 1.5rem;
+                  "
+                >
                   Desa Persiapan Giriwangi · Kec. Cilengkrang · Kab. Bandung
                 </p>
-                <div style="max-width:580px;margin:0 auto;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.11);border-radius:14px;padding:1.2rem 1.6rem;">
-                  <p style="color:rgba(255,255,255,0.82);font-size:0.9rem;line-height:1.8;margin:0;font-style:italic;">
-                    Logo ini menyampaikan pesan bahwa <span style="color:var(--kuning);font-weight:700;">"GIRIWANGI MAKMUR"</span>
-                    adalah kondisi desa yang sejahtera — dicapai melalui kerja keras di sektor riil yang dipadukan dengan strategi pertumbuhan modern, namun tetap berpijak pada nilai-nilai luhur, keharmonisan alam, sosial, dan budaya.
+                <div
+                  style="
+                    max-width: 580px;
+                    margin: 0 auto;
+                    background: rgba(255, 255, 255, 0.07);
+                    border: 1px solid rgba(255, 255, 255, 0.11);
+                    border-radius: 14px;
+                    padding: 1.2rem 1.6rem;
+                  "
+                >
+                  <p
+                    style="
+                      color: rgba(255, 255, 255, 0.82);
+                      font-size: 0.9rem;
+                      line-height: 1.8;
+                      margin: 0;
+                      font-style: italic;
+                    "
+                  >
+                    Logo ini menyampaikan pesan bahwa
+                    <span style="color: var(--kuning); font-weight: 700"
+                      >"GIRIWANGI MAKMUR"</span
+                    >
+                    adalah kondisi desa yang sejahtera — dicapai melalui kerja
+                    keras di sektor riil yang dipadukan dengan strategi
+                    pertumbuhan modern, namun tetap berpijak pada nilai-nilai
+                    luhur, keharmonisan alam, sosial, dan budaya.
                   </p>
                 </div>
               </div>
@@ -1057,59 +2526,240 @@
 
         <!-- 4 Kartu Filosofi -->
         <div class="row g-4">
-          <div class="col-lg-6 reveal reveal-left" style="transition-delay:0.05s">
+          <div
+            class="col-lg-6 reveal reveal-left"
+            style="transition-delay: 0.05s"
+          >
             <div class="filos-card">
               <div class="filos-header">
-                <div class="filos-icon" style="background:linear-gradient(135deg,#8b6914,#c9a227);box-shadow:0 4px 12px rgba(139,105,20,0.28);">
+                <div
+                  class="filos-icon"
+                  style="
+                    background: linear-gradient(135deg, #8b6914, #c9a227);
+                    box-shadow: 0 4px 12px rgba(139, 105, 20, 0.28);
+                  "
+                >
                   <i class="bi bi-fonts"></i>
                 </div>
-                <div><div class="filos-elemen" style="color:#c9a227;">Elemen 01</div><div class="filos-judul">Makna Tipografi "MAKMUR"</div></div>
+                <div>
+                  <div class="filos-elemen" style="color: #c9a227">
+                    Elemen 01
+                  </div>
+                  <div class="filos-judul">Makna Tipografi "MAKMUR"</div>
+                </div>
               </div>
               <div class="d-flex flex-column gap-3">
-                <div class="filos-item"><div class="filos-dot" style="background:#c9a227"></div><div><div class="filos-item-title" style="color:#8b6914;">Warna Emas</div><p class="filos-item-desc">Melambangkan kejayaan, kemuliaan, dan kemewahan. Menegaskan visi keberhasilan yang bersifat material sekaligus spiritual.</p></div></div>
-                <div class="filos-item"><div class="filos-dot" style="background:#c9a227"></div><div><div class="filos-item-title" style="color:#8b6914;">Gaya Font Serif yang Kokoh</div><p class="filos-item-desc">Menunjukkan stabilitas, kepercayaan, dan warisan nilai yang kuat dari generasi ke generasi.</p></div></div>
+                <div class="filos-item">
+                  <div class="filos-dot" style="background: #c9a227"></div>
+                  <div>
+                    <div class="filos-item-title" style="color: #8b6914">
+                      Warna Emas
+                    </div>
+                    <p class="filos-item-desc">
+                      Melambangkan kejayaan, kemuliaan, dan kemewahan.
+                      Menegaskan visi keberhasilan yang bersifat material
+                      sekaligus spiritual.
+                    </p>
+                  </div>
+                </div>
+                <div class="filos-item">
+                  <div class="filos-dot" style="background: #c9a227"></div>
+                  <div>
+                    <div class="filos-item-title" style="color: #8b6914">
+                      Gaya Font Serif yang Kokoh
+                    </div>
+                    <p class="filos-item-desc">
+                      Menunjukkan stabilitas, kepercayaan, dan warisan nilai
+                      yang kuat dari generasi ke generasi.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-6 reveal reveal-right" style="transition-delay:0.15s">
+          <div
+            class="col-lg-6 reveal reveal-right"
+            style="transition-delay: 0.15s"
+          >
             <div class="filos-card">
               <div class="filos-header">
-                <div class="filos-icon" style="background:linear-gradient(135deg,var(--hijau-tua),var(--hijau-terang));box-shadow:0 4px 12px rgba(1,82,75,0.24);">
+                <div
+                  class="filos-icon"
+                  style="
+                    background: linear-gradient(
+                      135deg,
+                      var(--hijau-tua),
+                      var(--hijau-terang)
+                    );
+                    box-shadow: 0 4px 12px rgba(1, 82, 75, 0.24);
+                  "
+                >
                   <i class="bi bi-flower1"></i>
                 </div>
-                <div><div class="filos-elemen" style="color:var(--hijau-terang);">Elemen 02</div><div class="filos-judul">Simbolisme Flora &amp; Alam</div></div>
+                <div>
+                  <div class="filos-elemen" style="color: var(--hijau-terang)">
+                    Elemen 02
+                  </div>
+                  <div class="filos-judul">Simbolisme Flora &amp; Alam</div>
+                </div>
               </div>
               <div class="d-flex flex-column gap-3">
-                <div class="filos-item"><div class="filos-dot" style="background:var(--hijau-terang)"></div><div><div class="filos-item-title" style="color:var(--hijau-tua);">Bunga Teratai (Lotus)</div><p class="filos-item-desc">Berada di posisi paling atas, melambangkan kesucian, kebangkitan, dan kemurnian niat. Simbol meraih kemakmuran dari nol.</p></div></div>
-                <div class="filos-item"><div class="filos-dot" style="background:var(--hijau-terang)"></div><div><div class="filos-item-title" style="color:var(--hijau-tua);">Padi</div><p class="filos-item-desc">Mengapit bunga teratai sebagai simbol ketahanan pangan dan kesejahteraan masyarakat, melambangkan kecukupan kebutuhan pokok.</p></div></div>
+                <div class="filos-item">
+                  <div
+                    class="filos-dot"
+                    style="background: var(--hijau-terang)"
+                  ></div>
+                  <div>
+                    <div
+                      class="filos-item-title"
+                      style="color: var(--hijau-tua)"
+                    >
+                      Bunga Teratai (Lotus)
+                    </div>
+                    <p class="filos-item-desc">
+                      Berada di posisi paling atas, melambangkan kesucian,
+                      kebangkitan, dan kemurnian niat. Simbol meraih kemakmuran
+                      dari nol.
+                    </p>
+                  </div>
+                </div>
+                <div class="filos-item">
+                  <div
+                    class="filos-dot"
+                    style="background: var(--hijau-terang)"
+                  ></div>
+                  <div>
+                    <div
+                      class="filos-item-title"
+                      style="color: var(--hijau-tua)"
+                    >
+                      Padi
+                    </div>
+                    <p class="filos-item-desc">
+                      Mengapit bunga teratai sebagai simbol ketahanan pangan dan
+                      kesejahteraan masyarakat, melambangkan kecukupan kebutuhan
+                      pokok.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-6 reveal reveal-left" style="transition-delay:0.25s">
+          <div
+            class="col-lg-6 reveal reveal-left"
+            style="transition-delay: 0.25s"
+          >
             <div class="filos-card">
               <div class="filos-header">
-                <div class="filos-icon" style="background:linear-gradient(135deg,#1a6fa8,#2596d1);box-shadow:0 4px 12px rgba(26,111,168,0.28);">
+                <div
+                  class="filos-icon"
+                  style="
+                    background: linear-gradient(135deg, #1a6fa8, #2596d1);
+                    box-shadow: 0 4px 12px rgba(26, 111, 168, 0.28);
+                  "
+                >
                   <i class="bi bi-graph-up-arrow"></i>
                 </div>
-                <div><div class="filos-elemen" style="color:#2596d1;">Elemen 03</div><div class="filos-judul">Elemen Modern &amp; Pertumbuhan</div></div>
+                <div>
+                  <div class="filos-elemen" style="color: #2596d1">
+                    Elemen 03
+                  </div>
+                  <div class="filos-judul">Elemen Modern &amp; Pertumbuhan</div>
+                </div>
               </div>
               <div class="d-flex flex-column gap-3">
-                <div class="filos-item"><div class="filos-dot" style="background:#2596d1"></div><div><div class="filos-item-title" style="color:#1a6fa8;">Grafik Panah Naik</div><p class="filos-item-desc">Simbol grafik yang mengarah ke atas melambangkan pertumbuhan ekonomi, progres, dan investasi yang terus meningkat.</p></div></div>
-                <div class="filos-item"><div class="filos-dot" style="background:#2596d1"></div><div><div class="filos-item-title" style="color:#1a6fa8;">Matahari Terbit</div><p class="filos-item-desc">Melambangkan harapan baru, awal yang cerah, dan energi yang tidak pernah habis untuk membangun masa depan desa.</p></div></div>
+                <div class="filos-item">
+                  <div class="filos-dot" style="background: #2596d1"></div>
+                  <div>
+                    <div class="filos-item-title" style="color: #1a6fa8">
+                      Grafik Panah Naik
+                    </div>
+                    <p class="filos-item-desc">
+                      Simbol grafik yang mengarah ke atas melambangkan
+                      pertumbuhan ekonomi, progres, dan investasi yang terus
+                      meningkat.
+                    </p>
+                  </div>
+                </div>
+                <div class="filos-item">
+                  <div class="filos-dot" style="background: #2596d1"></div>
+                  <div>
+                    <div class="filos-item-title" style="color: #1a6fa8">
+                      Matahari Terbit
+                    </div>
+                    <p class="filos-item-desc">
+                      Melambangkan harapan baru, awal yang cerah, dan energi
+                      yang tidak pernah habis untuk membangun masa depan desa.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-6 reveal reveal-right" style="transition-delay:0.35s">
+          <div
+            class="col-lg-6 reveal reveal-right"
+            style="transition-delay: 0.35s"
+          >
             <div class="filos-card">
               <div class="filos-header">
-                <div class="filos-icon" style="background:linear-gradient(135deg,#4a7c3f,var(--hijau-terang));box-shadow:0 4px 12px rgba(74,124,63,0.28);">
+                <div
+                  class="filos-icon"
+                  style="
+                    background: linear-gradient(
+                      135deg,
+                      #4a7c3f,
+                      var(--hijau-terang)
+                    );
+                    box-shadow: 0 4px 12px rgba(74, 124, 63, 0.28);
+                  "
+                >
                   <i class="bi bi-palette-fill"></i>
                 </div>
-                <div><div class="filos-elemen" style="color:var(--hijau-terang);">Elemen 04</div><div class="filos-judul">Warna Hijau Tua &amp; Ornamen</div></div>
+                <div>
+                  <div class="filos-elemen" style="color: var(--hijau-terang)">
+                    Elemen 04
+                  </div>
+                  <div class="filos-judul">Warna Hijau Tua &amp; Ornamen</div>
+                </div>
               </div>
               <div class="d-flex flex-column gap-3">
-                <div class="filos-item"><div class="filos-dot" style="background:var(--hijau-tua)"></div><div><div class="filos-item-title" style="color:var(--hijau-tua);">Warna Hijau Tua</div><p class="filos-item-desc">Melambangkan kesuburan, kedamaian, dan pertumbuhan yang berkelanjutan (sustainability) bagi seluruh warga desa.</p></div></div>
-                <div class="filos-item"><div class="filos-dot" style="background:var(--hijau-tua)"></div><div><div class="filos-item-title" style="color:var(--hijau-tua);">Ukiran Sulur</div><p class="filos-item-desc">Menunjukkan apresiasi terhadap seni budaya dan etnik — kemakmuran yang dicapai tidak melupakan akar budaya bangsa.</p></div></div>
+                <div class="filos-item">
+                  <div
+                    class="filos-dot"
+                    style="background: var(--hijau-tua)"
+                  ></div>
+                  <div>
+                    <div
+                      class="filos-item-title"
+                      style="color: var(--hijau-tua)"
+                    >
+                      Warna Hijau Tua
+                    </div>
+                    <p class="filos-item-desc">
+                      Melambangkan kesuburan, kedamaian, dan pertumbuhan yang
+                      berkelanjutan (sustainability) bagi seluruh warga desa.
+                    </p>
+                  </div>
+                </div>
+                <div class="filos-item">
+                  <div
+                    class="filos-dot"
+                    style="background: var(--hijau-tua)"
+                  ></div>
+                  <div>
+                    <div
+                      class="filos-item-title"
+                      style="color: var(--hijau-tua)"
+                    >
+                      Ukiran Sulur
+                    </div>
+                    <p class="filos-item-desc">
+                      Menunjukkan apresiasi terhadap seni budaya dan etnik —
+                      kemakmuran yang dicapai tidak melupakan akar budaya
+                      bangsa.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -1119,25 +2769,46 @@
 
     <!-- ══════════════ SOTK ══════════════ -->
     <section id="sotk" class="sotk-section py-5">
-      <div class="container position-relative" style="z-index:1">
+      <div class="container position-relative" style="z-index: 1">
         <div class="row mb-5">
           <div class="col reveal">
-            <div class="section-label-dark"><i class="bi bi-diagram-3"></i> Pemerintahan</div>
-            <h2 class="section-title" style="color:white;">Struktur Organisasi</h2>
-            <p class="section-subtitle">Perangkat Desa Persiapan Giriwangi · Tahun 2025</p>
+            <div class="section-label-dark">
+              <i class="bi bi-diagram-3"></i> Pemerintahan
+            </div>
+            <h2 class="section-title" style="color: white">
+              Struktur Organisasi
+            </h2>
+            <p class="section-subtitle">
+              Perangkat Desa Persiapan Giriwangi · Tahun 2025
+            </p>
           </div>
         </div>
 
         <!-- Kepala Desa -->
         <div class="row justify-content-center mb-4">
           <div class="col-md-7 col-lg-5 reveal reveal-scale">
-            <div class="card-pegawai card-featured p-4 d-flex align-items-center gap-4">
-              <div class="foto-wrapper" style="width:88px;height:88px;border-color:var(--kuning)">
-                <img src="user.jpg" alt="Kepala Desa" onerror="this.src='https://placehold.co/88x88/FFDE24/01524B?text=IS'"/>
+            <div
+              class="card-pegawai card-featured p-4 d-flex align-items-center gap-4"
+            >
+              <div
+                class="foto-wrapper"
+                style="width: 88px; height: 88px; border-color: var(--kuning)"
+              >
+                <img
+                  src="user.jpg"
+                  alt="Kepala Desa"
+                  onerror="
+                    this.src =
+                      'https://placehold.co/88x88/FFDE24/01524B?text=IS'
+                  "
+                />
               </div>
               <div>
-                <div class="jabatan mb-1" style="font-size:0.68rem;"><i class="bi bi-star-fill me-1" style="font-size:0.6rem;"></i>PJ. Kepala Desa Persiapan Giriwangi</div>
-                <div class="nama" style="font-size:1.15rem;">IYAN SURYANA</div>
+                <div class="jabatan mb-1" style="font-size: 0.68rem">
+                  <i class="bi bi-star-fill me-1" style="font-size: 0.6rem"></i
+                  >PJ. Kepala Desa Persiapan Giriwangi
+                </div>
+                <div class="nama" style="font-size: 1.15rem">IYAN SURYANA</div>
               </div>
             </div>
           </div>
@@ -1145,58 +2816,162 @@
 
         <!-- Perangkat Grid -->
         <div class="row g-3" id="pegawaiGrid">
-          <div class="col-md-6 col-lg-4 reveal" style="transition-delay:0.05s">
+          <div class="col-md-6 col-lg-4 reveal" style="transition-delay: 0.05s">
             <div class="card-pegawai p-3 d-flex align-items-center gap-3">
-              <div class="foto-wrapper" style="width:66px;height:66px;"><img src="user.jpg" alt="Sekdes" onerror="this.src='https://placehold.co/66x66/016162/FFDE24?text=TF'"/></div>
-              <div><div class="jabatan">Sekretaris Desa</div><div class="nama">TONI FEBRIANA</div></div>
+              <div class="foto-wrapper" style="width: 66px; height: 66px">
+                <img
+                  src="user.jpg"
+                  alt="Sekdes"
+                  onerror="
+                    this.src =
+                      'https://placehold.co/66x66/016162/FFDE24?text=TF'
+                  "
+                />
+              </div>
+              <div>
+                <div class="jabatan">Sekretaris Desa</div>
+                <div class="nama">TONI FEBRIANA</div>
+              </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 reveal" style="transition-delay:0.1s">
+          <div class="col-md-6 col-lg-4 reveal" style="transition-delay: 0.1s">
             <div class="card-pegawai p-3 d-flex align-items-center gap-3">
-              <div class="foto-wrapper" style="width:66px;height:66px;"><img src="user.jpg" alt="Kasi" onerror="this.src='https://placehold.co/66x66/016162/FFDE24?text=H'"/></div>
-              <div><div class="jabatan">Kepala Seksi Pemerintahan</div><div class="nama">HADIATNA, S.H.</div></div>
+              <div class="foto-wrapper" style="width: 66px; height: 66px">
+                <img
+                  src="user.jpg"
+                  alt="Kasi"
+                  onerror="
+                    this.src = 'https://placehold.co/66x66/016162/FFDE24?text=H'
+                  "
+                />
+              </div>
+              <div>
+                <div class="jabatan">Kepala Seksi Pemerintahan</div>
+                <div class="nama">HADIATNA, S.H.</div>
+              </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 reveal" style="transition-delay:0.15s">
+          <div class="col-md-6 col-lg-4 reveal" style="transition-delay: 0.15s">
             <div class="card-pegawai p-3 d-flex align-items-center gap-3">
-              <div class="foto-wrapper" style="width:66px;height:66px;"><img src="user.jpg" alt="Kasi" onerror="this.src='https://placehold.co/66x66/016162/FFDE24?text=M'"/></div>
-              <div><div class="jabatan">Kepala Seksi Pelayanan</div><div class="nama">MARYANI, A.Md.</div></div>
+              <div class="foto-wrapper" style="width: 66px; height: 66px">
+                <img
+                  src="user.jpg"
+                  alt="Kasi"
+                  onerror="
+                    this.src = 'https://placehold.co/66x66/016162/FFDE24?text=M'
+                  "
+                />
+              </div>
+              <div>
+                <div class="jabatan">Kepala Seksi Pelayanan</div>
+                <div class="nama">MARYANI, A.Md.</div>
+              </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 reveal" style="transition-delay:0.2s">
+          <div class="col-md-6 col-lg-4 reveal" style="transition-delay: 0.2s">
             <div class="card-pegawai p-3 d-flex align-items-center gap-3">
-              <div class="foto-wrapper" style="width:66px;height:66px;"><img src="user.jpg" alt="Kasi" onerror="this.src='https://placehold.co/66x66/016162/FFDE24?text=HS'"/></div>
-              <div><div class="jabatan">Kepala Seksi Kesejahteraan</div><div class="nama">HARRY SIDIQ ALHAQ, S.Sy.</div></div>
+              <div class="foto-wrapper" style="width: 66px; height: 66px">
+                <img
+                  src="user.jpg"
+                  alt="Kasi"
+                  onerror="
+                    this.src =
+                      'https://placehold.co/66x66/016162/FFDE24?text=HS'
+                  "
+                />
+              </div>
+              <div>
+                <div class="jabatan">Kepala Seksi Kesejahteraan</div>
+                <div class="nama">HARRY SIDIQ ALHAQ, S.Sy.</div>
+              </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 reveal" style="transition-delay:0.25s">
+          <div class="col-md-6 col-lg-4 reveal" style="transition-delay: 0.25s">
             <div class="card-pegawai p-3 d-flex align-items-center gap-3">
-              <div class="foto-wrapper" style="width:66px;height:66px;"><img src="user.jpg" alt="Kaur" onerror="this.src='https://placehold.co/66x66/016162/FFDE24?text=CS'"/></div>
-              <div><div class="jabatan">Kepala Urusan Perencanaan</div><div class="nama">CECEP SAEPUDIN, A.Md.T.</div></div>
+              <div class="foto-wrapper" style="width: 66px; height: 66px">
+                <img
+                  src="user.jpg"
+                  alt="Kaur"
+                  onerror="
+                    this.src =
+                      'https://placehold.co/66x66/016162/FFDE24?text=CS'
+                  "
+                />
+              </div>
+              <div>
+                <div class="jabatan">Kepala Urusan Perencanaan</div>
+                <div class="nama">CECEP SAEPUDIN, A.Md.T.</div>
+              </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 reveal" style="transition-delay:0.3s">
+          <div class="col-md-6 col-lg-4 reveal" style="transition-delay: 0.3s">
             <div class="card-pegawai p-3 d-flex align-items-center gap-3">
-              <div class="foto-wrapper" style="width:66px;height:66px;"><img src="user.jpg" alt="Kaur" onerror="this.src='https://placehold.co/66x66/016162/FFDE24?text=O'"/></div>
-              <div><div class="jabatan">Kepala Urusan Tata Usaha &amp; Umum</div><div class="nama">OTING</div></div>
+              <div class="foto-wrapper" style="width: 66px; height: 66px">
+                <img
+                  src="user.jpg"
+                  alt="Kaur"
+                  onerror="
+                    this.src = 'https://placehold.co/66x66/016162/FFDE24?text=O'
+                  "
+                />
+              </div>
+              <div>
+                <div class="jabatan">Kepala Urusan Tata Usaha &amp; Umum</div>
+                <div class="nama">OTING</div>
+              </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 reveal" style="transition-delay:0.35s">
+          <div class="col-md-6 col-lg-4 reveal" style="transition-delay: 0.35s">
             <div class="card-pegawai p-3 d-flex align-items-center gap-3">
-              <div class="foto-wrapper" style="width:66px;height:66px;"><img src="user.jpg" alt="Kadus" onerror="this.src='https://placehold.co/66x66/016162/FFDE24?text=AT'"/></div>
-              <div><div class="jabatan">Kepala Dusun I</div><div class="nama">AEP TADJUDIN</div></div>
+              <div class="foto-wrapper" style="width: 66px; height: 66px">
+                <img
+                  src="user.jpg"
+                  alt="Kadus"
+                  onerror="
+                    this.src =
+                      'https://placehold.co/66x66/016162/FFDE24?text=AT'
+                  "
+                />
+              </div>
+              <div>
+                <div class="jabatan">Kepala Dusun I</div>
+                <div class="nama">AEP TADJUDIN</div>
+              </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 reveal" style="transition-delay:0.4s">
+          <div class="col-md-6 col-lg-4 reveal" style="transition-delay: 0.4s">
             <div class="card-pegawai p-3 d-flex align-items-center gap-3">
-              <div class="foto-wrapper" style="width:66px;height:66px;"><img src="user.jpg" alt="Kadus" onerror="this.src='https://placehold.co/66x66/016162/FFDE24?text=CC'"/></div>
-              <div><div class="jabatan">Kepala Dusun II</div><div class="nama">CEP CAHYANA</div></div>
+              <div class="foto-wrapper" style="width: 66px; height: 66px">
+                <img
+                  src="user.jpg"
+                  alt="Kadus"
+                  onerror="
+                    this.src =
+                      'https://placehold.co/66x66/016162/FFDE24?text=CC'
+                  "
+                />
+              </div>
+              <div>
+                <div class="jabatan">Kepala Dusun II</div>
+                <div class="nama">CEP CAHYANA</div>
+              </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 reveal" style="transition-delay:0.45s">
+          <div class="col-md-6 col-lg-4 reveal" style="transition-delay: 0.45s">
             <div class="card-pegawai p-3 d-flex align-items-center gap-3">
-              <div class="foto-wrapper" style="width:66px;height:66px;"><img src="user.jpg" alt="Kadus" onerror="this.src='https://placehold.co/66x66/016162/FFDE24?text=U'"/></div>
-              <div><div class="jabatan">Kepala Dusun III</div><div class="nama">USMAN</div></div>
+              <div class="foto-wrapper" style="width: 66px; height: 66px">
+                <img
+                  src="user.jpg"
+                  alt="Kadus"
+                  onerror="
+                    this.src = 'https://placehold.co/66x66/016162/FFDE24?text=U'
+                  "
+                />
+              </div>
+              <div>
+                <div class="jabatan">Kepala Dusun III</div>
+                <div class="nama">USMAN</div>
+              </div>
             </div>
           </div>
         </div>
@@ -1204,77 +2979,119 @@
     </section>
 
     <!-- ══════════════ FOOTER ══════════════ -->
-    <hr class="divider-kuning"/>
+    <hr class="divider-kuning" />
     <footer class="footer-custom pt-5 pb-0">
       <div class="container">
         <div class="row g-4 pb-4 align-items-start reveal">
           <div class="col-md-1 d-none d-md-flex">
-            <img class="logo-footer" src="logokab.png" alt="Logo Kabupaten" onerror="this.style.display='none'"/>
+            <img
+              class="logo-footer"
+              src="logokab.png"
+              alt="Logo Kabupaten"
+              onerror="this.style.display = 'none'"
+            />
           </div>
           <div class="col-md-4">
             <div class="footer-brand">Desa Persiapan Giriwangi</div>
-            <div class="footer-alamat">Kecamatan Cilengkrang<br/>Kabupaten Bandung, Jawa Barat<br/>Jalan Legok Hayam</div>
+            <div class="footer-alamat">
+              Kecamatan Cilengkrang<br />Kabupaten Bandung, Jawa Barat<br />Jalan
+              Legok Hayam
+            </div>
           </div>
           <div class="col-md-3">
             <div class="footer-heading">Hubungi Kami</div>
-            <div class="footer-info"><i class="bi bi-envelope-fill"></i><a href="mailto:pemdes.giriwangi@gmail.com">pemdes.giriwangi@gmail.com</a></div>
+            <div class="footer-info">
+              <i class="bi bi-envelope-fill"></i
+              ><a href="mailto:pemdes.giriwangi@gmail.com"
+                >pemdes.giriwangi@gmail.com</a
+              >
+            </div>
           </div>
           <div class="col-md-4">
             <div class="footer-heading">Temukan Kami Di</div>
-            <div class="footer-info"><i class="bi bi-instagram"></i><a href="https://www.instagram.com/pemdes.giriwangi/" target="_blank">@pemdes.giriwangi</a></div>
+            <div class="footer-info">
+              <i class="bi bi-instagram"></i
+              ><a
+                href="https://www.instagram.com/pemdes.giriwangi/"
+                target="_blank"
+                >@pemdes.giriwangi</a
+              >
+            </div>
           </div>
         </div>
       </div>
-      <div class="footer-bottom">© 2026 Pemerintahan Desa Persiapan Giriwangi. All rights reserved.</div>
+      <div class="footer-bottom">
+        © 2026 Pemerintahan Desa Persiapan Giriwangi. All rights reserved.
+      </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"
+    ></script>
 
     <script>
       // ══ INTERSECTION OBSERVER — Scroll Reveal ══
-      const revealObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('is-visible');
-            // Jangan unobserve stagger-parent agar tetap visible
-            if (!entry.target.classList.contains('stagger-parent')) {
-              revealObserver.unobserve(entry.target);
+      const revealObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              // Jangan unobserve stagger-parent agar tetap visible
+              if (!entry.target.classList.contains("stagger-parent")) {
+                revealObserver.unobserve(entry.target);
+              }
             }
-          }
-        });
-      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+          });
+        },
+        { threshold: 0.12, rootMargin: "0px 0px -40px 0px" },
+      );
 
       // Observe semua .reveal dan .stagger-parent
-      document.querySelectorAll('.reveal, .stagger-parent, .section-divider-anim').forEach(el => {
-        revealObserver.observe(el);
-      });
+      document
+        .querySelectorAll(".reveal, .stagger-parent, .section-divider-anim")
+        .forEach((el) => {
+          revealObserver.observe(el);
+        });
 
       // ══ SCROLL PROGRESS BAR ══
-      const progressBar = document.getElementById('progress-bar');
-      window.addEventListener('scroll', () => {
-        const scrollTop = window.pageYOffset;
-        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-        progressBar.style.width = (scrollTop / docHeight * 100) + '%';
-      }, { passive: true });
+      const progressBar = document.getElementById("progress-bar");
+      window.addEventListener(
+        "scroll",
+        () => {
+          const scrollTop = window.pageYOffset;
+          const docHeight =
+            document.documentElement.scrollHeight - window.innerHeight;
+          progressBar.style.width = (scrollTop / docHeight) * 100 + "%";
+        },
+        { passive: true },
+      );
 
       // ══ NAVBAR SHRINK ON SCROLL ══
-      const navbar = document.querySelector('.navbar-custom');
-      window.addEventListener('scroll', () => {
-        navbar.classList.toggle('scrolled', window.pageYOffset > 80);
-      }, { passive: true });
+      const navbar = document.querySelector(".navbar-custom");
+      window.addEventListener(
+        "scroll",
+        () => {
+          navbar.classList.toggle("scrolled", window.pageYOffset > 80);
+        },
+        { passive: true },
+      );
 
       // ══ BACK TO TOP ══
-      const backTop = document.getElementById('backToTop');
-      window.addEventListener('scroll', () => {
-        backTop.classList.toggle('show', window.pageYOffset > 400);
-      }, { passive: true });
+      const backTop = document.getElementById("backToTop");
+      window.addEventListener(
+        "scroll",
+        () => {
+          backTop.classList.toggle("show", window.pageYOffset > 400);
+        },
+        { passive: true },
+      );
 
       // ══ COUNTER ANIMASI STATS ══
       function animateCounter(el) {
-        const target = parseInt(el.getAttribute('data-target'));
-        const formatted = el.getAttribute('data-formatted');
+        const target = parseInt(el.getAttribute("data-target"));
+        const formatted = el.getAttribute("data-formatted");
         const duration = 1800;
         const start = performance.now();
         const startVal = 0;
@@ -1289,7 +3106,7 @@
           if (formatted && progress === 1) {
             el.textContent = formatted;
           } else {
-            el.textContent = current.toLocaleString('id-ID');
+            el.textContent = current.toLocaleString("id-ID");
           }
 
           if (progress < 1) requestAnimationFrame(update);
@@ -1298,46 +3115,67 @@
       }
 
       // Observer khusus stats
-      const statsObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.querySelectorAll('.stat-num[data-target]').forEach(animateCounter);
-            statsObserver.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.5 });
+      const statsObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target
+                .querySelectorAll(".stat-num[data-target]")
+                .forEach(animateCounter);
+              statsObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.5 },
+      );
 
-      const statsRow = document.getElementById('statsRow');
+      const statsRow = document.getElementById("statsRow");
       if (statsRow) statsObserver.observe(statsRow);
 
       // ══ SMOOTH SCROLL ══
-      document.querySelectorAll('a[href^="#"]').forEach(a => {
-        a.addEventListener('click', function(e) {
-          const id = this.getAttribute('href');
-          if (id === '#') return;
+      document.querySelectorAll('a[href^="#"]').forEach((a) => {
+        a.addEventListener("click", function (e) {
+          const id = this.getAttribute("href");
+          if (id === "#") return;
           const target = document.querySelector(id);
           if (!target) return;
           e.preventDefault();
-          const offset = document.querySelector('.navbar-custom').offsetHeight + 8;
-          window.scrollTo({ top: target.getBoundingClientRect().top + window.pageYOffset - offset, behavior: 'smooth' });
-          const nav = document.getElementById('navMain');
-          if (nav.classList.contains('show')) bootstrap.Collapse.getInstance(nav)?.hide();
+          const offset =
+            document.querySelector(".navbar-custom").offsetHeight + 8;
+          window.scrollTo({
+            top:
+              target.getBoundingClientRect().top + window.pageYOffset - offset,
+            behavior: "smooth",
+          });
+          const nav = document.getElementById("navMain");
+          if (nav.classList.contains("show"))
+            bootstrap.Collapse.getInstance(nav)?.hide();
         });
       });
 
       // ══ ACTIVE NAV HIGHLIGHT ══
-      const sections = document.querySelectorAll('section[id]');
-      const navLinks = document.querySelectorAll('.navbar-custom .nav-link[href^="#"]');
-      const navOffset = () => document.querySelector('.navbar-custom').offsetHeight + 20;
+      const sections = document.querySelectorAll("section[id]");
+      const navLinks = document.querySelectorAll(
+        '.navbar-custom .nav-link[href^="#"]',
+      );
+      const navOffset = () =>
+        document.querySelector(".navbar-custom").offsetHeight + 20;
 
-      window.addEventListener('scroll', () => {
-        let current = 'beranda';
-        sections.forEach(s => { if (window.pageYOffset >= s.offsetTop - navOffset()) current = s.id; });
-        navLinks.forEach(l => {
-          l.classList.remove('active');
-          if (l.getAttribute('href') === '#' + current) l.classList.add('active');
-        });
-      }, { passive: true });
+      window.addEventListener(
+        "scroll",
+        () => {
+          let current = "beranda";
+          sections.forEach((s) => {
+            if (window.pageYOffset >= s.offsetTop - navOffset()) current = s.id;
+          });
+          navLinks.forEach((l) => {
+            l.classList.remove("active");
+            if (l.getAttribute("href") === "#" + current)
+              l.classList.add("active");
+          });
+        },
+        { passive: true },
+      );
     </script>
   </body>
 </html>
