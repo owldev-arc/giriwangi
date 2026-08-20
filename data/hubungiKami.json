@@ -1,0 +1,47 @@
+{
+  "hubungi-kami": {
+    "id": "hubungi",
+    "title": "Hubungi Kami",
+    "intro": "Jangan ragu untuk menghubungi kami. Tim kami siap melayani pertanyaan, masukan, dan aspirasi Anda untuk kemajuan bersama Desa Persiapan Giriwangi.",
+    "cards": [
+      {
+        "iconHtml": "<i class=\"fas fa-envelope\"></i>",
+        "title": "Email",
+        "text": "Kirim email untuk pertanyaan atau keperluan administrasi desa.",
+        "link": {
+          "href": "mailto:pemdes.giriwangi@gmail.com",
+          "label": "pemdes.giriwangi@gmail.com"
+        }
+      },
+      {
+        "iconHtml": "<i class=\"fas fa-clock\"></i>",
+        "title": "Jam Operasional",
+        "text": "Senin - Jumat: 08:00 - 16:00 WIB<br>Sabtu - Minggu: Tutup",
+        "link": {
+          "href": "#",
+          "label": "Informasi Lengkap"
+        }
+      },
+      {
+        "iconHtml": "<i class=\"fas fa-map-marker-alt\"></i>",
+        "title": "Alamat",
+        "text": "Jalan Legok Hayam, Kecamatan Cilengkrang, Kabupaten Bandung, Jawa Barat",
+        "link": {
+          "href": "https://maps.google.com",
+          "label": "Lihat di Maps",
+          "target": "_blank"
+        }
+      },
+      {
+        "iconHtml": "<i class=\"fas fa-share-alt\"></i>",
+        "title": "Media Sosial",
+        "text": "Ikuti kami di media sosial untuk update terbaru dan informasi kegiatan desa.",
+        "socialIcons": [
+          { "href": "#", "title": "Facebook", "iconHtml": "<i class=\"fab fa-facebook-f\"></i>" },
+          { "href": "#", "title": "Instagram", "iconHtml": "<i class=\"fab fa-instagram\"></i>" },
+          { "href": "#", "title": "Twitter", "iconHtml": "<i class=\"fab fa-twitter\"></i>" }
+        ]
+      }
+    ]
+  }
+}

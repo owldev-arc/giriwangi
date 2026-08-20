@@ -1,0 +1,15 @@
+{
+  "preloader": {
+    "id": "preloader",
+    "logo": {
+      "src": "assets/logo.png",
+      "alt": "Logo Giriwangi",
+      "class": "preload-logo"
+    },
+    "text": "giriwangi",
+    "subtext": "kec cilengkrang",
+    "progressText": "heheheeh",
+    "containerClass": "preload-content",
+    "logoContainerClass": "preload-logo-container"
+  }
+}

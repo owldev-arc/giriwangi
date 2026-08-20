@@ -1,0 +1,241 @@
+{
+  "publikasi": {
+    "id": "publikasi",
+    "title": "Publikasi",
+    "subtitle": "Berita Desa - Informasi terbaru tentang peristiwa dan kegiatan desa",
+    "items": [
+      {
+        "id": "silaturahmi-halal-bihalal-hari-jadi-385",
+        "date": "Kamis, 30 April 2026",
+        "category": "Kegiatan",
+        "iconClass": "fas fa-handshake",
+        "title": "Silaturahmi/Halal Bihalal Hari Jadi Kabupaten Bandung",
+        "excerpt": "PJ. Kepala Desa Persiapan Giriwangi dan Kepala Desa Girimekar mengadakan acara silaturahmi/halal bihalal untuk mempererat tali silaturahmi di wilayah desa induk dan sub desa.",
+        "fullText": "PJ. Kepala Desa Persiapan Giriwangi dan Kepala Desa Girimekar Kecamatan Cilengkrang mengadakan acara Silaturahmi/halal bihalal dalam rangka peringatan Hari Jadi Kabupaten Bandung yang ke-385 tahun. Kegiatan ini bertujuan untuk mempererat tali silaturahmi di wilayah Desa Girimekar selaku desa induk dan wilayah Desa Persiapan Giriwangi. Kegiatan ini dihadiri oleh Kepala Desa Girimekar dan PJ. Kepala Desa, Camat Cilengkrang, Kapolsubsektor Cilengkrang, Penyuluh KUA Cilengkrang, MUI Desa Girimekar, BPD Girimekar, LPMD Girimekar, karta Desa Girimekar, seluruh Ketua RW dan Ketua RT di wilayah Desa Girimekar dan Desa Persiapan Giriwangi, serta tokoh masyarakat & tokoh agama. Kegiatan berjalan lancar, dibuka dengan Pembacaan ayat suci Al-Qur'an, Do'a Bersama, Sambutan-sambutan, Tausiah, dan ditutup dengan acara halal bihalal serta ramah tamah PJ. Kepala Desa Giriwangi dalam sambutannya mengajak warga dan pemangku kepentingan untuk mensukseskan program pemekaran desa agar Desa Persiapan Giriwangi menjadi desa definitif, serta memaparkan Visi dan Misi pembangunan. Adapun visinya yaitu Giriwangi MAKMUR (Maju, Aktif, Kreatif, Mufakat, Unggul dan Religius).",
+        "images": [
+          { "src": "hl1crop.jpeg", "alt": "Silaturahmi/Halal Bihalal Hari Jadi Kabupaten Bandung" },
+          { "src": "hl7.jpeg", "alt": "Silaturahmi/Halal Bihalal Hari Jadi Kabupaten Bandung" },
+          { "src": "hl11.jpeg", "alt": "Silaturahmi/Halal Bihalal Hari Jadi Kabupaten Bandung" },
+          { "src": "hl2.jpeg", "alt": "Silaturahmi/Halal Bihalal Hari Jadi Kabupaten Bandung" },
+          { "src": "hl4.jpeg", "alt": "Silaturahmi/Halal Bihalal Hari Jadi Kabupaten Bandung" },
+          { "src": "hl12.jpeg", "alt": "Silaturahmi/Halal Bihalal Hari Jadi Kabupaten Bandung" }
+        ]
+      },
+      {
+        "id": "identifikasi-verifikasi-batas-desa",
+        "date": "Kamis, 21 Mei 2026",
+        "category": "Administrasi",
+        "iconClass": "fas fa-map-marker-alt",
+        "title": "Identifikasi dan Verifikasi Batas Desa Persiapan Giriwangi",
+        "excerpt": "Pemerintah Desa Persiapan Giriwangi melakukan identifikasi dan verifikasi batas desa melalui pencocokan data administrasi serta peninjauan kondisi lapangan.",
+        "fullText": "Pemerintah Desa Persiapan Giriwangi bersama Dinas Pemberdayaan Masyarakat dan Desa melaksanakan kegiatan identifikasi dan verifikasi batas desa yang bertempat di Kantor Desa Persiapan Giriwangi sebagai bagian dari proses penataan administrasi wilayah menuju desa definitif. Kegiatan ini dilakukan melalui pencocokan data administrasi dan peninjauan kondisi lapangan guna memastikan batas wilayah desa sesuai dengan ketentuan dan kaidah kartografis yang berlaku. Dengan adanya kegiatan ini diharapkan dapat tercipta kejelasan batas wilayah, tertib administrasi pemerintahan, serta mendukung kelancaran proses penetapan batas desa secara akurat dan berkelanjutan.",
+        "images": [
+          { "src": "verif2.jpeg", "alt": "Identifikasi dan Verifikasi Batas Desa" }
+        ]
+      },
+      {
+        "id": "layanan-kesehatan-baznas-dusun-1-cilaja",
+        "date": "Rabu, 20 Mei 2026",
+        "category": "Kesehatan",
+        "iconClass": "fas fa-heartbeat",
+        "title": "Layanan Kesehatan Bersama BAZNAS Provinsi untuk Dusun 1 Cilaja",
+        "excerpt": "Layanan kesehatan bagi masyarakat Dusun 1 Cilaja bersama BAZNAS Provinsi sebagai bentuk kepedulian terhadap kesehatan dan kesejahteraan warga.",
+        "fullText": "Pemerintah Desa Persiapan Giriwangi bersama BAZNAS Provinsi melaksanakan kegiatan layanan kesehatan bagi masyarakat Dusun 1 Cilaja sebagai bentuk kepedulian terhadap kesehatan dan kesejahteraan warga. Kegiatan ini bertujuan untuk memberikan pelayanan kesehatan yang mudah dijangkau serta meningkatkan kesadaran masyarakat akan pentingnya menjaga kesehatan secara rutin. Antusiasme warga dalam mengikuti kegiatan ini menjadi bentuk dukungan terhadap terciptanya masyarakat yang sehat dan sejahtera.",
+        "images": [
+          { "src": "baznas.jpeg", "alt": "Layanan Kesehatan BAZNAS (1)" },
+          { "src": "baznas2.jpeg", "alt": "Layanan Kesehatan BAZNAS (2)" }
+        ]
+      },
+      {
+        "id": "monev-ke-desa-persiapan-giriwangi",
+        "date": "Rabu, 20 Mei 2026",
+        "category": "Monitoring",
+        "iconClass": "fas fa-chart-line",
+        "title": "Kegiatan Monitoring dan Evaluasi ke Desa Persiapan Giriwangi",
+        "excerpt": "Kegiatan monev dari pihak terkait untuk pembinaan, pengawasan, serta peningkatan kualitas administrasi dan pelayanan pemerintahan desa.",
+        "fullText": "Pemerintah Desa Persiapan Giriwangi menerima kunjungan kegiatan monitoring dan evaluasi (monev) dari pihak terkait sebagai upaya pembinaan, pengawasan, serta peningkatan kualitas administrasi dan pelayanan pemerintahan desa. Kegiatan ini dilakukan untuk memastikan program dan pelaksanaan kegiatan desa berjalan dengan baik, tertib administrasi, serta sesuai dengan ketentuan yang berlaku demi mendukung tata kelola pemerintahan desa yang lebih optimal.",
+        "images": [
+          { "src": "monev.jpeg", "alt": "Monitoring dan Evaluasi (Monev)" }
+        ]
+      },
+      {
+        "id": "budayakan-5s-pelayanan-prima",
+        "date": "Rabu, 20 Mei 2026",
+        "category": "Pelayanan",
+        "iconClass": "fas fa-star",
+        "title": "Desa Persiapan Giriwangi Budayakan 5S dalam Pelayanan Prima",
+        "excerpt": "Membudayakan prinsip 5S (Senyum, Salam, Sapa, Sopan, Santun) agar pelayanan lebih nyaman, ramah, dan humanis.",
+        "fullText": "Pemerintah Desa Persiapan Giriwangi terus berkomitmen meningkatkan kualitas pelayanan kepada masyarakat dengan membudayakan prinsip 5S, yaitu Senyum, Salam, Sapa, Sopan, dan Santun dalam setiap aktivitas pelayanan. Melalui penerapan budaya 5S, diharapkan tercipta suasana pelayanan yang nyaman, ramah, serta mampu membangun hubungan yang harmonis antara pemerintah desa dan masyarakat. Pelayanan yang baik bukan hanya tentang administrasi, tetapi juga tentang sikap, kepedulian, dan komunikasi yang positif demi terciptanya pelayanan publik yang lebih humanis dan berkualitas.",
+        "images": [
+          { "src": "pelayananprima.jpeg", "alt": "Budayakan 5S Pelayanan Prima" }
+        ]
+      },
+      {
+        "id": "kunjungan-pjs-ke-posyandu",
+        "date": "Rabu, 13 Mei 2026",
+        "category": "Edukasi",
+        "iconClass": "fas fa-book",
+        "title": "Kunjungan PJS Desa Persiapan Giriwangi ke Kegiatan Posyandu",
+        "excerpt": "Kunjungan PJS ke Posyandu sebagai dukungan pelayanan kesehatan masyarakat, khususnya bagi ibu dan balita.",
+        "fullText": "PJS Desa Persiapan Giriwangi melaksanakan kunjungan ke kegiatan Posyandu sebagai bentuk dukungan terhadap pelayanan kesehatan masyarakat, khususnya bagi ibu dan balita. Dalam kegiatan tersebut, PJS desa turut memantau jalannya pelayanan kesehatan serta memberikan semangat kepada para kader Posyandu dan masyarakat yang hadir. Kunjungan ini diharapkan dapat meningkatkan kesadaran akan pentingnya menjaga kesehatan serta mempererat hubungan antara pemerintah desa dan masyarakat.",
+        "images": [
+          { "src": "posyanduu.jpeg", "alt": "Kunjungan PJS ke Posyandu" }
+        ]
+      },
+      {
+        "id": "kunjungan-tk-insan-muda-kurban",
+        "date": "Rabu, 13 Mei 2026",
+        "category": "Edukasi",
+        "iconClass": "fas fa-book",
+        "title": "Kunjungan TK Insan Muda ke Peternakan Hewan Kurban PJS Desa Persiapan Giriwangi",
+        "excerpt": "Edukasi pengenalan hewan kurban untuk anak-anak: jenis hewan, cara perawatan, serta nilai kepedulian dan edukasi keagamaan.",
+        "fullText": "PJS Desa Persiapan Giriwangi menerima kunjungan edukasi dari TK Insan Muda dalam kegiatan pengenalan hewan kurban di area peternakan. Kegiatan ini bertujuan untuk memberikan pembelajaran kepada anak-anak mengenai jenis hewan kurban, cara perawatan, serta menanamkan nilai kepedulian dan edukasi keagamaan sejak dini. Suasana kegiatan berlangsung hangat dan interaktif dengan antusiasme para siswa dalam mengenal lingkungan peternakan secara langsung.",
+        "images": [
+          { "src": "tkkunjungan.jpeg", "alt": "Kunjungan TK Insan Muda (Hewan Kurban)" }
+        ]
+      },
+      {
+        "id": "penetapan-batas-wilayah-giriwangi-girimekar",
+        "date": "Jumat, 8 Mei 2026",
+        "category": "Administrasi",
+        "iconClass": "fas fa-map-marker-alt",
+        "title": "Penetapan Batas Wilayah Desa Persiapan Giriwangi dan Desa Girimekar",
+        "excerpt": "Penetapan batas wilayah untuk memperjelas administrasi wilayah serta mendukung tertib tata kelola pemerintahan desa.",
+        "fullText": "Pemerintah Desa Persiapan Giriwangi bersama pihak terkait melaksanakan kegiatan penetapan batas wilayah antara Desa Persiapan Giriwangi dan Desa Girimekar sebagai upaya memperjelas administrasi wilayah serta mendukung tertib tata kelola pemerintahan desa. Kegiatan ini dilakukan melalui koordinasi dan peninjauan langsung di lapangan guna memastikan batas wilayah yang telah ditetapkan sesuai dengan data dan kondisi yang ada, sehingga dapat menciptakan kepastian administrasi serta menjaga hubungan baik antarwilayah dan masyarakat sekitar.",
+        "images": [
+          { "src": "pb1.jpeg", "alt": "Penetapan Batas Wilayah (1)" },
+          { "src": "pb2.jpeg", "alt": "Penetapan Batas Wilayah (2)" },
+          { "src": "pb3.jpeg", "alt": "Penetapan Batas Wilayah (3)" }
+        ]
+      },
+      {
+        "id": "ayo-datang-ke-posyandu",
+        "date": "Kamis, 7 Mei 2026",
+        "category": "Kesehatan",
+        "iconClass": "fas fa-heartbeat",
+        "title": "Ayo Datang ke Posyandu!",
+        "excerpt": "Mengajak seluruh masyarakat khususnya ibu dan balita hadir ke Posyandu di RW 1 sampai RW 11 sesuai jadwal.",
+        "fullText": "Pemerintah Desa Persiapan Giriwangi mengajak seluruh masyarakat, khususnya para ibu dan balita, untuk turut hadir dalam kegiatan Posyandu yang akan dilaksanakan di setiap wilayah RW 1 sampai RW 11 sesuai jadwal yang telah ditentukan. Kegiatan Posyandu ini bertujuan untuk memantau tumbuh kembang anak, pemeriksaan kesehatan, imunisasi, serta memberikan edukasi kesehatan bagi masyarakat. Melalui kegiatan ini diharapkan dapat meningkatkan kesadaran bersama akan pentingnya menjaga kesehatan keluarga sejak dini demi terciptanya generasi yang sehat, aktif, dan berkualitas. Catat tanggal pelaksanaannya dan jangan sampai terlewat agar pelayanan kesehatan dapat dirasakan secara maksimal oleh seluruh warga.",
+        "images": [
+          { "src": "posyandu.png", "alt": "Ayo Datang ke Posyandu" }
+        ]
+      },
+      {
+        "id": "persiapan-penetapan-batas-wilayah-laporan-6-bulan",
+        "date": "Kamis, 7 Mei 2026",
+        "category": "Administrasi",
+        "iconClass": "fas fa-map-marker-alt",
+        "title": "Penetapan Batas Wilayah (Persiapan & Laporan Per Enam Bulan)",
+        "excerpt": "Persiapan penetapan batas wilayah dan penyusunan laporan per enam bulan di Soreang untuk tertib administrasi.",
+        "fullText": "Pemerintah Desa Persiapan Giriwangi melaksanakan kegiatan persiapan penetapan batas wilayah sekaligus penyusunan laporan per enam bulan yang dilaksanakan di Soreang sebagai bentuk tertib administrasi dan upaya meningkatkan kualitas pelayanan pemerintahan desa. Kegiatan ini dilakukan guna memastikan data dan informasi yang disampaikan sesuai dengan kondisi di lapangan serta mendukung kelancaran proses administrasi desa secara transparan dan akuntabel.",
+        "images": [
+          { "src": "rapat7may.jpeg", "alt": "Penetapan Batas Wilayah (Persiapan & Laporan)" }
+        ]
+      },
+      {
+        "id": "kebersamaan-bersama-warga-gotong-royong",
+        "date": "Jumat, 1 Mei 2026",
+        "category": "Kegiatan",
+        "iconClass": "fas fa-handshake",
+        "title": "Kebersamaan bersama warga",
+        "excerpt": "Gotong royong membantu menurunkan pasir dari kendaraan kobak untuk kebutuhan pembangunan di lingkungan desa.",
+        "fullText": "Pemerintah Desa Persiapan Giriwangi bersama warga menunjukkan semangat kebersamaan dan gotong royong dalam kegiatan membantu menurunkan pasir dari kendaraan kobak untuk kebutuhan pembangunan di lingkungan desa. Kegiatan ini menjadi bentuk kepedulian serta kekompakan antara pemerintah desa dan masyarakat dalam mendukung terciptanya lingkungan yang lebih baik dan harmonis.",
+        "images": [
+          { "src": "kb1.jpeg", "alt": "Kebersamaan bersama warga (1)" },
+          { "src": "kb2.jpeg", "alt": "Kebersamaan bersama warga (2)" },
+          { "src": "kb3.jpeg", "alt": "Kebersamaan bersama warga (3)" }
+        ]
+      },
+      {
+        "id": "kegiatan-pengukuran-jalan-perbaikan-infrastruktur",
+        "date": "Jumat, 1 Mei 2026",
+        "category": "Kegiatan",
+        "iconClass": "fas fa-handshake",
+        "title": "Kegiatan Pengukuran Jalan untuk Perbaikan Infrastruktur",
+        "excerpt": "Pengukuran jalan sebagai tahap awal rencana perbaikan infrastruktur jalan desa agar tepat sasaran sesuai kondisi lapangan.",
+        "fullText": "Pemerintah Desa Persiapan Giriwangi bersama perangkat desa dan pejabat desa melaksanakan kegiatan pengukuran jalan sebagai tahap awal dalam rencana perbaikan infrastruktur jalan desa yang bertujuan untuk meningkatkan kualitas akses dan kenyamanan masyarakat. Kegiatan ini dilakukan guna memastikan proses pembangunan nantinya berjalan tepat sasaran, sesuai kondisi lapangan, serta dapat memberikan manfaat yang maksimal bagi warga dan lingkungan sekitar.",
+        "images": [
+          { "src": "uj1.jpeg", "alt": "Pengukuran Jalan (1)" },
+          { "src": "uj9.jpeg", "alt": "Pengukuran Jalan (2)" },
+          { "src": "uj6.jpeg", "alt": "Pengukuran Jalan (3)" },
+          { "src": "uj8.jpeg", "alt": "Pengukuran Jalan (4)" }
+        ]
+      },
+      {
+        "id": "jumsih-jumat-bersih-batununggal-rw-08",
+        "date": "Jumat, 1 Mei 2026",
+        "category": "Lingkungan",
+        "iconClass": "fas fa-star",
+        "title": "Jumsih (Jum'at Bersih) Kampung Batununggal RW 08",
+        "excerpt": "Kegiatan rutin Jumsih untuk melestarikan kebersihan lingkungan agar tercipta suasana yang bersih dan asri.",
+        "fullText": "Warga masyarakat Kampung Batununggal RW. 08 Desa Persiapan Giriwangi mengadakan kegiatan Jumsih (Jum'at Bersih). Kegiatan Jumsih ini merupakan kegiatan rutin yang dilakukan oleh warga masyarakat dalam rangka melestarikan kebersihan lingkungan agar tercipta lingkungan yang bersih dan asri. Kegiatan Jumsih ini tidak hanya dilakukan oleh warga RW. 08 namun warga masyarakat di RW lainnya pun melakukan hal yang sama, sebagaimana himbauan dan ajakan dari PJ. Kepala Desa Persiapan Giriwangi Bpk. Suryana agar seluruh masyarakat dan seluruh stakeholder mencintai lingkungannya agar tercipta suasana yang asri, nyaman dan kondusif di lingkungan wilayah masing-masing.",
+        "images": [
+          { "src": "opsih1.jpeg", "alt": "Jumsih (1)" },
+          { "src": "opsih3.jpeg", "alt": "Jumsih (2)" },
+          { "src": "opsih4.jpeg", "alt": "Jumsih (3)" },
+          { "src": "opsih2.jpeg", "alt": "Jumsih (4)" }
+        ]
+      },
+      {
+        "id": "musyawarah-pembentukan-panitia-pemilihan-bpd",
+        "date": null,
+        "category": "Pemerintahan",
+        "iconClass": "fas fa-gavel",
+        "title": "Pj. Desa Persiapan Giriwangi Hadiri Musyawarah Pembentukan Panitia Pemilihan BPD 2026–2034",
+        "excerpt": "Musyawarah pembentukan panitia pemilihan BPD Desa Girimekar untuk masa bakti 2026–2034 agar proses pemilihan berjalan transparan dan tertib.",
+        "fullText": "Pj. Kepala Desa Persiapan Giriwangi menghadiri musyawarah pembentukan Panitia Pemilihan BPD Desa Girimekar untuk masa bakti 2026–2034. Kegiatan ini bertujuan memastikan proses pemilihan BPD berjalan transparan, tertib, dan sesuai ketentuan yang berlaku.",
+        "images": [
+          { "src": "bpd2.jpeg", "alt": "Musyawarah Pembentukan Panitia Pemilihan BPD" }
+        ]
+      },
+      {
+        "id": "penentuan-halal-bihalal-desa-girimekar",
+        "date": null,
+        "category": "Kegiatan",
+        "iconClass": "fas fa-people-group",
+        "title": "Penentuan Halal Bihalal Desa Giriwangi",
+        "excerpt": "Perangkat desa menggelar rapat penentuan waktu dan tempat pelaksanaan Halal Bihalal bersama warga pasca Idul Fitri.",
+        "fullText": "Perangkat desa menggelar rapat penentuan waktu dan tempat pelaksanaan Halal Bihalal bersama warga sebagai wujud silaturahmi pasca Idul Fitri.",
+        "images": [
+          { "src": "rapathalal.jpeg", "alt": "Penentuan Halal Bihalal" }
+        ]
+      },
+      {
+        "id": "pembagian-beras-desa-giriwangi",
+        "date": null,
+        "category": "Sosial",
+        "iconClass": "fas fa-box-seam",
+        "title": "Pembagian Beras Desa Giriwangi",
+        "excerpt": "Penyaluran bantuan beras kepada warga yang berhak sebagai bentuk kepedulian terhadap ketahanan pangan masyarakat.",
+        "fullText": "Pemerintah Desa Giriwangi menyalurkan bantuan beras kepada warga yang berhak sebagai bentuk kepedulian terhadap ketahanan pangan masyarakat.",
+        "images": [
+          { "src": "beras.jpeg", "alt": "Pembagian Beras Desa Giriwangi" }
+        ]
+      },
+      {
+        "id": "pasang-banner-anti-sampah-desa-giriwangi",
+        "date": null,
+        "category": "Lingkungan",
+        "iconClass": "fas fa-recycle",
+        "title": "Desa Giriwangi Pasang Banner Anti Sampah",
+        "excerpt": "Desa memasang banner larangan membuang sampah sembarangan di titik-titik strategis desa untuk meningkatkan kesadaran warga.",
+        "fullText": "Dalam upaya meningkatkan kesadaran warga, Desa Giriwangi memasang banner larangan membuang sampah sembarangan di titik-titik strategis desa.",
+        "images": [
+          { "src": "bannersampah.jpeg", "alt": "Banner Anti Sampah" }
+        ]
+      },
+      {
+        "id": "tahlil-bersama-warga-giriwangi",
+        "date": null,
+        "category": "Keagamaan",
+        "iconClass": "fas fa-moon",
+        "title": "Kegiatan Tahlil Bersama Warga Desa Giriwangi",
+        "excerpt": "Tahlil rutin bersama perangkat dan warga sebagai wujud nilai religius dan kebersamaan masyarakat Giriwangi.",
+        "fullText": "Kegiatan tahlil rutin digelar bersama perangkat dan warga desa sebagai wujud nilai religius dan kebersamaan yang dijunjung tinggi oleh masyarakat Giriwangi.",
+        "images": [
+          { "src": "tahlil3.jpeg", "alt": "Kegiatan Tahlil Bersama Warga" }
+        ]
+      }
+    ]
+  }
+}

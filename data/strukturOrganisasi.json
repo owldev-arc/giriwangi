@@ -1,0 +1,89 @@
+{
+  "struktur-organisasi": {
+    "id": "struktur",
+    "title": "Struktur Organisasi",
+    "subtitle": "Perangkat Desa Persiapan Giriwangi · Tahun 2025",
+    "items": [
+      {
+        "type": "kepalaDesa",
+        "iconHtml": "<i class=\"fas fa-building-columns\"></i>",
+        "nama": "IYAN SURYANA",
+        "jabatan": "PJ. Kepala Desa",
+        "badge": "Pemimpin",
+        "classes": ["struktur-kepala"]
+      },
+      {
+        "type": "sekretarisDesa",
+        "iconHtml": "<i class=\"fas fa-clipboard-list\"></i>",
+        "nama": "TONI FEBRIANA",
+        "jabatan": "Sekretaris Desa",
+        "badge": "Administrasi",
+        "classes": ["struktur-sekretaris"]
+      },
+      {
+        "type": "kepalaSeksiPemerintahan",
+        "iconHtml": "<i class=\"fas fa-gavel\"></i>",
+        "nama": "HADIATNA, S.H.",
+        "jabatan": "Kepala Seksi Pemerintahan",
+        "badge": "Hukum",
+        "classes": ["struktur-pemerintahan"]
+      },
+      {
+        "type": "kepalaSeksiPelayanan",
+        "iconHtml": "<i class=\"fas fa-handshake\"></i>",
+        "nama": "MARYANI, A.Md.",
+        "jabatan": "Kepala Seksi Pelayanan",
+        "badge": "Pelayanan",
+        "classes": ["struktur-pelayanan"]
+      },
+      {
+        "type": "kepalaSeksiKesejahteraan",
+        "iconHtml": "<i class=\"fas fa-people-arrows\"></i>",
+        "nama": "HARRY SIDIQ ALHAQ, S.Sy.",
+        "jabatan": "Kepala Seksi Kesejahteraan",
+        "badge": "Sosial",
+        "classes": ["struktur-kesejahteraan"]
+      },
+      {
+        "type": "kepalaUrusanPerencanaan",
+        "iconHtml": "<i class=\"fas fa-chart-line\"></i>",
+        "nama": "CECEP SAEPUDIN, A.Md.T.",
+        "jabatan": "Kepala Urusan Perencanaan",
+        "badge": "Perencanaan",
+        "classes": ["struktur-perencanaan"]
+      },
+      {
+        "type": "kepalaUrusanTataUsaha",
+        "iconHtml": "<i class=\"fas fa-folder-open\"></i>",
+        "nama": "OTING",
+        "jabatan": "Kepala Urusan Tata Usaha & Umum",
+        "badge": "Umum",
+        "classes": ["struktur-tataUsaha"]
+      },
+      {
+        "type": "kepalaDusun1",
+        "iconHtml": "<i class=\"fas fa-map-location-dot\"></i>",
+        "nama": "AEP TADJUDIN",
+        "jabatan": "Kepala Dusun I",
+        "badge": "Dusun 1",
+        "classes": ["struktur-dusun"]
+      },
+      {
+        "type": "kepalaDusun2",
+        "iconHtml": "<i class=\"fas fa-map-location-dot\"></i>",
+        "nama": "CEP CAHYANA",
+        "jabatan": "Kepala Dusun II",
+        "badge": "Dusun 2",
+        "classes": ["struktur-dusun"]
+      },
+      {
+        "type": "kepalaDusun3",
+        "iconHtml": "<i class=\"fas fa-map-location-dot\"></i>",
+        "nama": "USMAN",
+        "jabatan": "Kepala Dusun III",
+        "badge": "Dusun 3",
+        "classes": ["struktur-dusun"]
+      }
+    ]
+  }
+}

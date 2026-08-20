@@ -1,0 +1,26 @@
+{
+  "territoryBoundaries": {
+    "west": "MEKARMANIK DAN SINDANGLAYA",
+    "south": "GIRIMEKAR",
+    "east": "MELATIWANGI",
+    "north": "PERHUTANI"
+  },
+  "villageName": "Desa Persiapan Giriwangi",
+  "geographicInformation": {
+    "area": {
+      "value": 4.352,
+      "unit": "km²"
+    }
+  },
+  "sectionTitle": "Profil Wilayah",
+  "demographics": {
+    "population": {
+      "value": 6120,
+      "unit": "jiwa"
+    }
+  },
+  "mapsLink": {
+    "note": "",
+    "url": ""
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "hero": {
+    "id": "beranda",
+    "backgroundImage": "assets/giriwangi3.png",
+    "title": "Selamat Datang di Desa Persiapan Giriwangi",
+    "subtitle": "Kecamatan Cilengkrang, Kabupaten Bandung, Jawa Barat",
+    "stats": [
+      { "number": "3", "label": "Dusun" },
+      { "number": "10", "label": "Perangkat Desa" },
+      { "number": "6.120", "label": "Jiwa" },
+      { "number": "2025", "label": "Tahun Berdiri" }
+    ]
+  }
+}

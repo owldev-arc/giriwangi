@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desa Persiapan Giriwangi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<!-- PRELOADER DENGAN LOGO -->
+<div class="preloader" id="preloader">
+    <div class="preload-content">
+        <!-- LOGO IMAGE YANG MEMUTAR -->
+        <div class="preload-logo-container">
+            <img src="assets/logo.png" alt="Logo Giriwangi" class="preload-logo">
+        </div>
+        <div class="preload-text">Desa Giriwangi</div>
+        <div class="preload-subtext">kecamatan Cilengkrang</div>
+        <div class="preload-progress">Kabupaten Bandung</div>
+    </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container-lg">
+        <a class="navbar-brand" href="#beranda">
+            <img src="assets/logo.png" alt="Logo" class="navbar-logo">
+            
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="#beranda">Beranda</a></li>
+                <li class="nav-item"><a class="nav-link" href="#publikasi">Publikasi</a></li>
+                <li class="nav-item"><a class="nav-link" href="#filosofi">Filosofi</a></li>
+                <li class="nav-item"><a class="nav-link" href="#visi-misi">Visi & Misi</a></li>
+                <li class="nav-item"><a class="nav-link" href="#wilayah">Wilayah</a></li>
+                <li class="nav-item"><a class="nav-link" href="#struktur">Struktur</a></li>
+                <li class="nav-item"><a class="nav-link" href="#kependudukan">Kependudukan</a></li>
+                <li class="nav-item"><a class="nav-link" href="#hubungi">Hubungi</a></li>
+                <li class="nav-item">
+                    <button class="theme-toggle" id="themeToggle" title="Toggle Dark Mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- WEATHER BAR -->
+<div class="weatherbar" id="weatherBar">
+  <div class="container-custom weatherbar-inner">
+    <div class="weatherbar-left">
+      <div class="weatherbar-time" id="wbTime">--:--:--</div>
+      <div class="weatherbar-date" id="wbDate">--</div>
+    </div>
+
+    <div class="weatherbar-right">
+      <div class="weatherbar-weather">
+        <span class="weatherbar-icon" id="wbIcon" aria-hidden="true">⛅</span>
+        <span class="weatherbar-desc" id="wbDesc">Cerah Berawan</span>
+        <span class="weatherbar-temp" id="wbTemp">--°C</span>
+      </div>
+
+      <span class="weatherbar-loc" id="wbLoc">Cilengkrang</span>
+
+      <button class="weatherbar-refresh" id="wbRefresh" type="button" title="Refresh (dummy)">
+        <i class="fas fa-sync-alt"></i>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- HERO SECTION WITH BACKGROUND IMAGE -->
+<section class="hero-section" id="beranda" style="background-image: url('assets/giriwangi3.png'); background-size: cover; background-position: center;">
+    <div class="hero-overlay"></div>
+    <div class="hero-content container-custom">
+        <h1 class="hero-title">Selamat Datang di Desa Persiapan Giriwangi</h1>
+        <p class="hero-subtitle">Kecamatan Cilengkrang, Kabupaten Bandung, Jawa Barat</p>
+        <div class="hero-stats">
+            <div class="stat-box scroll-fade-in">
+                <div class="stat-number">3</div>
+                <div class="stat-label">Dusun</div>
+            </div>
+            <div class="stat-box scroll-fade-in">
+                <div class="stat-number">9</div>
+                <div class="stat-label">Perangkat Desa</div>
+            </div>
+            <div class="stat-box scroll-fade-in">
+                <div class="stat-number">6.120</div>
+                <div class="stat-label">Jiwa</div>
+            </div>
+            <div class="stat-box scroll-fade-in">
+                <div class="stat-number">2025</div>
+                <div class="stat-label">Tahun Berdiri</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section-padding bg-light-gradient" id="publikasi">
+    <div class="container-custom">
+        <h2 class="section-title scroll-fade-in">Publikasi</h2>
+        <p class="section-subtitle scroll-fade-in">Berita Desa - Informasi terbaru tentang peristiwa dan kegiatan desa</p>
+        
+        <div class="berita-grid">
+            <div class="berita-item scroll-fade-in">
+                <div class="berita-image"><img src="https://res.cloudinary.com/dykoop6rv/image/upload/v1787054566/WhatsApp_Image_2026-08-06_at_09.01.37_rlzwpf.jpg" alt="" srcset=""></div>
+                <div class="berita-content">
+                    <div class="berita-date"><i class="far fa-calendar"></i> Kamis, 30 April 2026</div>
+                    <span class="berita-category">Kegiatan</span>
+                    <h3 class="berita-title">Silaturahmi/Halal Bihalal Hari Jadi Kabupaten Bandung</h3>
+                    <p class="berita-excerpt">PJ. Kepala Desa Persiapan Giriwangi dan Kepala Desa Girimekar mengadakan acara Silaturahmi/halal bihalal dalam rangka peringatan Hari Jadi Kabupaten Bandung ke-385 tahun...</p>
+                    <button class="berita-btn">Selengkapnya</button>
+                </div>
+            </div>
+
+            <div class="berita-item scroll-fade-in">
+                <div class="berita-image"><i class="fas fa-map-marker-alt"></i></div>
+                <div class="berita-content">
+                    <div class="berita-date"><i class="far fa-calendar"></i> Kamis, 30 April 2026</div>
+                    <span class="berita-category">Administrasi</span>
+                    <h3 class="berita-title">Identifikasi dan Verifikasi Batas Desa</h3>
+                    <p class="berita-excerpt">Pemerintah Desa Persiapan Giriwangi bersama Dinas Pemberdayaan Masyarakat dan Desa melaksanakan kegiatan identifikasi dan verifikasi batas desa...</p>
+                    <button class="berita-btn">Selengkapnya</button>
+                </div>
+            </div>
+
+            <div class="berita-item scroll-fade-in">
+                <div class="berita-image"><i class="fas fa-heartbeat"></i></div>
+                <div class="berita-content">
+                    <div class="berita-date"><i class="far fa-calendar"></i> Kamis, 21 Mei 2026</div>
+                    <span class="berita-category">Kesehatan</span>
+                    <h3 class="berita-title">Layanan Kesehatan Bersama BAZNAS Provinsi</h3>
+                    <p class="berita-excerpt">Pemerintah Desa Persiapan Giriwangi bersama BAZNAS Provinsi melaksanakan kegiatan layanan kesehatan bagi masyarakat Dusun 1 Cilaja...</p>
+                    <button class="berita-btn">Selengkapnya</button>
+                </div>
+            </div>
+
+            <div class="berita-item scroll-fade-in">
+                <div class="berita-image"><i class="fas fa-chart-line"></i></div>
+                <div class="berita-content">
+                    <div class="berita-date"><i class="far fa-calendar"></i> Rabu, 20 Mei 2026</div>
+                    <span class="berita-category">Monitoring</span>
+                    <h3 class="berita-title">Kegiatan Monitoring dan Evaluasi</h3>
+                    <p class="berita-excerpt">Pemerintah Desa Persiapan Giriwangi menerima kunjungan kegiatan monitoring dan evaluasi dari pihak terkait...</p>
+                    <button class="berita-btn">Selengkapnya</button>
+                </div>
+            </div>
+
+            <div class="berita-item scroll-fade-in">
+                <div class="berita-image"><i class="fas fa-star"></i></div>
+                <div class="berita-content">
+                    <div class="berita-date"><i class="far fa-calendar"></i> Rabu, 20 Mei 2026</div>
+                    <span class="berita-category">Pelayanan</span>
+                    <h3 class="berita-title">Budayakan 5S dalam Pelayanan Prima</h3>
+                    <p class="berita-excerpt">Pemerintah Desa Persiapan Giriwangi berkomitmen meningkatkan kualitas pelayanan dengan membudayakan prinsip 5S...</p>
+                    <button class="berita-btn">Selengkapnya</button>
+                </div>
+            </div>
+
+            <div class="berita-item scroll-fade-in">
+                <div class="berita-image"><i class="fas fa-book"></i></div>
+                <div class="berita-content">
+                    <div class="berita-date"><i class="far fa-calendar"></i> Rabu, 13 Mei 2026</div>
+                    <span class="berita-category">Edukasi</span>
+                    <h3 class="berita-title">Kunjungan TK Insan Muda ke Peternakan</h3>
+                    <p class="berita-excerpt">PJS Desa Persiapan Giriwangi menerima kunjungan edukasi dari TK Insan Muda dalam kegiatan pengenalan hewan kurban...</p>
+                    <button class="berita-btn">Selengkapnya</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- FILOSOFI LOGO SECTION -->
+<section class="section-padding" id="filosofi">
+    <div class="container-custom">
+        <h2 class="section-title scroll-fade-in">Filosofi Logo</h2>
+        <p class="section-subtitle scroll-fade-in">Makna dan Simbolisme di Balik Logo Desa Persiapan Giriwangi</p>
+
+        <div class="filosofi-intro scroll-fade-in">
+            <div class="filosofi-logo-display">
+                <img src="assets/logo.png" alt="Logo Giriwangi" class="filosofi-logo-img">
+            </div>
+            <div class="filosofi-text">
+                <p class="filosofi-quote">"Giriwangi MAKMUR adalah kondisi desa yang sejahtera — dicapai melalui kerja keras di sektor riil yang dipadukan dengan strategi pertumbuhan modern, namun tetap berpijak pada nilai-nilai luhur, keharmonisan alam, sosial, dan budaya."</p>
+            </div>
+        </div>
+
+        <div class="filosofi-elements">
+            <div class="filosofi-element scroll-fade-in">
+                <div class="element-number">01</div>
+                <h4 class="element-title">Makna Tipografi</h4>
+                <div class="element-content">
+                    <div class="element-sub">
+                        <h5><span class="sub-icon" style="background: #d4af37;"></span> Warna Emas</h5>
+                        <p>Melambangkan kejayaan dan kemuliaan desa.</p>
+                    </div>
+                    <div class="element-sub">
+                        <h5><span class="sub-icon" style="background: #2d5016;"></span> Font Serif</h5>
+                        <p>Stabilitas dan kepercayaan berkelanjutan.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filosofi-element scroll-fade-in">
+                <div class="element-number">02</div>
+                <h4 class="element-title">Simbolisme Flora</h4>
+                <div class="element-content">
+                    <div class="element-sub">
+                        <h5><span class="sub-icon" style="background: #ff69b4;"></span> Bunga Teratai</h5>
+                        <p>Melambangkan kesucian dan kebangkitan niat.</p>
+                    </div>
+                    <div class="element-sub">
+                        <h5><span class="sub-icon" style="background: #f4a460;"></span> Padi</h5>
+                        <p>Simbol ketahanan pangan masyarakat.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filosofi-element scroll-fade-in">
+                <div class="element-number">03</div>
+                <h4 class="element-title">Elemen Modern</h4>
+                <div class="element-content">
+                    <div class="element-sub">
+                        <h5><span class="sub-icon" style="background: #3498db;"></span> Panah Naik</h5>
+                        <p>Pertumbuhan ekonomi yang berkelanjutan.</p>
+                    </div>
+                    <div class="element-sub">
+                        <h5><span class="sub-icon" style="background: #ffd700;"></span> Matahari Terbit</h5>
+                        <p>Harapan baru dan energi positif.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filosofi-element scroll-fade-in">
+                <div class="element-number">04</div>
+                <h4 class="element-title">Warna & Ornamen</h4>
+                <div class="element-content">
+                    <div class="element-sub">
+                        <h5><span class="sub-icon" style="background: #2d5016;"></span> Hijau Tua</h5>
+                        <p>Kesuburan dan pertumbuhan berkelanjutan.</p>
+                    </div>
+                    <div class="element-sub">
+                        <h5><span class="sub-icon" style="background: #66bb6a;"></span> Sulur Ukiran</h5>
+                        <p>Apresiasi budaya dan tradisi lokal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="filosofi-summary scroll-fade-in">
+            <h4>Kesimpulan</h4>
+            <p>Logo Desa Persiapan Giriwangi merupakan representasi visual yang komprehensif dari komitmen desa terhadap pembangunan berkelanjutan dengan keseimbangan antara modernitas, alam, dan budaya lokal.</p>
+        </div>
+    </div>
+</section>
+
+<!-- VISI & MISI SECTION -->
+<section class="section-padding bg-light-gradient" id="visi-misi">
+    <div class="container-custom">
+        <h2 class="section-title scroll-fade-in">Arah Pembangunan</h2>
+
+        <div class="visi-misi-box scroll-fade-in">
+            <h3 class="visi-title"><i class="fas fa-eye"></i> Visi</h3>
+            <p class="visi-text">"Terwujudnya Desa Giriwangi yang MAKMUR"</p>
+            <p class="visi-desc">MAKMUR adalah akronim dari Maju, Aktif, Kreatif, Mufakat, Unggul, dan Religius. Visi ini mencerminkan komitmen desa untuk berkembang melalui kerja keras, kreativitas, musyawarah, dan nilai-nilai spiritual.</p>
+            
+            <div class="makmur-grid">
+                <div class="makmur-item scroll-fade-in"><div class="makmur-letter">M</div><div class="makmur-text">Maju</div></div>
+                <div class="makmur-item scroll-fade-in"><div class="makmur-letter">A</div><div class="makmur-text">Aktif</div></div>
+                <div class="makmur-item scroll-fade-in"><div class="makmur-letter">K</div><div class="makmur-text">Kreatif</div></div>
+                <div class="makmur-item scroll-fade-in"><div class="makmur-letter">M</div><div class="makmur-text">Mufakat</div></div>
+                <div class="makmur-item scroll-fade-in"><div class="makmur-letter">U</div><div class="makmur-text">Unggul</div></div>
+                <div class="makmur-item scroll-fade-in"><div class="makmur-letter">R</div><div class="makmur-text">Religius</div></div>
+            </div>
+        </div>
+
+        <div class="misi-box scroll-fade-in">
+            <h3 class="misi-title"><i class="fas fa-tasks"></i> Misi</h3>
+            <div class="misi-list">
+                <div class="misi-item scroll-fade-in"><strong>Misi 01:</strong> Meningkatkan profesionalisme aparatur pemerintahan desa, aktif, kreatif, dan pelayanan yang prima.</div>
+                <div class="misi-item scroll-fade-in"><strong>Misi 02:</strong> Membangun infrastruktur desa yang berkelanjutan dan merata serta transparansi dalam pengelolaan anggaran.</div>
+                <div class="misi-item scroll-fade-in"><strong>Misi 03:</strong> Mengembangkan usaha milik desa, UMKM, dan potensi lokal desa lainnya untuk meningkatkan kesejahteraan masyarakat.</div>
+                <div class="misi-item scroll-fade-in"><strong>Misi 04:</strong> Meningkatkan kualitas pendidikan, kesehatan, sosial, budaya, olahraga dan agama, serta melestarikan kearifan lokal desa.</div>
+                <div class="misi-item scroll-fade-in"><strong>Misi 05:</strong> Memelihara keamanan dan kondusifitas lingkungan dengan mengedepankan musyawarah mufakat dalam kehidupan bermasyarakat.</div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- HUBUNGI KAMI SECTION -->
+<section class="section-padding" id="hubungi">
+    <!-- DATA KEPENDUDUKAN SECTION -->
+<section class="section-padding bg-light-gradient" id="kependudukan">
+    <div class="container-custom">
+        <h2 class="section-title scroll-fade-in">Data Kependudukan</h2>
+        <p class="section-subtitle scroll-fade-in">
+            
+        </p>
+
+        <div class="kependudukan-tabs scroll-fade-in">
+            <button class="kependudukan-tab active" type="button" data-target="tab-usia">Usia</button>
+            <button class="kependudukan-tab" type="button" data-target="tab-agama">Agama</button>
+            <button class="kependudukan-tab" type="button" data-target="tab-pendidikan">Pendidikan</button>
+            <button class="kependudukan-tab" type="button" data-target="tab-kelamin">Jenis Kelamin</button>
+            <!-- <button class="kependudukan-tab" type="button" data-target="tab-pekerjaan">Pekerjaan</button> -->
+            <!-- Option tambahan yang relevan (bisa Anda aktifkan nanti):
+            <button class="kependudukan-tab" type="button" data-target="tab-kk">Jumlah KK</button>
+            -->
+        </div>
+
+        <div class="kependudukan-panels">
+            <div class="kependudukan-panel active" id="tab-usia">
+                <div class="kependudukan-card scroll-fade-in">
+                    <div class="kependudukan-card-header">
+                        <h3 class="kependudukan-card-title">Penduduk berdasarkan Usia</h3>
+                        <p class="kependudukan-card-note"></p>
+                    </div>
+                    <div class="kependudukan-chart-wrap">
+                        <canvas id="chartUsia" aria-label="Grafik Usia" role="img"></canvas>
+                    </div>
+                </div>
+                <div class="kependudukan-summary" id="sumUsia"></div>
+            </div>
+
+            <div class="kependudukan-panel" id="tab-agama">
+                <div class="kependudukan-card scroll-fade-in">
+                    <div class="kependudukan-card-header">
+                        <h3 class="kependudukan-card-title">Penduduk berdasarkan Agama</h3>
+                        <p class="kependudukan-card-note"></p>
+                    </div>
+                    <div class="kependudukan-chart-wrap">
+                        <canvas id="chartAgama" aria-label="Grafik Agama" role="img"></canvas>
+                    </div>
+                </div>
+                <div class="kependudukan-summary" id="sumAgama"></div>
+            </div>
+
+            <div class="kependudukan-panel" id="tab-pendidikan">
+                <div class="kependudukan-card scroll-fade-in">
+                    <div class="kependudukan-card-header">
+                        <h3 class="kependudukan-card-title">Penduduk berdasarkan Pendidikan</h3>
+                        <p class="kependudukan-card-note"></p>
+                    </div>
+                    <div class="kependudukan-chart-wrap">
+                        <canvas id="chartPendidikan" aria-label="Grafik Pendidikan" role="img"></canvas>
+                    </div>
+                </div>
+                <div class="kependudukan-summary" id="sumPendidikan"></div>
+            </div>
+
+            <div class="kependudukan-panel" id="tab-kelamin">
+                <div class="kependudukan-card scroll-fade-in">
+                    <div class="kependudukan-card-header">
+                        <h3 class="kependudukan-card-title">Penduduk berdasarkan Jenis Kelamin</h3>
+                        <p class="kependudukan-card-note"></p>
+                    </div>
+                    <div class="kependudukan-chart-wrap">
+                        <canvas id="chartKelamin" aria-label="Grafik Jenis Kelamin" role="img"></canvas>
+                    </div>
+                </div>
+                <div class="kependudukan-summary" id="sumKelamin"></div>
+            </div>
+
+            <!-- <div class="kependudukan-panel" id="tab-pekerjaan">
+                <div class="kependudukan-card scroll-fade-in">
+                    <div class="kependudukan-card-header">
+                        <h3 class="kependudukan-card-title">Penduduk berdasarkan Pekerjaan</h3>
+                        <p class="kependudukan-card-note">Bar chart horizontal</p>
+                    </div>
+                    <div class="kependudukan-chart-wrap">
+                        <canvas id="chartPekerjaan" aria-label="Grafik Pekerjaan" role="img"></canvas>
+                    </div>
+                </div>
+                <div class="kependudukan-summary" id="sumPekerjaan"></div>
+            </div> -->
+        </div>
+    </div>
+</section>
+
+<!-- WILAYAH SECTION -->
+<section class="section-padding" id="wilayah">
+    <div class="container-custom">
+        <h2 class="section-title scroll-fade-in">Profil Wilayah</h2>
+        <p class="section-subtitle scroll-fade-in">Batas Wilayah Desa Persiapan Giriwangi</p>
+
+        <div class="batas-grid">
+            <div class="batas-card scroll-fade-in"><div class="batas-icon">🌲</div><div class="batas-label">Utara</div><div class="batas-value">Desa Mekarmanik Kecamatan Cimenyan & <br>
+Desa Cipanjalu Kecamatan Cilengkrang</div></div>
+            <div class="batas-card scroll-fade-in"><div class="batas-icon">🌄</div><div class="batas-label">Timur</div><div class="batas-value">Desa Cipanjalu Kecamatan Cilengkrang & <br>
+Desa Melatiwangi Kecamatan Cilengkrang</div></div>
+            <div class="batas-card scroll-fade-in"><div class="batas-icon">🏘️</div><div class="batas-label">Selatan</div><div class="batas-value">Desa Girimekar Kecamatan Cilengkrang</div></div>
+            <div class="batas-card scroll-fade-in"><div class="batas-icon">🌾</div><div class="batas-label">Barat</div><div class="batas-value">Desa Mekarmanik Kecamatan Cimenyan & <br>
+Desa Sindanglaya Kecamatan Cimenyan</div></div>
+        </div>
+
+        <div class="info-stats">
+            <div class="info-card scroll-fade-in"><h5>Luas Desa</h5><div class="info-value">4.352 km²</div></div>
+            <div class="info-card scroll-fade-in"><h5>Jumlah Penduduk</h5><div class="info-value">6.120</div></div>
+            <div class="info-card scroll-fade-in"><h5>Jumlah Dusun</h5><div class="info-value">3</div></div>
+        </div>
+
+        <div class="map-section scroll-fade-in">
+            <h3 class="map-title">Lokasi Desa Persiapan Giriwangi</h3>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.8484394839945!2d107.36890122346891!3d-6.887405393217464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68b8e8e8e8e8ed%3A0x1234567890abcdef!2sJalan%20Legok%20Hayam%2C%20Cilengkrang%2C%20Bandung!5e0!3m2!1sid!2sid!4v1234567890123" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <p class="map-address"><i class="fas fa-map-marker-alt"></i> Jalan Legok Hayam, Kecamatan Cilengkrang, Kabupaten Bandung, Jawa Barat</p>
+        </div>
+    </div>
+</section>
+
+<!-- STRUKTUR ORGANISASI SECTION -->
+<section class="section-padding bg-light-gradient" id="struktur">
+    <div class="container-custom">
+        <h2 class="section-title scroll-fade-in">Struktur Organisasi</h2>
+        <p class="section-subtitle scroll-fade-in">Perangkat Desa Persiapan Giriwangi · Tahun 2025</p>
+
+        <div class="struktur-grid">
+            <!-- Kepala Desa -->
+            <div class="struktur-item struktur-kepala scroll-fade-in">
+             
+                  <div class="struktur-icon"><i class="fas fa-building-columns"></i></div>
+              
+                <div class="struktur-nama">SURYANA</div>
+                <div class="struktur-jabatan">PJ. Kepala Desa</div>
+                <div class="struktur-badge">Pemimpin</div>
+            </div>
+
+            <!-- Sekretaris Desa -->
+            <div class="struktur-item struktur-sekretaris scroll-fade-in">
+                <div class="struktur-icon">
+                    <i class="fas fa-clipboard-list"></i>
+                </div>
+                <div class="struktur-nama">TONI FEBRIANA</div>
+                <div class="struktur-jabatan">Sekretaris Desa</div>
+                <div class="struktur-badge">Administrasi</div>
+            </div>
+
+            <!-- Kepala Seksi Pemerintahan -->
+            <div class="struktur-item struktur-pemerintahan scroll-fade-in">
+                <div class="struktur-icon">
+                    <i class="fas fa-gavel"></i>
+                </div>
+                <div class="struktur-nama">HADIATNA, S.H.</div>
+                <div class="struktur-jabatan">Kepala Seksi Pemerintahan & Pelayanan </div>
+                <div class="struktur-badge">Hukum</div>
+            </div>
+
+            <!-- Kepala Seksi Pelayanan -->
+            <!-- <div class="struktur-item struktur-pelayanan scroll-fade-in">
+                <div class="struktur-icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <div class="struktur-nama">MARYANI, A.Md.</div>
+                <div class="struktur-jabatan">Kepala Seksi Pelayanan</div>
+                <div class="struktur-badge">Pelayanan</div>
+            </div> -->
+
+            <!-- Kepala Seksi Kesejahteraan -->
+            <div class="struktur-item struktur-kesejahteraan scroll-fade-in">
+                <div class="struktur-icon">
+                    <i class="fas fa-people-arrows"></i>
+                </div>
+                <div class="struktur-nama">HARRY SIDIQ ALHAQ, S.Sy.</div>
+                <div class="struktur-jabatan">Kepala Seksi Kesejahteraan</div>
+                <div class="struktur-badge">Sosial</div>
+            </div>
+
+            <!-- Kepala Urusan Perencanaan -->
+            <div class="struktur-item struktur-perencanaan scroll-fade-in">
+                <div class="struktur-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="struktur-nama">CECEP SAEPUDIN, A.Md.T.</div>
+                <div class="struktur-jabatan">Kepala Urusan Perencanaan</div>
+                <div class="struktur-badge">Perencanaan</div>
+            </div>
+
+            <!-- Kepala Urusan Tata Usaha -->
+            <div class="struktur-item struktur-tataUsaha scroll-fade-in">
+                <div class="struktur-icon">
+                    <i class="fas fa-folder-open"></i>
+                </div>
+                <div class="struktur-nama">OTING</div>
+                <div class="struktur-jabatan">Kepala Urusan Tata Usaha & Umum</div>
+                <div class="struktur-badge">Umum</div>
+            </div>
+
+            <!-- Kepala Dusun I -->
+            <div class="struktur-item struktur-dusun scroll-fade-in">
+                <div class="struktur-icon">
+                    <i class="fas fa-map-location-dot"></i>
+                </div>
+                <div class="struktur-nama">AEP TADJUDIN</div>
+                <div class="struktur-jabatan">Kepala Dusun I </div>
+                <div class="struktur-badge">Dusun 1</div>
+            </div>
+
+            <!-- Kepala Dusun II -->
+            <div class="struktur-item struktur-dusun scroll-fade-in">
+                <div class="struktur-icon">
+                    <i class="fas fa-map-location-dot"></i>
+                </div>
+                <div class="struktur-nama">CEP CAHYANA</div>
+                <div class="struktur-jabatan">Kepala Dusun II</div>
+                <div class="struktur-badge">Dusun 2</div>
+            </div>
+
+            <!-- Kepala Dusun III -->
+            <div class="struktur-item struktur-dusun scroll-fade-in">
+                <div class="struktur-icon">
+                    <i class="fas fa-map-location-dot"></i>
+                </div>
+                <div class="struktur-nama">USMAN</div>
+                <div class="struktur-jabatan">Kepala Dusun III</div>
+                <div class="struktur-badge">Dusun 3</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- HUBUNGI KAMI SECTION -->
+<section class="section-padding" id="hubungi">
+    <div class="container-custom">
+        <h2 class="section-title scroll-fade-in">Hubungi Kami</h2>
+        
+        <div class="hubungi-intro scroll-fade-in">
+            <p>Jangan ragu untuk menghubungi kami. Tim kami siap melayani pertanyaan, masukan, dan aspirasi Anda untuk kemajuan bersama Desa Persiapan Giriwangi.</p>
+        </div>
+
+        <div class="hubungi-grid">
+            <div class="hubungi-card scroll-fade-in">
+                <div class="hubungi-icon"><i class="fas fa-envelope"></i></div>
+                <h4 class="hubungi-title">Email</h4>
+                <p class="hubungi-text">Kirim email untuk pertanyaan atau keperluan administrasi desa.</p>
+                <a href="mailto:pemdes.giriwangi@gmail.com" class="hubungi-link">pemdes.giriwangi@gmail.com</a>
+            </div>
+
+            <div class="hubungi-card scroll-fade-in">
+                <div class="hubungi-icon"><i class="fas fa-clock"></i></div>
+                <h4 class="hubungi-title">Jam Operasional</h4>
+                <p class="hubungi-text">Senin - Jumat: 08:00 - 16:00 WIB<br>Sabtu - Minggu: Tutup</p>
+                <a href="#" class="hubungi-link">Informasi Lengkap</a>
+            </div>
+
+            <div class="hubungi-card scroll-fade-in">
+                <div class="hubungi-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <h4 class="hubungi-title">Alamat</h4>
+                <p class="hubungi-text">Jalan Legok Hayam, Kecamatan Cilengkrang, Kabupaten Bandung, Jawa Barat</p>
+                <a href="https://maps.google.com" target="_blank" class="hubungi-link">Lihat di Maps</a>
+            </div>
+
+            <div class="hubungi-card scroll-fade-in">
+                <div class="hubungi-icon"><i class="fas fa-share-alt"></i></div>
+                <h4 class="hubungi-title">Media Sosial</h4>
+                <p class="hubungi-text">Ikuti kami di media sosial untuk update terbaru dan informasi kegiatan desa.</p>
+                <div class="social-icons">
+                    <!-- <a href="#" class="social-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a> -->
+                    <a href="#" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <!-- <a href="#" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-content container-custom">
+    <div class="footer-section">
+      <h3>
+        <img src="assets/logo.png" alt="Logo" class="footer-logo" />
+        Desa Persiapan Giriwangi
+      </h3>
+      <p>
+        Berkomitmen untuk mewujudkan pembangunan yang berkelanjutan, adil, dan sejahtera bagi seluruh
+        masyarakat melalui kerja keras dan nilai-nilai luhur.
+      </p>
+    </div>
+
+    <div class="footer-section">
+      <h3>📍 Informasi</h3>
+      <p>
+        Jalan Legok Hayam<br>
+        Kecamatan Cilengkrang<br>
+        Kabupaten Bandung, Jawa Barat
+      </p>
+    </div>
+
+    <div class="footer-section">
+      <h3>📞 Hubungi Kami</h3>
+      <p>
+        📧 pemdes.giriwangi@gmail.com<br>
+        📱 @pemdes.giriwangi
+      </p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 Pemerintahan Desa Persiapan Giriwangi. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- FLOATING THEME TOGGLE -->
+<div class="floating-theme-toggle" id="floatingThemeToggle" title="Toggle Dark Mode">
+    <i class="fas fa-moon"></i>
+    <i class="fas fa-sun" style="display:none;"></i>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

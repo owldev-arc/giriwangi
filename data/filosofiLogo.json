@@ -1,0 +1,87 @@
+{
+  "filosofi-logo": {
+    "title": "Filosofi Logo",
+    "subtitle": "Makna dan Simbolisme di Balik Logo Desa Persiapan Giriwangi",
+    "intro": {
+      "logo": {
+        "src": "assets/logo.png",
+        "alt": "Logo Giriwangi"
+      },
+      "quote": "Giriwangi MAKMUR adalah kondisi desa yang sejahtera — dicapai melalui kerja keras di sektor riil yang dipadukan dengan strategi pertumbuhan modern, namun tetap berpijak pada nilai-nilai luhur, keharmonisan alam, sosial, dan budaya."
+    },
+    "elements": [
+      {
+        "number": "01",
+        "title": "Makna Tipografi",
+        "items": [
+          {
+            "title": "Warna Emas",
+            "text": "Melambangkan kejayaan dan kemuliaan desa."
+          },
+          {
+            "title": "Font Serif",
+            "text": "Stabilitas dan kepercayaan berkelanjutan."
+          }
+        ]
+      },
+      {
+        "number": "02",
+        "title": "Simbolisme Flora",
+        "items": [
+          {
+            "title": "Bunga Teratai",
+            "text": "Melambangkan kesucian dan kebangkitan niat."
+          },
+          {
+            "title": "Padi",
+            "text": "Simbol ketahanan pangan masyarakat."
+          }
+        ]
+      },
+
+        {
+      "id": "02",
+      "title": "Simbolisme Flora",
+      "items": [
+        "Bunga Teratai",
+        "Melambangkan kesucian dan kebangkitan niat.",
+        "Padi",
+        "Simbol ketahanan pangan masyarakat."
+      ]
+    },
+
+      {
+        "number": "03",
+        "title": "Elemen Modern",
+        "items": [
+          {
+            "title": "Panah Naik",
+            "text": "Pertumbuhan ekonomi yang berkelanjutan."
+          },
+          {
+            "title": "Matahari Terbit",
+            "text": "Harapan baru dan energi positif."
+          }
+        ]
+      },
+      {
+        "number": "04",
+        "title": "Warna & Ornamen",
+        "items": [
+          {
+            "title": "Hijau Tua",
+            "text": "Kesuburan dan pertumbuhan berkelanjutan."
+          },
+          {
+            "title": "Sulur Ukiran",
+            "text": "Apresiasi budaya dan tradisi lokal."
+          }
+        ]
+      }
+    ],
+    "summary": {
+      "title": "Kesimpulan",
+      "text": "Logo Desa Persiapan Giriwangi merupakan representasi visual yang komprehensif dari komitmen desa terhadap pembangunan berkelanjutan dengan keseimbangan antara modernitas, alam, dan budaya lokal."
+    }
+  }
+}

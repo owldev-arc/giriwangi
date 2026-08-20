@@ -1,0 +1,31 @@
+{
+  "wilayah": {
+    "id": "wilayah",
+    "title": "Profil Wilayah",
+    "subtitle": "Batas Wilayah Desa Persiapan Giriwangi",
+    "batasGrid": [
+      { "icon": "🌲", "label": "Utara", "value": "PERHUTANI" },
+      { "icon": "🌄", "label": "Timur", "value": "MELATIWANGI" },
+      { "icon": "🏘️", "label": "Selatan", "value": "GIRIMEKAR" },
+      { "icon": "🌾", "label": "Barat", "value": "MEKARMANIK & SINDANGLAYA" }
+    ],
+    "infoStats": [
+      { "heading": "Luas Desa", "value": "4.352 km²" },
+      { "heading": "Jumlah Penduduk", "value": "6.120" },
+      { "heading": "Jumlah Dusun", "value": "3" }
+    ],
+    "map": {
+      "title": "Lokasi Desa Persiapan Giriwangi",
+      "iframe": {
+        "src": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.8484394839945!2d107.36890122346891!3d-6.887405393217464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68b8e8e8e8e8ed%3A0x1234567890abcdef!2sJalan%20Legok%20Hayam%2C%20Cilengkrang%2C%20Bandung!5e0!3m2!1sid!2sid!4v1234567890123",
+        "allowfullscreen": true,
+        "loading": "lazy",
+        "referrerpolicy": "no-referrer-when-downgrade"
+      },
+      "address": {
+        "iconClass": "fas fa-map-marker-alt",
+        "text": "Jalan Legok Hayam, Kecamatan Cilengkrang, Kabupaten Bandung, Jawa Barat"
+      }
+    }
+  }
+}

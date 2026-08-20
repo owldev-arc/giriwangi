@@ -1,0 +1,46 @@
+{
+  "visi-misi": {
+    "id": "visi-misi",
+    "title": "Arah Pembangunan",
+    "vision": {
+      "headingIcon": "fas fa-eye",
+      "heading": "Visi",
+      "shortText": "\"Terwujudnya Desa Giriwangi yang MAKMUR\"",
+      "description": "MAKMUR adalah akronim dari Maju, Aktif, Kreatif, Mufakat, Unggul, dan Religius. Visi ini mencerminkan komitmen desa untuk berkembang melalui kerja keras, kreativitas, musyawarah, dan nilai-nilai spiritual.",
+      "makmurGrid": [
+        { "letter": "M", "text": "Maju" },
+        { "letter": "A", "text": "Aktif" },
+        { "letter": "K", "text": "Kreatif" },
+        { "letter": "M", "text": "Mufakat" },
+        { "letter": "U", "text": "Unggul" },
+        { "letter": "R", "text": "Religius" }
+      ]
+    },
+    "missions": {
+      "headingIcon": "fas fa-tasks",
+      "heading": "Misi",
+      "items": [
+        {
+          "label": "Misi 01",
+          "text": "Meningkatkan profesionalisme aparatur pemerintahan desa, aktif, kreatif, dan pelayanan yang prima."
+        },
+        {
+          "label": "Misi 02",
+          "text": "Membangun infrastruktur desa yang berkelanjutan dan merata serta transparansi dalam pengelolaan anggaran."
+        },
+        {
+          "label": "Misi 03",
+          "text": "Mengembangkan usaha milik desa, UMKM, dan potensi lokal desa lainnya untuk meningkatkan kesejahteraan masyarakat."
+        },
+        {
+          "label": "Misi 04",
+          "text": "Meningkatkan kualitas pendidikan, kesehatan, sosial, budaya, olahraga dan agama, serta melestarikan kearifan lokal desa."
+        },
+        {
+          "label": "Misi 05",
+          "text": "Memelihara keamanan dan kondusifitas lingkungan dengan mengedepankan musyawarah mufakat dalam kehidupan bermasyarakat."
+        }
+      ]
+    }
+  }
+}
