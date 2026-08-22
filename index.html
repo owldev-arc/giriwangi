@@ -110,78 +110,99 @@
         <h2 class="section-title scroll-fade-in">Publikasi</h2>
         <p class="section-subtitle scroll-fade-in">Berita Desa - Informasi terbaru tentang peristiwa dan kegiatan desa</p>
         
-        <div class="berita-grid">
-            <div class="berita-item scroll-fade-in">
-                <div class="berita-image"><img src="" alt="" srcset=""></div>
-                <div class="berita-content">
-                    <div class="berita-date"><i class="far fa-calendar"></i> Kamis, 30 April 2026</div>
-                    <span class="berita-category">Kegiatan</span>
-                    <h3 class="berita-title">Silaturahmi/Halal Bihalal Hari Jadi Kabupaten Bandung</h3>
-                    <p class="berita-excerpt">PJ. Kepala Desa Persiapan Giriwangi dan Kepala Desa Girimekar mengadakan acara Silaturahmi/halal bihalal dalam rangka peringatan Hari Jadi Kabupaten Bandung ke-385 tahun...</p>
-                    <button class="berita-btn">Selengkapnya</button>
-                </div>
+        <!-- Filter tanggal -->
+        <div class="berita-filter-card scroll-fade-in">
+            <div class="berita-filter-field">
+                <label for="filterFrom"><i class="far fa-calendar-alt"></i> Dari tanggal</label>
+                <input type="date" id="filterFrom">
             </div>
+            <div class="berita-filter-field">
+                <label for="filterTo"><i class="far fa-calendar-alt"></i> Sampai tanggal</label>
+                <input type="date" id="filterTo">
+            </div>
+            <div class="berita-filter-actions">
+                <button id="filterApply" class="berita-filter-btn berita-filter-btn-primary">
+                    <i class="fas fa-filter"></i> Terapkan
+                </button>
+                <button id="filterClear" class="berita-filter-btn berita-filter-btn-ghost">
+                    <i class="fas fa-rotate-left"></i> Reset
+                </button>
+            </div>
+        </div>
+        <div id="filterInfo" class="berita-filter-info d-none">
+            <i class="fas fa-circle-info"></i>
+            <span id="filterInfoText"></span>
+        </div>
 
-            <div class="berita-item scroll-fade-in">
-                <div class="berita-image"><i class="fas fa-map-marker-alt"></i></div>
-                <div class="berita-content">
-                    <div class="berita-date"><i class="far fa-calendar"></i> Kamis, 20 Agustus 2026</div>
-                    <span class="berita-category">Kegiatan</span>
-                    <h3 class="berita-title">Silaturahmi & Koordinasi Persiapan Kompetisi Gulat Desa Cilengkrang</h3>
-                    <p class="berita-excerpt">Pertemuan silaturahmi sekaligus pemantapan teknis bagi para atlet, pelatih, dan pengurus gulat Desa Cilengkrang untuk persiapan pertandingan besok. Harap hadir tepat waktu demi kelancaran kompetisi.</p>
-                    <button class="berita-btn">Selengkapnya</button>
-                </div>
-            </div>
+        <!-- List berita (di-render oleh script.js) -->
+        <div id="beritaList" class="row g-4"></div>
 
-            <div class="berita-item scroll-fade-in">
-                <div class="berita-image"><i class="fas fa-heartbeat"></i></div>
-                <div class="berita-content">
-                    <div class="berita-date"><i class="far fa-calendar"></i> Kamis, 21 Mei 2026</div>
-                    <span class="berita-category">Kesehatan</span>
-                    <h3 class="berita-title">Layanan Kesehatan Bersama BAZNAS Provinsi</h3>
-                    <p class="berita-excerpt">Pemerintah Desa Persiapan Giriwangi bersama BAZNAS Provinsi melaksanakan kegiatan layanan kesehatan bagi masyarakat Dusun 1 Cilaja...</p>
-                    <button class="berita-btn">Selengkapnya</button>
-                </div>
-            </div>
+        <!-- Info halaman + pagination -->
+        <p id="pageInfo" class="text-muted small mt-4 mb-2"></p>
+        <div id="paginationContainer" class="d-flex flex-wrap gap-2"></div>
+    </div>
+</section>
 
-            <div class="berita-item scroll-fade-in">
-                <div class="berita-image"><i class="fas fa-chart-line"></i></div>
-                <div class="berita-content">
-                    <div class="berita-date"><i class="far fa-calendar"></i> Rabu, 20 Mei 2026</div>
-                    <span class="berita-category">Monitoring</span>
-                    <h3 class="berita-title">Kegiatan Monitoring dan Evaluasi</h3>
-                    <p class="berita-excerpt">Pemerintah Desa Persiapan Giriwangi menerima kunjungan kegiatan monitoring dan evaluasi dari pihak terkait...</p>
-                    <button class="berita-btn">Selengkapnya</button>
+<!-- Modal detail berita -->
+<div class="modal fade" id="beritaModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <span id="modalCategory" class="badge mb-2" style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: white;"></span>
+                    <h5 class="modal-title" id="modalTitle"></h5>
+                    <small class="text-muted" id="modalDate"></small>
                 </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+            <div class="modal-body" id="modalBody"></div>
+        </div>
+    </div>
+</div>
 
-            <div class="berita-item scroll-fade-in">
-                <div class="berita-image"><i class="fas fa-star"></i></div>
-                <div class="berita-content">
-                    <div class="berita-date"><i class="far fa-calendar"></i> Rabu, 20 Mei 2026</div>
-                    <span class="berita-category">Pelayanan</span>
-                    <h3 class="berita-title">Budayakan 5S dalam Pelayanan Prima</h3>
-                    <p class="berita-excerpt">Pemerintah Desa Persiapan Giriwangi berkomitmen meningkatkan kualitas pelayanan dengan membudayakan prinsip 5S...</p>
-                    <button class="berita-btn">Selengkapnya</button>
-                </div>
-            </div>
 
-            <div class="berita-item scroll-fade-in">
-                <div class="berita-image"><i class="fas fa-book"></i></div>
-                <div class="berita-content">
-                    <div class="berita-date"><i class="far fa-calendar"></i> Rabu, 13 Mei 2026</div>
-                    <span class="berita-category">Edukasi</span>
-                    <h3 class="berita-title">Kunjungan TK Insan Muda ke Peternakan</h3>
-                    <p class="berita-excerpt">PJS Desa Persiapan Giriwangi menerima kunjungan edukasi dari TK Insan Muda dalam kegiatan pengenalan hewan kurban...</p>
-                    <button class="berita-btn">Selengkapnya</button>
-                </div>
-            </div>
+<!-- GALERI FOTO SECTION -->
+<section class="section-padding" id="galeri">
+    <div class="container-custom">
+        <h2 class="section-title scroll-fade-in">Galeri Foto</h2>
+        <p class="section-subtitle scroll-fade-in">
+            Dokumentasi kegiatan, alam, dan potensi Desa Persiapan Giriwangi
+        </p>
+
+        <div class="galeri-filter-card scroll-fade-in" id="galeriFilter">
+            <button class="galeri-filter-btn active" type="button" data-filter="all"><i class="fas fa-border-all"></i> Semua</button>
+            <button class="galeri-filter-btn" type="button" data-filter="kegiatan"><i class="fas fa-people-group"></i> Kegiatan</button>
+            <button class="galeri-filter-btn" type="button" data-filter="pertanian"><i class="fas fa-seedling"></i> Pertanian</button>
+            <button class="galeri-filter-btn" type="button" data-filter="alam"><i class="fas fa-mountain-sun"></i> Alam</button>
+            <button class="galeri-filter-btn" type="button" data-filter="infrastruktur"><i class="fas fa-road"></i> Infrastruktur</button>
+        </div>
+
+        <div id="galeriCarousel" class="carousel slide galeri-carousel scroll-fade-in" data-bs-ride="carousel" data-bs-interval="3500">
+            <div class="carousel-indicators" id="galeriIndicators"></div>
+            <div class="carousel-inner" id="galeriInner"></div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#galeriCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#galeriCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
         </div>
     </div>
 </section>
 
-
-
+<!-- LIGHTBOX GALERI -->
+<div class="galeri-lightbox" id="galeriLightbox">
+    <button class="galeri-lightbox-close" id="galeriLightboxClose" aria-label="Tutup"><i class="fas fa-times"></i></button>
+    <button class="galeri-lightbox-nav galeri-lightbox-prev" id="galeriLightboxPrev" aria-label="Sebelumnya"><i class="fas fa-chevron-left"></i></button>
+    <div class="galeri-lightbox-content">
+        <img src="" alt="" id="galeriLightboxImg">
+        <div class="galeri-lightbox-caption">
+            <span class="galeri-lightbox-category" id="galeriLightboxCategory"></span>
+            <h5 id="galeriLightboxTitle"></h5>
+        </div>
+    </div>
+    <button class="galeri-lightbox-nav galeri-lightbox-next" id="galeriLightboxNext" aria-label="Berikutnya"><i class="fas fa-chevron-right"></i></button>
+</div>
 
 
 <!-- FILOSOFI LOGO SECTION -->
@@ -300,9 +321,7 @@
         </div>
     </div>
 </section>
-<!-- HUBUNGI KAMI SECTION -->
-<section class="section-padding" id="hubungi">
-    <!-- DATA KEPENDUDUKAN SECTION -->
+<!-- DATA KEPENDUDUKAN SECTION -->
 <section class="section-padding bg-light-gradient" id="kependudukan">
     <div class="container-custom">
         <h2 class="section-title scroll-fade-in">Data Kependudukan</h2>

@@ -424,59 +424,50 @@ document.querySelectorAll('.hubungi-link').forEach(link => {
 })();
 // ===== BERITA SECTION (BOOTSTRAP) =====
 (() => {
-  // Dummy data berita (sesuaikan / fetch dari JSON)
+  // berita list 
   const dummyBerita = [
     {
       id: 1,
-      date: '2026-04-30',
-      image: 'https://res.cloudinary.com/dykoop6rv/image/upload/v1787054566/WhatsApp_Image_2026-08-06_at_09.01.37_rlzwpf.jpg',
+      date: '2026-08-20',
       category: 'Kegiatan',
-      title: 'Silaturahmi/Halal Bihalal Hari Jadi Kabupaten Bandung',
-      excerpt: 'PJ. Kepala Desa Persiapan Giriwangi dan Kepala Desa Girimekar mengadakan acara Silaturahmi/halal bihalal dalam rangka peringatan Hari Jadi Kabupaten Bandung ke-385 tahun...',
-      fullContent: 'PJ. Kepala Desa Persiapan Giriwangi dan Kepala Desa Girimekar mengadakan acara Silaturahmi/halal bihalal dalam rangka peringatan Hari Jadi Kabupaten Bandung ke-385 tahun. Kegiatan ini merupakan bentuk apresiasi kepada mitra kerja dan stakeholder dalam memajukan desa.'
+      title: 'Silaturahmi & Koordinasi Persiapan Kompetisi Gulat Desa Cilengkrang',
+      excerpt: 'Pertemuan silaturahmi sekaligus pemantapan teknis bagi para atlet, pelatih, dan pengurus gulat Desa Cilengkrang untuk persiapan pertandingan besok...',
+      fullContent: 'Pertemuan silaturahmi sekaligus pemantapan teknis bagi para atlet, pelatih, dan pengurus gulat Desa Cilengkrang untuk persiapan pertandingan besok. Harap hadir tepat waktu demi kelancaran kompetisi.'
     },
     {
       id: 2,
-      date: '2026-04-30',
-      category: 'Administrasi',
-      title: 'Identifikasi dan Verifikasi Batas Desa',
-      excerpt: 'Pemerintah Desa Persiapan Giriwangi bersama Dinas Pemberdayaan Masyarakat dan Desa melaksanakan kegiatan identifikasi dan verifikasi batas desa...',
-      fullContent: 'Pemerintah Desa Persiapan Giriwangi bersama Dinas Pemberdayaan Masyarakat dan Desa melaksanakan kegiatan identifikasi dan verifikasi batas desa. Tujuan dari kegiatan ini adalah untuk memperjelas batas-batas wilayah desa secara administratif dan legal.'
+      date: '2026-08-17',
+      category: 'Kegiatan',
+      title: 'Parade Kolosal Giriwangi: Gelombang Kreativitas RW 01\u201311 Menuju Girimekar',
+      excerpt: 'Unjuk kekompakan akbar 11 RW Dusun Giriwangi dalam satu barisan seni, kostum, dan budaya lokal...',
+      fullContent: 'Unjuk kekompakan akbar 11 RW Dusun Giriwangi dalam satu barisan seni, kostum, dan budaya lokal. Bersiap menyemarakkan pusat Desa Induk Girimekar dengan energi gotong royong yang meriah!'
     },
     {
       id: 3,
-      date: '2026-05-21',
-      category: 'Kesehatan',
-      title: 'Layanan Kesehatan Bersama BAZNAS Provinsi',
-      excerpt: 'Pemerintah Desa Persiapan Giriwangi bersama BAZNAS Provinsi melaksanakan kegiatan layanan kesehatan bagi masyarakat Dusun 1 Cilaja...',
-      fullContent: 'Pemerintah Desa Persiapan Giriwangi bersama BAZNAS Provinsi melaksanakan kegiatan layanan kesehatan bagi masyarakat Dusun 1 Cilaja. Layanan ini meliputi pemeriksaan kesehatan gratis, edukasi kesehatan, dan pembagian obat-obatan.'
+      date: '2026-08-15',
+      category: 'Kegiatan',
+      title: 'Peringatan Maulid Nabi Muhammad SAW 1448 H \u2013 Masjid Al-Manan RW 8',
+      excerpt: 'Undangan menghadiri tablig akbar peringatan Maulid Nabi Muhammad SAW di Masjid Al-Manan RW 8, Cilengkrang...',
+      fullContent: 'Undangan menghadiri tablig akbar peringatan Maulid Nabi Muhammad SAW di Masjid Al-Manan RW 8, Cilengkrang. Mari bersama-sama meneladani akhlak Rasulullah SAW dan mempererat silaturahmi antarwarga.'
     },
     {
       id: 4,
-      date: '2026-05-20',
-      category: 'Monitoring',
-      title: 'Kegiatan Monitoring dan Evaluasi',
-      excerpt: 'Pemerintah Desa Persiapan Giriwangi menerima kunjungan kegiatan monitoring dan evaluasi dari pihak terkait...',
-      fullContent: 'Pemerintah Desa Persiapan Giriwangi menerima kunjungan kegiatan monitoring dan evaluasi dari pihak terkait. Kegiatan ini bertujuan untuk mengukur pencapaian program desa dan memberikan masukan untuk perbaikan ke depan.'
+      date: '2026-08-13',
+      category: 'Kegiatan',
+      title: 'Musyawarah Warga: Gotong Royong Menyambut HUT RI ke-81',
+      excerpt: 'Undangan rapat kerja dan musyawarah mufakat seluruh warga untuk menyusun rangkaian kegiatan, kepanitiaan, dan perlombaan HUT RI...',
+      fullContent: 'Undangan rapat kerja dan musyawarah mufakat seluruh warga untuk menyusun rangkaian kegiatan, kepanitiaan, dan perlombaan dalam rangka memeriahkan Hari Kemerdekaan Republik Indonesia ke-81. Kehadiran dan ide kreatif Anda adalah kunci kemeriahan Desa kita!'
     },
     {
       id: 5,
-      date: '2026-05-20',
-      category: 'Pelayanan',
-      title: 'Budayakan 5S dalam Pelayanan Prima',
-      excerpt: 'Pemerintah Desa Persiapan Giriwangi berkomitmen meningkatkan kualitas pelayanan dengan membudayakan prinsip 5S...',
-      fullContent: 'Pemerintah Desa Persiapan Giriwangi berkomitmen meningkatkan kualitas pelayanan dengan membudayakan prinsip 5S (Senyum, Sapa, Salam, Santun, Solusi). Program ini ditujukan untuk meningkatkan kepuasan masyarakat terhadap layanan desa.'
+      date: '2026-06-05',
+      category: 'Sosial',
+      title: 'Program Bantuan Sosial untuk UMKM',
+      excerpt: 'Desa Persiapan Giriwangi meluncurkan program bantuan sosial untuk mendukung UMKM lokal...',
+      fullContent: 'Desa Persiapan Giriwangi meluncurkan program bantuan sosial untuk mendukung UMKM lokal yang terdampak ekonomi. Program ini memberikan modal kerja dan pelatihan manajemen usaha bagi pelaku UMKM.'
     },
     {
       id: 6,
-      date: '2026-05-13',
-      category: 'Edukasi',
-      title: 'Kunjungan TK Insan Muda ke Peternakan',
-      excerpt: 'PJS Desa Persiapan Giriwangi menerima kunjungan edukasi dari TK Insan Muda dalam kegiatan pengenalan hewan kurban...',
-      fullContent: 'PJS Desa Persiapan Giriwangi menerima kunjungan edukasi dari TK Insan Muda dalam kegiatan pengenalan hewan kurban. Kegiatan ini merupakan bagian dari program edukasi anak tentang tradisi dan budaya lokal.'
-    },
-    {
-      id: 7,
       date: '2026-06-01',
       category: 'Infrastruktur',
       title: 'Perbaikan Jalan Desa Giriwangi',
@@ -484,44 +475,53 @@ document.querySelectorAll('.hubungi-link').forEach(link => {
       fullContent: 'Pemerintah Desa melaksanakan kegiatan perbaikan jalan Desa Giriwangi untuk meningkatkan aksesibilitas transportasi masyarakat. Pekerjaan ini difokuskan pada jalan utama yang banyak dilalui oleh kendaraan operasional.'
     },
     {
+      id: 7,
+      date: '2026-05-21',
+      category: 'Kesehatan',
+      title: 'Layanan Kesehatan Bersama BAZNAS Provinsi',
+      excerpt: 'Pemerintah Desa Persiapan Giriwangi bersama BAZNAS Provinsi melaksanakan kegiatan layanan kesehatan bagi masyarakat Dusun 1 Cilaja...',
+      fullContent: 'Pemerintah Desa Persiapan Giriwangi bersama BAZNAS Provinsi melaksanakan kegiatan layanan kesehatan bagi masyarakat Dusun 1 Cilaja. Layanan ini meliputi pemeriksaan kesehatan gratis, edukasi kesehatan, dan pembagian obat-obatan.'
+    },
+    {
+      id: 8,
+      date: '2026-05-20',
+      category: 'Monitoring',
+      title: 'Kegiatan Monitoring dan Evaluasi',
+      excerpt: 'Pemerintah Desa Persiapan Giriwangi menerima kunjungan kegiatan monitoring dan evaluasi dari pihak terkait...',
+      fullContent: 'Pemerintah Desa Persiapan Giriwangi menerima kunjungan kegiatan monitoring dan evaluasi dari pihak terkait. Kegiatan ini bertujuan untuk mengukur pencapaian program desa dan memberikan masukan untuk perbaikan ke depan.'
+    },
+    {
       id: 9,
-      date: '2026-06-05',
-      category: 'Sosial',
-      title: 'Program Bantuan Sosial untuk UMKM',
-      excerpt: 'Desa Persiapan Giriwangi meluncurkan program bantuan sosial untuk mendukung UMKM lokal...',
-      fullContent: 'Desa Persiapan Giriwangi meluncurkan program bantuan sosial untuk mendukung UMKM lokal yang terdampak ekonomi. Program ini memberikan modal kerja dan pelatihan manajemen usaha bagi pelaku UMKM.'
+      date: '2026-05-20',
+      category: 'Pelayanan',
+      title: 'Budayakan 5S dalam Pelayanan Prima',
+      excerpt: 'Pemerintah Desa Persiapan Giriwangi berkomitmen meningkatkan kualitas pelayanan dengan membudayakan prinsip 5S...',
+      fullContent: 'Pemerintah Desa Persiapan Giriwangi berkomitmen meningkatkan kualitas pelayanan dengan membudayakan prinsip 5S (Senyum, Sapa, Salam, Santun, Solusi). Program ini ditujukan untuk meningkatkan kepuasan masyarakat terhadap layanan desa.'
     },
-        {
+    {
       id: 10,
-      date: '2026-06-05',
-      category: 'Sosial',
-      title: 'Program Bantuan Sosial untuk UMKM',
-      excerpt: 'Desa Persiapan Giriwangi meluncurkan program bantuan sosial untuk mendukung UMKM lokal...',
-      fullContent: 'Desa Persiapan Giriwangi meluncurkan program bantuan sosial untuk mendukung UMKM lokal yang terdampak ekonomi. Program ini memberikan modal kerja dan pelatihan manajemen usaha bagi pelaku UMKM.'
+      date: '2026-05-13',
+      category: 'Edukasi',
+      title: 'Kunjungan TK Insan Muda ke Peternakan',
+      excerpt: 'PJS Desa Persiapan Giriwangi menerima kunjungan edukasi dari TK Insan Muda dalam kegiatan pengenalan hewan kurban...',
+      fullContent: 'PJS Desa Persiapan Giriwangi menerima kunjungan edukasi dari TK Insan Muda dalam kegiatan pengenalan hewan kurban. Kegiatan ini merupakan bagian dari program edukasi anak tentang tradisi dan budaya lokal.'
     },
-        {
+    {
       id: 11,
-      date: '2026-06-05',
-      category: 'Sosial',
-      title: 'Program Bantuan Sosial untuk UMKM',
-      excerpt: 'Desa Persiapan Giriwangi meluncurkan program bantuan sosial untuk mendukung UMKM lokal...',
-      fullContent: 'Desa Persiapan Giriwangi meluncurkan program bantuan sosial untuk mendukung UMKM lokal yang terdampak ekonomi. Program ini memberikan modal kerja dan pelatihan manajemen usaha bagi pelaku UMKM.'
+      date: '2026-04-30',
+      category: 'Administrasi',
+      title: 'Identifikasi dan Verifikasi Batas Desa',
+      excerpt: 'Pemerintah Desa Persiapan Giriwangi bersama Dinas Pemberdayaan Masyarakat dan Desa melaksanakan kegiatan identifikasi dan verifikasi batas desa...',
+      fullContent: 'Pemerintah Desa Persiapan Giriwangi bersama Dinas Pemberdayaan Masyarakat dan Desa melaksanakan kegiatan identifikasi dan verifikasi batas desa. Tujuan dari kegiatan ini adalah untuk memperjelas batas-batas wilayah desa secara administratif dan legal.'
     },
-        {
+    {
       id: 12,
-      date: '2026-06-05',
-      category: 'Sosial',
-      title: 'Program Bantuan Sosial untuk UMKM',
-      excerpt: 'Desa Persiapan Giriwangi meluncurkan program bantuan sosial untuk mendukung UMKM lokal...',
-      fullContent: 'Desa Persiapan Giriwangi meluncurkan program bantuan sosial untuk mendukung UMKM lokal yang terdampak ekonomi. Program ini memberikan modal kerja dan pelatihan manajemen usaha bagi pelaku UMKM.'
-    },
-        {
-      id: 13,
-      date: '2026-06-05',
-      category: 'Sosial',
-      title: 'Program Bantuan Sosial untuk UMKM',
-      excerpt: 'Desa Persiapan Giriwangi meluncurkan program bantuan sosial untuk mendukung UMKM lokal...',
-      fullContent: 'Desa Persiapan Giriwangi meluncurkan program bantuan sosial untuk mendukung UMKM lokal yang terdampak ekonomi. Program ini memberikan modal kerja dan pelatihan manajemen usaha bagi pelaku UMKM.'
+      date: '2026-04-30',
+      image: 'https://res.cloudinary.com/dykoop6rv/image/upload/v1787054566/WhatsApp_Image_2026-08-06_at_09.01.37_rlzwpf.jpg',
+      category: 'Kegiatan',
+      title: 'Silaturahmi/Halal Bihalal Hari Jadi Kabupaten Bandung',
+      excerpt: 'PJ. Kepala Desa Persiapan Giriwangi dan Kepala Desa Girimekar mengadakan acara Silaturahmi/halal bihalal dalam rangka peringatan Hari Jadi Kabupaten Bandung ke-385 tahun...',
+      fullContent: 'PJ. Kepala Desa Persiapan Giriwangi dan Kepala Desa Girimekar mengadakan acara Silaturahmi/halal bihalal dalam rangka peringatan Hari Jadi Kabupaten Bandung ke-385 tahun. Kegiatan ini merupakan bentuk apresiasi kepada mitra kerja dan stakeholder dalam memajukan desa.'
     }
   ];
 
@@ -552,9 +552,15 @@ document.querySelectorAll('.hubungi-link').forEach(link => {
       const dateStr = dateObj.toLocaleDateString('id-ID', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
       
       const card = document.createElement('div');
-      card.className = 'col-12 col-md-6';
+      card.className = 'col-12 col-sm-6 col-lg-4';
+      const imageHtml = item.image
+        ? `<img src="${item.image}" alt="${item.title}" style="width:100%; height:180px; object-fit:cover; border-radius: 12px 12px 0 0;" loading="lazy">`
+        : `<div style="width:100%; height:180px; border-radius:12px 12px 0 0; background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); display:flex; align-items:center; justify-content:center;">
+             <i class="fas fa-newspaper" style="font-size:2.2rem; color:rgba(255,255,255,0.35);"></i>
+           </div>`;
       card.innerHTML = `
-        <div class="card border-0 shadow-sm h-100 scroll-fade-in-up" style="transition: all 0.3s ease;">
+        <div class="card border-0 shadow-sm h-100 scroll-fade-in-up" style="transition: all 0.3s ease; overflow:hidden;">
+          ${imageHtml}
           <div class="card-body d-flex flex-column">
             <div class="mb-2">
               <small class="text-muted d-flex align-items-center gap-2">
@@ -578,6 +584,16 @@ document.querySelectorAll('.hubungi-link').forEach(link => {
         </div>
       `;
       listContainer.appendChild(card);
+
+      // Trigger scroll-reveal animation (tanpa ini card stuck di opacity:0)
+      const cardEl = card.querySelector('.scroll-fade-in-up');
+      if (cardEl) {
+        if (typeof observer !== 'undefined' && observer.observe) {
+          observer.observe(cardEl);
+        } else {
+          requestAnimationFrame(() => cardEl.classList.add('visible'));
+        }
+      }
     });
 
     // Attach modal handlers
@@ -659,7 +675,10 @@ document.querySelectorAll('.hubungi-link').forEach(link => {
     document.getElementById('modalTitle').textContent = item.title;
     document.getElementById('modalDate').textContent = new Date(item.date).toLocaleDateString('id-ID', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
     document.getElementById('modalCategory').textContent = item.category;
-    document.getElementById('modalBody').innerHTML = item.fullContent;
+    const imageBlock = item.image
+      ? `<img src="${item.image}" alt="${item.title}" style="width:100%; max-height:280px; object-fit:cover; border-radius:12px; margin-bottom:16px;">`
+      : '';
+    document.getElementById('modalBody').innerHTML = imageBlock + item.fullContent;
 
     const modal = new bootstrap.Modal(document.getElementById('beritaModal'));
     modal.show();
@@ -706,7 +725,126 @@ document.querySelectorAll('.hubungi-link').forEach(link => {
   renderBerita();
 })();
 })();
+// ===== GALERI FOTO (CAROUSEL OTOMATIS) =====
+(() => {
+  const carouselEl = document.getElementById('galeriCarousel');
+  const inner = document.getElementById('galeriInner');
+  const indicators = document.getElementById('galeriIndicators');
+  const filterWrap = document.getElementById('galeriFilter');
+  if (!carouselEl || !inner || !indicators || !filterWrap) return;
 
+  const dummyGaleri = [
+    { title: 'Rapat Musyawarah Desa', category: 'kegiatan', src: 'https://res.cloudinary.com/dykoop6rv/image/upload/v1787054652/WhatsApp_Image_2026-08-18_at_18.21.07_tgmbd9.jpg' },
+    { title: 'Kebun Kopi Warga Dusun 1', category: 'pertanian', src: 'https://picsum.photos/seed/giriwangi-02/900/600' },
+    { title: 'Panorama Desa 748 MDPL', category: 'alam', src: 'https://picsum.photos/seed/giriwangi-03/900/600' },
+    { title: 'Perbaikan Jalan Desa', category: 'infrastruktur', src: 'https://picsum.photos/seed/giriwangi-04/900/600' },
+    { title: 'Panen Sayuran Dusun 2', category: 'pertanian', src: 'https://picsum.photos/seed/giriwangi-05/900/600' },
+    { title: 'Kegiatan Posyandu', category: 'kegiatan', src: 'https://picsum.photos/seed/giriwangi-06/900/600' },
+    { title: 'Sungai di Kaki Bukit', category: 'alam', src: 'https://picsum.photos/seed/giriwangi-07/900/600' },
+    { title: 'Pembangunan Balai Desa', category: 'infrastruktur', src: 'https://picsum.photos/seed/giriwangi-08/900/600' },
+    { title: 'Gotong Royong Warga', category: 'kegiatan', src: 'https://picsum.photos/seed/giriwangi-09/900/600' },
+  ];
+
+  const categoryLabel = { kegiatan: 'Kegiatan', pertanian: 'Pertanian', alam: 'Alam', infrastruktur: 'Infrastruktur' };
+
+  let currentList = [...dummyGaleri];
+  let currentIndex = 0;
+  let bsCarousel = null;
+
+  function renderCarousel(filter) {
+    currentList = filter === 'all' ? [...dummyGaleri] : dummyGaleri.filter(g => g.category === filter);
+    if (currentList.length === 0) currentList = [...dummyGaleri];
+
+    // Bangun indicators
+    indicators.innerHTML = currentList.map((_, idx) => `
+      <button type="button" data-bs-target="#galeriCarousel" data-bs-slide-to="${idx}"
+        class="${idx === 0 ? 'active' : ''}" aria-current="${idx === 0 ? 'true' : 'false'}"
+        aria-label="Slide ${idx + 1}"></button>
+    `).join('');
+
+    // Bangun slides
+    inner.innerHTML = currentList.map((item, idx) => `
+      <div class="carousel-item ${idx === 0 ? 'active' : ''}" data-idx="${idx}">
+        <img src="${item.src}" alt="${item.title}" loading="lazy">
+        <div class="galeri-carousel-caption">
+          <span class="cat">${categoryLabel[item.category] || item.category}</span>
+          <h5>${item.title}</h5>
+        </div>
+      </div>
+    `).join('');
+
+    // Klik gambar -> buka lightbox
+    inner.querySelectorAll('.carousel-item img').forEach((img, idx) => {
+      img.addEventListener('click', () => openLightbox(idx));
+    });
+
+    // Reinit instance Bootstrap Carousel biar auto-slide jalan dari slide baru
+    if (bsCarousel) bsCarousel.dispose();
+    bsCarousel = new bootstrap.Carousel(carouselEl, {
+      interval: 3500,
+      ride: 'carousel',
+      wrap: true,
+      touch: true
+    });
+  }
+
+  filterWrap.querySelectorAll('.galeri-filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterWrap.querySelectorAll('.galeri-filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      renderCarousel(btn.dataset.filter);
+    });
+  });
+
+  // ===== LIGHTBOX (tetap ada, klik foto di carousel utk lihat penuh) =====
+  const lightbox = document.getElementById('galeriLightbox');
+  const lbImg = document.getElementById('galeriLightboxImg');
+  const lbTitle = document.getElementById('galeriLightboxTitle');
+  const lbCategory = document.getElementById('galeriLightboxCategory');
+  const lbClose = document.getElementById('galeriLightboxClose');
+  const lbPrev = document.getElementById('galeriLightboxPrev');
+  const lbNext = document.getElementById('galeriLightboxNext');
+
+  function openLightbox(idx) {
+    currentIndex = idx;
+    updateLightbox();
+    lightbox.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    if (bsCarousel) bsCarousel.pause();
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('active');
+    document.body.style.overflow = '';
+    if (bsCarousel) bsCarousel.cycle();
+  }
+
+  function updateLightbox() {
+    const item = currentList[currentIndex];
+    if (!item) return;
+    lbImg.src = item.src;
+    lbImg.alt = item.title;
+    lbTitle.textContent = item.title;
+    lbCategory.textContent = categoryLabel[item.category] || item.category;
+  }
+
+  function showPrev() { currentIndex = (currentIndex - 1 + currentList.length) % currentList.length; updateLightbox(); }
+  function showNext() { currentIndex = (currentIndex + 1) % currentList.length; updateLightbox(); }
+
+  lbClose.addEventListener('click', closeLightbox);
+  lbPrev.addEventListener('click', showPrev);
+  lbNext.addEventListener('click', showNext);
+  lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+
+  document.addEventListener('keydown', (e) => {
+    if (!lightbox.classList.contains('active')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') showPrev();
+    if (e.key === 'ArrowRight') showNext();
+  });
+
+  renderCarousel('all');
+})();
 // ===== CONSOLE LOG =====
 console.log('%c🌿 Desa Persiapan Giriwangi - Website Loaded Successfully', 'color: #2d5016; font-size: 14px; font-weight: bold;');
 console.log('%cVisi: Giriwangi MAKMUR (Maju, Aktif, Kreatif, Mufakat, Unggul, Religius)', 'color: #d4af37; font-size: 12px;');
