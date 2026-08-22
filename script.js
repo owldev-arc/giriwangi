@@ -734,15 +734,15 @@ document.querySelectorAll('.hubungi-link').forEach(link => {
   if (!carouselEl || !inner || !indicators || !filterWrap) return;
 
   const dummyGaleri = [
-    { title: 'Rapat Musyawarah Desa', category: 'kegiatan', src: 'https://res.cloudinary.com/dykoop6rv/image/upload/v1787054652/WhatsApp_Image_2026-08-18_at_18.21.07_tgmbd9.jpg' },
-    { title: 'Kebun Kopi Warga Dusun 1', category: 'pertanian', src: 'https://picsum.photos/seed/giriwangi-02/900/600' },
-    { title: 'Panorama Desa 748 MDPL', category: 'alam', src: 'https://picsum.photos/seed/giriwangi-03/900/600' },
-    { title: 'Perbaikan Jalan Desa', category: 'infrastruktur', src: 'https://picsum.photos/seed/giriwangi-04/900/600' },
-    { title: 'Panen Sayuran Dusun 2', category: 'pertanian', src: 'https://picsum.photos/seed/giriwangi-05/900/600' },
-    { title: 'Kegiatan Posyandu', category: 'kegiatan', src: 'https://picsum.photos/seed/giriwangi-06/900/600' },
-    { title: 'Sungai di Kaki Bukit', category: 'alam', src: 'https://picsum.photos/seed/giriwangi-07/900/600' },
-    { title: 'Pembangunan Balai Desa', category: 'infrastruktur', src: 'https://picsum.photos/seed/giriwangi-08/900/600' },
-    { title: 'Gotong Royong Warga', category: 'kegiatan', src: 'https://picsum.photos/seed/giriwangi-09/900/600' },
+    { title: 'Karnaval ', category: 'kegiatan', src: 'https://res.cloudinary.com/dykoop6rv/image/upload/v1787376669/giriwangiwa_b9udqr.jpg' },
+    { title: 'Kebun Kopi Warga Dusun 1', category: 'pertanian', src: '' },
+    { title: 'Panorama Desa 748 MDPL', category: 'alam', src: '' },
+    { title: 'Perbaikan Jalan Desa', category: 'infrastruktur', src: '' },
+    { title: 'Panen Sayuran Dusun 2', category: 'pertanian', src: '' },
+    { title: 'Kegiatan Posyandu', category: 'kegiatan', src: '' },
+    { title: 'Sungai di Kaki Bukit', category: 'alam', src: '' },
+    { title: 'Pembangunan Balai Desa', category: 'infrastruktur', src: '' },
+    { title: 'Gotong Royong Warga', category: 'kegiatan', src: '' },
   ];
 
   const categoryLabel = { kegiatan: 'Kegiatan', pertanian: 'Pertanian', alam: 'Alam', infrastruktur: 'Infrastruktur' };
