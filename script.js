@@ -427,39 +427,72 @@ document.querySelectorAll('.hubungi-link').forEach(link => {
   // berita list 
   const dummyBerita = [
     {
+              
       id: 1,
+      date: '2026-08-24',
+      category: 'Kegiatan',
+      image:'https://res.cloudinary.com/dykoop6rv/image/upload/v1787677836/WhatsApp_Image_2026-08-24_at_09.12.33_1_cfeveg.jpg',
+      title: 'Pjs Kades Giriwangi Tinjau Lokasi Kebakaran di Jatiendah',
+      excerpt: 'Pjs Kepala Desa Giriwangi mengunjungi langsung lokasi musibah kebakaran di wilayah Jatiendah guna menyampaikan rasa prihatin sekaligus berkoordinasi terkait bantuan darurat untuk warga terdampak.',
+      fullContent: 'GIRIWANGI – Merespons musibah kebakaran yang melanda kawasan Jatiendah baru-baru ini, Pejabat Sementara (Pjs) Kepala Desa Giriwangi langsung turun ke lapangan untuk meninjau lokasi kejadian. Kunjungan darurat ini dilakukan sebagai bentuk solidaritas, kepedulian, sekaligus aksi tanggap cepat terhadap bencana yang menimpa warga sekitar.Begitu tiba di lokasi, Pjs Kepala Desa Giriwangi segera memantau area yang terdampak oleh kobaran api. Dalam peninjauan tersebut, beliau melihat langsung kondisi kerusakan bangunan serta memastikan bahwa situasi di sekitar tempat kejadian perkara (TKP) sudah sepenuhnya aman dan terkendali setelah penanganan oleh petugas pemadam kebakaran.Selain memantau kondisi fisik lingkungan, Pjs Kepala Desa Giriwangi juga menyempatkan diri untuk berinteraksi langsung dengan para korban dan warga setempat. Kehadiran beliau di tengah situasi sulit ini bertujuan untuk memberikan dukungan moril serta mendengarkan langsung kebutuhan mendesak yang diperlukan oleh warga terdampak."Kehadiran kami di sini adalah bentuk empati dan kebersamaan. Musibah ini adalah duka kita bersama, dan kami ingin memastikan bahwa koordinasi penanganan pasca-kebakaran dapat berjalan dengan baik agar warga yang terdampak bisa segera mendapatkan bantuan yang dibutuhkan," ujar Pjs Kepala Desa Giriwangi di sela-sela kunjungannya.Dalam agenda kunjungan ini, pihak Pemerintah Desa Giriwangi juga melakukan koordinasi dengan jajaran pengurus lingkungan setempat, mulai dari Ketua RT, RW, hingga tokoh masyarakat. Koordinasi ini difokuskan pada pendataan kerugian, pemetaan kebutuhan logistik darurat, serta perencanaan penyaluran bantuan sosial guna meringankan beban para korban kebakaran.Melalui aksi tanggap darurat ini, diharapkan sinergi antara pemerintah desa, petugas, dan masyarakat dapat mempercepat proses pemulihan situasi di Jatiendah, baik dari segi infrastruktur maupun kondisi psikologis warga yang tertimpa musibah.'
+    },
+           {
+      id: 2,
+      date: '2026-08-22',
+      category: 'Kegiatan',
+      image:'https://res.cloudinary.com/dykoop6rv/image/upload/v1787677734/malam_cmyr0s.jpg',
+      title: 'Apresiasi Bakat Warga, Pjs Desa Giriwangi Hadiri Malam Kreasi Seni',
+      excerpt: 'intip keseruan malam panggung kreasi seni di lingkungan RW Desa Giriwangi. Acara ini menjadi wadah kreativitas warga sekaligus ajang silaturahmi bersama Pjs Kades.',
+      fullContent: 'ntip keseruan malam panggung kreasi seni di lingkungan RW Desa Giriwangi. Acara ini menjadi wadah kreativitas warga sekaligus ajang silaturahmi bersama Pjs Kades.'
+    },
+    {
+      id: 3,
       date: '2026-08-20',
       category: 'Kegiatan',
+      image:'https://res.cloudinary.com/dykoop6rv/image/upload/v1787676520/WhatsApp_Image_2026-08-20_at_11.29.30_2_jgvhc6.jpg',
       title: 'Silaturahmi & Koordinasi Persiapan Kompetisi Gulat Desa Cilengkrang',
       excerpt: 'Pertemuan silaturahmi sekaligus pemantapan teknis bagi para atlet, pelatih, dan pengurus gulat Desa Cilengkrang untuk persiapan pertandingan besok...',
       fullContent: 'Pertemuan silaturahmi sekaligus pemantapan teknis bagi para atlet, pelatih, dan pengurus gulat Desa Cilengkrang untuk persiapan pertandingan besok. Harap hadir tepat waktu demi kelancaran kompetisi.'
     },
+  
     {
-      id: 2,
+      id: 4,
       date: '2026-08-17',
       category: 'Kegiatan',
+      image: 'https://res.cloudinary.com/dykoop6rv/image/upload/v1787386521/IMG_6623_zlfkdb.jpg',
       title: 'Parade Kolosal Giriwangi: Gelombang Kreativitas RW 01\u201311 Menuju Girimekar',
       excerpt: 'Unjuk kekompakan akbar 11 RW Dusun Giriwangi dalam satu barisan seni, kostum, dan budaya lokal...',
       fullContent: 'Unjuk kekompakan akbar 11 RW Dusun Giriwangi dalam satu barisan seni, kostum, dan budaya lokal. Bersiap menyemarakkan pusat Desa Induk Girimekar dengan energi gotong royong yang meriah!'
     },
-    {
+       {
       id: 3,
+      date: '2026-08-17',
+      category: 'Kegiatan',
+      image: 'https://res.cloudinary.com/dykoop6rv/image/upload/v1787676831/bendera_bpz7ad.jpg',
+      title: 'Pjs Desa Giriwangi Hadiri Upacara Penurunan Bendera HUT RI',
+      excerpt: 'Hadiri upacara penurunan bendera merah putih, Pjs Kepala Desa Giriwangi sampaikan apresiasi kepada seluruh masyarakat dan perangkat desa yang terlibat.',
+      fullContent: 'Hadiri upacara penurunan bendera merah putih, Pjs Kepala Desa Giriwangi sampaikan apresiasi kepada seluruh masyarakat dan perangkat desa yang terlibat.'
+    },
+    {
+      id: 5,
       date: '2026-08-15',
       category: 'Kegiatan',
+      image:'https://res.cloudinary.com/dykoop6rv/image/upload/v1787676336/WhatsApp_Image_2026-08-15_at_21.05.28_k5ygyh.jpg',
       title: 'Peringatan Maulid Nabi Muhammad SAW 1448 H \u2013 Masjid Al-Manan RW 8',
       excerpt: 'Undangan menghadiri tablig akbar peringatan Maulid Nabi Muhammad SAW di Masjid Al-Manan RW 8, Cilengkrang...',
       fullContent: 'Undangan menghadiri tablig akbar peringatan Maulid Nabi Muhammad SAW di Masjid Al-Manan RW 8, Cilengkrang. Mari bersama-sama meneladani akhlak Rasulullah SAW dan mempererat silaturahmi antarwarga.'
     },
     {
-      id: 4,
+      id: 6,
       date: '2026-08-13',
       category: 'Kegiatan',
+      image:'https://res.cloudinary.com/dykoop6rv/image/upload/v1787677010/musyahutri_zteyee.jpg',
       title: 'Musyawarah Warga: Gotong Royong Menyambut HUT RI ke-81',
       excerpt: 'Undangan rapat kerja dan musyawarah mufakat seluruh warga untuk menyusun rangkaian kegiatan, kepanitiaan, dan perlombaan HUT RI...',
       fullContent: 'Undangan rapat kerja dan musyawarah mufakat seluruh warga untuk menyusun rangkaian kegiatan, kepanitiaan, dan perlombaan dalam rangka memeriahkan Hari Kemerdekaan Republik Indonesia ke-81. Kehadiran dan ide kreatif Anda adalah kunci kemeriahan Desa kita!'
     },
     {
-      id: 5,
+      id: 7,
       date: '2026-06-05',
       category: 'Sosial',
       title: 'Program Bantuan Sosial untuk UMKM',
@@ -467,7 +500,7 @@ document.querySelectorAll('.hubungi-link').forEach(link => {
       fullContent: 'Desa Persiapan Giriwangi meluncurkan program bantuan sosial untuk mendukung UMKM lokal yang terdampak ekonomi. Program ini memberikan modal kerja dan pelatihan manajemen usaha bagi pelaku UMKM.'
     },
     {
-      id: 6,
+      id: 8,
       date: '2026-06-01',
       category: 'Infrastruktur',
       title: 'Perbaikan Jalan Desa Giriwangi',
@@ -475,7 +508,7 @@ document.querySelectorAll('.hubungi-link').forEach(link => {
       fullContent: 'Pemerintah Desa melaksanakan kegiatan perbaikan jalan Desa Giriwangi untuk meningkatkan aksesibilitas transportasi masyarakat. Pekerjaan ini difokuskan pada jalan utama yang banyak dilalui oleh kendaraan operasional.'
     },
     {
-      id: 7,
+      id: 9,
       date: '2026-05-21',
       category: 'Kesehatan',
       title: 'Layanan Kesehatan Bersama BAZNAS Provinsi',
@@ -483,7 +516,7 @@ document.querySelectorAll('.hubungi-link').forEach(link => {
       fullContent: 'Pemerintah Desa Persiapan Giriwangi bersama BAZNAS Provinsi melaksanakan kegiatan layanan kesehatan bagi masyarakat Dusun 1 Cilaja. Layanan ini meliputi pemeriksaan kesehatan gratis, edukasi kesehatan, dan pembagian obat-obatan.'
     },
     {
-      id: 8,
+      id: 10,
       date: '2026-05-20',
       category: 'Monitoring',
       title: 'Kegiatan Monitoring dan Evaluasi',
@@ -491,7 +524,7 @@ document.querySelectorAll('.hubungi-link').forEach(link => {
       fullContent: 'Pemerintah Desa Persiapan Giriwangi menerima kunjungan kegiatan monitoring dan evaluasi dari pihak terkait. Kegiatan ini bertujuan untuk mengukur pencapaian program desa dan memberikan masukan untuk perbaikan ke depan.'
     },
     {
-      id: 9,
+      id: 11,
       date: '2026-05-20',
       category: 'Pelayanan',
       title: 'Budayakan 5S dalam Pelayanan Prima',
@@ -499,7 +532,7 @@ document.querySelectorAll('.hubungi-link').forEach(link => {
       fullContent: 'Pemerintah Desa Persiapan Giriwangi berkomitmen meningkatkan kualitas pelayanan dengan membudayakan prinsip 5S (Senyum, Sapa, Salam, Santun, Solusi). Program ini ditujukan untuk meningkatkan kepuasan masyarakat terhadap layanan desa.'
     },
     {
-      id: 10,
+      id: 12,
       date: '2026-05-13',
       category: 'Edukasi',
       title: 'Kunjungan TK Insan Muda ke Peternakan',
@@ -507,7 +540,7 @@ document.querySelectorAll('.hubungi-link').forEach(link => {
       fullContent: 'PJS Desa Persiapan Giriwangi menerima kunjungan edukasi dari TK Insan Muda dalam kegiatan pengenalan hewan kurban. Kegiatan ini merupakan bagian dari program edukasi anak tentang tradisi dan budaya lokal.'
     },
     {
-      id: 11,
+      id: 13,
       date: '2026-04-30',
       category: 'Administrasi',
       title: 'Identifikasi dan Verifikasi Batas Desa',
@@ -515,7 +548,7 @@ document.querySelectorAll('.hubungi-link').forEach(link => {
       fullContent: 'Pemerintah Desa Persiapan Giriwangi bersama Dinas Pemberdayaan Masyarakat dan Desa melaksanakan kegiatan identifikasi dan verifikasi batas desa. Tujuan dari kegiatan ini adalah untuk memperjelas batas-batas wilayah desa secara administratif dan legal.'
     },
     {
-      id: 12,
+      id: 14,
       date: '2026-04-30',
       image: 'https://res.cloudinary.com/dykoop6rv/image/upload/v1787054566/WhatsApp_Image_2026-08-06_at_09.01.37_rlzwpf.jpg',
       category: 'Kegiatan',
