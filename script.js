@@ -426,9 +426,18 @@ document.querySelectorAll('.hubungi-link').forEach(link => {
 (() => {
   // berita list 
   const dummyBerita = [
+                {
+      id: 1,
+      date: '2026-08-29',
+      category: 'Kegiatan',
+      image:'https://res.cloudinary.com/dykoop6rv/image/upload/v1788022219/rw11_s9of9k.jpg',
+      title: 'Semarakkan HUT RI Ke-81, Pjs Kepala Desa Persiapan Giriwangi dan Jajaran Hadiri Perayaan di RW 11',
+      excerpt: 'Pjs Kepala Desa Persiapan Giriwangi beserta jajarannya menghadiri peringatan HUT ke-81 Kemerdekaan Republik Indonesia yang digelar meriah oleh warga RW 11. Kehadiran pemerintah desa ini menjadi momentum untuk mempererat kebersamaan dan mengapresiasi gotong royong warga setempat.',
+      fullContent: "Pjs Kepala Desa Persiapan Giriwangi beserta jajaran perangkat desa menghadiri peringatan Hari Ulang Tahun (HUT) ke-81 Kemerdekaan Republik Indonesia yang diselenggarakan oleh warga RW 11. Kehadiran jajaran pemerintah desa disambut hangat oleh pengurus RT/RW, tokoh masyarakat, dan warga setempat.\n\nAcara diisi dengan beragam kegiatan, mulai dari perlombaan tradisional hingga pertunjukan seni lokal. Dalam sambutannya, Pjs Kades Giriwangi menyampaikan apresiasi atas kekompakan panitia dan antusiasme masyarakat RW 11, seraya menekankan pentingnya menjaga persatuan dan semangat gotong royong dalam mengisi kemerdekaan. Selain memantau jalannya acara, momen ini juga dimanfaatkan untuk berdialog langsung dan menyerap aspirasi warga sebelum diakhiri dengan pembagian hadiah dan ramah tamah."
+},
     {
               
-      id: 1,
+      id: 2,
       date: '2026-08-24',
       category: 'Kegiatan',
       image:'https://res.cloudinary.com/dykoop6rv/image/upload/v1787677836/WhatsApp_Image_2026-08-24_at_09.12.33_1_cfeveg.jpg',
@@ -436,14 +445,15 @@ document.querySelectorAll('.hubungi-link').forEach(link => {
       excerpt: 'Pjs Kepala Desa Giriwangi mengunjungi langsung lokasi musibah kebakaran di wilayah Jatiendah guna menyampaikan rasa prihatin sekaligus berkoordinasi terkait bantuan darurat untuk warga terdampak.',
       fullContent: 'GIRIWANGI – Merespons musibah kebakaran yang melanda kawasan Jatiendah baru-baru ini, Pejabat Sementara (Pjs) Kepala Desa Giriwangi langsung turun ke lapangan untuk meninjau lokasi kejadian. Kunjungan darurat ini dilakukan sebagai bentuk solidaritas, kepedulian, sekaligus aksi tanggap cepat terhadap bencana yang menimpa warga sekitar.Begitu tiba di lokasi, Pjs Kepala Desa Giriwangi segera memantau area yang terdampak oleh kobaran api. Dalam peninjauan tersebut, beliau melihat langsung kondisi kerusakan bangunan serta memastikan bahwa situasi di sekitar tempat kejadian perkara (TKP) sudah sepenuhnya aman dan terkendali setelah penanganan oleh petugas pemadam kebakaran.Selain memantau kondisi fisik lingkungan, Pjs Kepala Desa Giriwangi juga menyempatkan diri untuk berinteraksi langsung dengan para korban dan warga setempat. Kehadiran beliau di tengah situasi sulit ini bertujuan untuk memberikan dukungan moril serta mendengarkan langsung kebutuhan mendesak yang diperlukan oleh warga terdampak."Kehadiran kami di sini adalah bentuk empati dan kebersamaan. Musibah ini adalah duka kita bersama, dan kami ingin memastikan bahwa koordinasi penanganan pasca-kebakaran dapat berjalan dengan baik agar warga yang terdampak bisa segera mendapatkan bantuan yang dibutuhkan," ujar Pjs Kepala Desa Giriwangi di sela-sela kunjungannya.Dalam agenda kunjungan ini, pihak Pemerintah Desa Giriwangi juga melakukan koordinasi dengan jajaran pengurus lingkungan setempat, mulai dari Ketua RT, RW, hingga tokoh masyarakat. Koordinasi ini difokuskan pada pendataan kerugian, pemetaan kebutuhan logistik darurat, serta perencanaan penyaluran bantuan sosial guna meringankan beban para korban kebakaran.Melalui aksi tanggap darurat ini, diharapkan sinergi antara pemerintah desa, petugas, dan masyarakat dapat mempercepat proses pemulihan situasi di Jatiendah, baik dari segi infrastruktur maupun kondisi psikologis warga yang tertimpa musibah.'
     },
-           {
+  
+      {
       id: 2,
       date: '2026-08-22',
       category: 'Kegiatan',
       image:'https://res.cloudinary.com/dykoop6rv/image/upload/v1787677734/malam_cmyr0s.jpg',
       title: 'Apresiasi Bakat Warga, Pjs Desa Giriwangi Hadiri Malam Kreasi Seni',
       excerpt: 'intip keseruan malam panggung kreasi seni di lingkungan RW Desa Giriwangi. Acara ini menjadi wadah kreativitas warga sekaligus ajang silaturahmi bersama Pjs Kades.',
-      fullContent: 'ntip keseruan malam panggung kreasi seni di lingkungan RW Desa Giriwangi. Acara ini menjadi wadah kreativitas warga sekaligus ajang silaturahmi bersama Pjs Kades.'
+      fullContent: 'intip keseruan malam panggung kreasi seni di lingkungan RW Desa Giriwangi. Acara ini menjadi wadah kreativitas warga sekaligus ajang silaturahmi bersama Pjs Kades.'
     },
     {
       id: 3,
