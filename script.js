@@ -428,6 +428,15 @@ document.querySelectorAll('.hubungi-link').forEach(link => {
   const dummyBerita = [
                 {
       id: 1,
+      date: '2026-08-30',
+      category: 'Kegiatan',
+      image:'https://res.cloudinary.com/dykoop6rv/image/upload/v1788103030/WhatsApp_Image_2026-08-30_at_21.58.00_v4qeew.jpg',
+      title: 'Desa Persiapan Giriwangi Hadiri Peringatan Maulid Nabi dan Syukuran HUT RI ke-81 di RW 3',
+      excerpt: 'Pemerintah Desa Persiapan Giriwangi menghadiri peringatan Maulid Nabi Muhammad SAW sekaligus syukuran HUT RI ke-81 yang diselenggarakan oleh warga RW 3. Kehadiran jajaran pemerintah desa ini menjadi momentum penting untuk mempererat ukhuwah islamiyah dan mengokohkan semangat persatuan antarwarga di wilayah tersebut.',
+      fullContent:'Pemerintah Desa Persiapan Giriwangi menghadiri peringatan Maulid Nabi Muhammad SAW yang diintegrasikan dengan syukuran HUT RI ke-81 di lingkungan RW 3. Kehadiran jajaran aparatur desa menjadi bentuk dukungan atas inisiatif warga dalam menyatukan momen keagamaan dan kebangsaan. Acara diawali dengan pembacaan ayat suci Al-Qur an dan salawat bersama, dilanjutkan dengan tausiyah yang mengulas pentingnya meneladani akhlak Rasulullah SAW dalam kehidupan bermasyarakat. Selain itu, Pemerintah Desa menyampaikan apresiasi atas kekompakan warga RW 3, serta mengajak seluruh masyarakat untuk terus memelihara rasa persatuan dan kebersamaan. Kegiatan ini diakhiri dengan doa bersama untuk keselamatan bangsa dan kemajuan Desa Persiapan Giriwangi.',
+},
+                {
+      id: 2,
       date: '2026-08-29',
       category: 'Kegiatan',
       image:'https://res.cloudinary.com/dykoop6rv/image/upload/v1788022219/rw11_s9of9k.jpg',
@@ -447,7 +456,7 @@ document.querySelectorAll('.hubungi-link').forEach(link => {
     },
   
       {
-      id: 2,
+      id: 3,
       date: '2026-08-22',
       category: 'Kegiatan',
       image:'https://res.cloudinary.com/dykoop6rv/image/upload/v1787677734/malam_cmyr0s.jpg',
