@@ -426,8 +426,17 @@ document.querySelectorAll('.hubungi-link').forEach(link => {
 (() => {
   // berita list 
   const dummyBerita = [
-                {
+                    {
       id: 1,
+      date: '2026-09-3',
+      category: 'Kegiatan',
+      image:'https://res.cloudinary.com/dykoop6rv/image/upload/v1788422499/WhatsApp_Image_2026-09-03_at_09.38.36_da3259.jpg',
+      title: 'Perkuat Sinergi Pemerintahan, Pengurus BPD Baru Gelar Kunjungan Perdana ke Kantor Desa Giriwangi',
+      excerpt: 'Anggota Badan Permusyawaratan Desa (BPD) Giriwangi yang baru resmi melakukan kunjungan kerja perdana ke Kantor Desa Giriwangi. Pertemuan tatap muka ini bertujuan untuk membangun komunikasi yang harmonis, menyelaraskan program kerja, serta mempertegas komitmen kemitraan yang sejajar demi kesejahteraan masyarakat desa.',
+      fullContent:'GIRIWANGI , Jajaran anggota Badan Permusyawaratan Desa (BPD) Giriwangi yang baru saja dilantik melaksanakan kunjungan kerja perdana ke Kantor Desa Persiapan Giriwangi, Kecamatan Cilengkrang, Kabupaten Bandung. Langkah awal ini diambil sebagai bentuk silaturahmi formal sekaligus koordinasi perdana untuk menyamakan persepsi terkait arah pembangunan desa ke depan.\n\nKedatangan para pengurus BPD baru tersebut disambut langsung oleh Kepala Desa Giriwangi beserta seluruh perangkat desa. Pertemuan yang berlangsung hangat dan produktif ini berfokus pada pembahasan fungsi pengawasan BPD, mekanisme penyerapan aspirasi masyarakat, serta penyelarasan regulasi lokal desa.\n\nDalam kesempatan tersebut, kedua pihak sepakat bahwa BPD dan Pemerintah Desa merupakan mitra strategis yang sejajar dalam menjalankan roda pemerintahan. BPD baru berkomitmen untuk terus mendukung transparansi program kerja desa sekaligus menjadi penyeimbang yang objektif, tanpa menciptakan ego sektoral atau pembatasan komunikasi yang kaku.\n\nKunjungan ini diakhiri dengan peninjauan fasilitas pelayanan publik di kantor desa dan kesepakatan untuk menggelar rapat koordinasi berkala guna memastikan seluruh program desa berjalan akuntabel dan tepat sasaran."',
+},
+                {
+      id: 2,
       date: '2026-08-30',
       category: 'Kegiatan',
       image:'https://res.cloudinary.com/dykoop6rv/image/upload/v1788103030/WhatsApp_Image_2026-08-30_at_21.58.00_v4qeew.jpg',
@@ -436,7 +445,7 @@ document.querySelectorAll('.hubungi-link').forEach(link => {
       fullContent:'Pemerintah Desa Persiapan Giriwangi menghadiri peringatan Maulid Nabi Muhammad SAW yang diintegrasikan dengan syukuran HUT RI ke-81 di lingkungan RW 03. Kehadiran jajaran aparatur desa menjadi bentuk dukungan atas inisiatif warga dalam menyatukan momen keagamaan dan kebangsaan. Acara diawali dengan pembacaan ayat suci Al-Qur an dan salawat bersama, dilanjutkan dengan tausiyah yang mengulas pentingnya meneladani akhlak Rasulullah SAW dalam kehidupan bermasyarakat. Selain itu, Pemerintah Desa menyampaikan apresiasi atas kekompakan warga RW 03, serta mengajak seluruh masyarakat untuk terus memelihara rasa persatuan dan kebersamaan. Kegiatan ini diakhiri dengan doa bersama untuk keselamatan bangsa dan kemajuan Desa Persiapan Giriwangi.',
 },
                 {
-      id: 2,
+      id: 3,
       date: '2026-08-29',
       category: 'Kegiatan',
       image:'https://res.cloudinary.com/dykoop6rv/image/upload/v1788022219/rw11_s9of9k.jpg',
@@ -446,7 +455,7 @@ document.querySelectorAll('.hubungi-link').forEach(link => {
 },
     {
               
-      id: 2,
+      id: 3,
       date: '2026-08-24',
       category: 'Kegiatan',
       image:'https://res.cloudinary.com/dykoop6rv/image/upload/v1787677836/WhatsApp_Image_2026-08-24_at_09.12.33_1_cfeveg.jpg',
@@ -456,7 +465,7 @@ document.querySelectorAll('.hubungi-link').forEach(link => {
     },
   
       {
-      id: 3,
+      id: 4,
       date: '2026-08-22',
       category: 'Kegiatan',
       image:'https://res.cloudinary.com/dykoop6rv/image/upload/v1787677734/malam_cmyr0s.jpg',
